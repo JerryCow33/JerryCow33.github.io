@@ -1,0 +1,110 @@
+.leitisphone_main {
+	display: flex;
+	flex-direction: column;
+	background: url('https://www.zupimages.net/up/16/43/w0gt.png') no-repeat;
+	width: 263px;
+	height: 472px;
+	max-height: 472px;
+}
+
+.leitisphone_wrapper {
+	display: flex;
+	flex-direction: column;
+	margin-top: 46px;
+	margin-left: 17px;
+	margin-right: 17px;
+	height: 379px;
+	background-color: #F7F7F7;
+}
+
+.leitisphone_header {
+	background-color: #055C8C;
+	border-bottom: 1px solid #033A58;
+	display: flex;
+	align-items: center;
+}
+
+.leitisphone_image {
+	width: 60px;
+	height: 60px;
+	border: 2px solid #fff;
+}
+
+.leitisphone_nom {
+	flex-grow: 1;
+	text-align: center;
+	font-family: tahoma;
+	font-size: 12px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.leitisphone_messages {
+	flex-grow: 1;
+	overflow: auto;
+}
+
+.leitisphone_messagegauche,
+.leitisphone_messagedroite {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	min-height: 20px;
+	border-radius: 10px;
+	padding: 10px;
+	text-align: justify;
+	color: #000;
+	font-family: Roboto;
+	font-size: 12px;
+}
+
+.leitisphone_messagegauche {
+	margin-right: 20px;
+	background-color: #FFEED7;
+	border: 1px solid #FFE0A6;
+	box-shadow: 0px 0px 10px #FFE0A6 inset;
+}
+
+.leitisphone_messagedroite {
+	margin-left: 20px;
+	background-color: #EBEBEB;
+	border: 1px solid #D2D2D2;
+	box-shadow: 0px 0px 10px #D2D2D2 inset;
+}
+
+.leitisphone_footer {
+	display: flex;
+	align-items: center;
+	background: #CDCCCC;
+	border-top: 1px solid #B9B7B7;
+}
+
+.leitisphone_saisiemessage {
+	flex-grow: 1;
+	padding: 5px;
+	background-color: #fff;
+	border: 1px solid #01A4E7;
+	color: #837B78;
+	font-family: Roboto;
+	font-size: 12px;
+}
+
+.leitisphone_saisiebouton {
+	width: 50px;
+	border-radius: 10px;
+	padding: 5px;
+	text-align: center;
+	background: #2BBFFF;
+	box-shadow: 0px 0px 10px #B5C1D7 inset;
+	border: 1px solid #0181B8;
+	color: #EEF4F9;
+	font-family: tahoma;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+.leitisphone_credits {
+	margin-top: 5px;
+	color: #C2CDD3;
+	font-size: 8px;
+	text-align: center;
+}

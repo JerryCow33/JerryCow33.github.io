@@ -1,0 +1,80 @@
+.mep_chrono_texte {
+    width: auto;
+    max-height: 105px;
+    overflow: auto;
+    padding-right: 3px;
+    color: #999999;
+    margin: 0px;
+}
+
+.mep_chrono_rp {
+    margin: 0px;
+    margin-bottom: 5px;
+    border-bottom: 6px solid #424243;
+}
+
+.mep_chrono_rp a {
+    color: #999999 !important;
+}
+
+.woa_valdyra_titre {
+    clear: both;
+    font: 35px Bebas Neue;
+    border-top: 5px solid #424243;
+    border-bottom: 5px solid #424243;
+    padding: 5px;
+    background: #181819;
+    color: #848686;
+    padding-bottom: 0px;
+}
+
+.woa_valdyra_lien_ligne {
+    display: flex;
+    align-content: flex-start;
+    max-height: 160px;
+}
+
+.woa_valdyra_lien_ligne img {
+    min-width: 150px;
+	max-width: 150px;
+}
+
+.woa_valdyra_lien {
+    margin-right: 5px;
+}
+
+.woa_valdyra_reike {
+    background: #5F4E70;
+}
+
+.woa_valdyra_republique {
+    background: #404F69;
+}
+
+.woa_valdyra_shoumei {
+    background: #40593E;
+}
+
+.woa_valdyra_vagabond {
+    background: #6E4242;
+}
+
+.woa_valdyra_reike img {
+    border: 5px solid #5F4E70;
+}
+
+.woa_valdyra_republique img {
+    border: 5px solid #404F69;
+}
+
+.woa_valdyra_shoumei img {
+    border: 5px solid #40593E;
+}
+
+.woa_valdyra_vagabond img {
+    border: 5px solid #6E4242;
+}
+
+.no_lien {
+    color: #181819;
+}
