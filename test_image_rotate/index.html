@@ -9,26 +9,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600&family=Raleway:wght@300&display=swap" rel="stylesheet">
     <style>
-        @keyframes rotate_img {
-            from {
-                transform: rotate(-45deg);
-                /*transform-origin: left center;*/
-             }
-            to {
-                transform: rotate(0deg);
-                /*transform-origin: center;*/
-            }
-        }
-        @keyframes rotate_wrap {
-            from { transform: rotate(45deg); }
-            to { transform: rotate(0deg); }
-        }
-
-        @keyframes translate_title {
-            from { margin-left:-10px; }
-            to { margin-left:-25px; }
-        }
-
         html {
             background:#282828;
         }
@@ -37,6 +17,7 @@
             align-items:center;
         }
 
+        /* perso_wrap */
         .perso_wrap {
             display: inline-block;
             overflow: hidden;
@@ -50,7 +31,15 @@
             z-index:2;
             transition: transform 0.3s, width 0.3s, height 0.3s, margin 0.3s;
         }
+        .perso:hover .perso_wrap {
+            transform: rotate(0deg);
+            width: 200px;
+            height: 200px;
+            margin: 0px;
+            /*transition: transform 0.3s, width 0.3s, height 0.3s, margin 0.3s;*/
+        }    
 
+        /* perso_wrap img */
         .perso_wrap img {
             display: block;
             transform: rotate(-45deg);
@@ -59,7 +48,14 @@
             margin-left:-40%;
             transition: transform 0.3s, margin-top 0.3s, margin-left 0.3s;
         }
+        .perso:hover .perso_wrap img {
+            transform: rotate(0deg);
+            margin-top:-20%;
+            margin-left:0%;
+            /*transition: transform 0.3s, margin-top 0.3s, margin-left 0.3s;*/
+        }
 
+        /* perso_title */
         .perso_title {
             color:lightgrey;
             font-family: 'Raleway', sans-serif;
@@ -70,7 +66,13 @@
             padding-left:0px;
             transition: margin-left 0.3s, padding-left 0.3s;
         }
-
+        .perso:hover .perso_title {
+            margin-left:0px;
+            padding-left:10px;
+            /*transition: margin-left 0.3s, padding-left 0.3s;*/
+        }
+        
+        /* perso_title span */
         .perso_title span {
             display:block;
             border-top:2px solid steelblue;
@@ -82,31 +84,9 @@
             color:steelblue;
             transition: margin-left 0.3s;
         }
-
-        .perso:hover .perso_wrap {
-            transform: rotate(0deg);
-            width: 200px;
-            height: 200px;
-            margin: 0px;
-            transition: transform 0.3s, width 0.3s, height 0.3s, margin 0.3s;
-            /*animation: 0.5s linear forwards rotate_wrap;*/
-        }
-        .perso:hover .perso_wrap img {
-            transform: rotate(0deg);
-            margin-top:-20%;
-            margin-left:0%;
-            transition: transform 0.3s, margin-top 0.3s, margin-left 0.3s;
-            /*animation: 0.5s linear forwards rotate_img;*/
-        }
-        .perso:hover .perso_title {
-            margin-left:0px;
-            padding-left:10px;
-            transition: margin-left 0.3s, padding-left 0.3s;
-            /*animation: 0.5s linear forwards translate_title;*/
-        }
         .perso:hover .perso_title span {
             margin-left:-10px;
-            transition: margin-left 0.3s;
+            /*transition: margin-left 0.3s;*/
         }
     </style>
 </head>
