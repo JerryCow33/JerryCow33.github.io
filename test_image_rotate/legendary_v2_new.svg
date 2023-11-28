@@ -1,9 +1,5 @@
 <svg version="1.1" id="svg24477" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="595.275px" height="841.89px" viewBox="0 0 595.275 841.89" enable-background="new 0 0 595.275 841.89" xml:space="preserve">
-	<g id="layer1">
-		<path id="path2344" fill="none" stroke="#000000" stroke-width="4.4598" d="M261.868,760.578L8.994,394.159L262.366,41.623 L515.24,408.042L261.868,760.578z"/>
-		<path id="path2344-0" fill="none" stroke="#000000" stroke-width="4.4598" d="M332.777,765.837L79.903,399.417L333.275,46.882 l252.874,366.419L332.777,765.837z"/>
-		<mask id="diamond-mask">
-			<path id="mask1" fill="#000000" stroke="#000000" d="M296.446,712.867L79.739,398.325L296.874,95.701 l216.708,314.542L296.446,712.867z"/>
-		</mask>
-	</g>
+	<path id="path2344" fill="none" stroke="#000000" stroke-width="4.4598" d="M261.868,760.578L8.994,394.159L262.366,41.623 L515.24,408.042L261.868,760.578z"/>
+	<path id="path2344-0" fill="none" stroke="#000000" stroke-width="4.4598" d="M332.777,765.837L79.903,399.417L333.275,46.882 l252.874,366.419L332.777,765.837z"/>
+	<path id="mask1" fill="#000000" stroke="#000000" d="M296.446,712.867L79.739,398.325L296.874,95.701 l216.708,314.542L296.446,712.867z"/>
 </svg>
