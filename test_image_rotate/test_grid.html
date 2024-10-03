@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(10, 51px); /* 10 colonnes */
+            grid-gap: 5px 2px;
+            padding-top:51px;
+        }
+
+        .diamond-container {
+            width: 100px; /* Largeur du conteneur */
+            height: 100px; /* Hauteur du conteneur */
+            position: relative;
+            overflow: hidden; /* Cache les parties du losange qui dépassent */
+            margin-top:-100%;
+        }
+
+        .diamond {
+            width: 70%; /* Ajustement pour que le losange couvre le conteneur */
+            height: 70%; /* Ajustement pour que le losange couvre le conteneur */
+            background-color: red;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) rotate(45deg); /* Centrage et rotation */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .diamond-content {
+            transform: rotate(-45deg);
+        }
+
+        /* Lignes impaires - 5 cases */
+        .diamond-container:nth-child(9n+1) { grid-column-start: 1; }
+        .diamond-container:nth-child(9n+2) { grid-column-start: 3; }
+        .diamond-container:nth-child(9n+3) { grid-column-start: 5; }
+        .diamond-container:nth-child(9n+4) { grid-column-start: 7; }
+        .diamond-container:nth-child(9n+5) { grid-column-start: 9; }
+
+        /* Lignes paires - 4 cases décalées */
+        .diamond-container:nth-child(9n+6) { grid-column-start: 2; }
+        .diamond-container:nth-child(9n+7) { grid-column-start: 4; }
+        .diamond-container:nth-child(9n+8) { grid-column-start: 6; }
+        .diamond-container:nth-child(9n+9) { grid-column-start: 8; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">1</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">2</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">3</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">4</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">5</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">6</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">7</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">8</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">9</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">10</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">11</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">12</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">13</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">14</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">15</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">16</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">17</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">18</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">19</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">20</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">21</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">22</div></div></div>
+        <div class="diamond-container"><div class="diamond"><div class="diamond-content">23</div></div></div>
+    </div>
+</body>
+</html>
