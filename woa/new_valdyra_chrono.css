@@ -1,14 +1,26 @@
+:root {
+    --primary-text-color:#848686;
+    --secondary-text-color:#828282;
+    --primary-bg-color:#181819;
+    --secondary-bg-color:#212122;
+    --primary-border-color:#424243;
+    --vignette-termine-color:darkgreen;
+    --vignette-encours-color:indianred;
+    --vignette-abandonne-color:royalblue;
+    --vignette-aprevoir-color:#212122;
+}
+
 .woa_valdyra_timeitem .woa_chrono_rp {
     display:flex;
     align-items:center;
     width:auto;
-    border-bottom: 6px solid #424243;
+    border-bottom: 6px solid var(--primary-border-color);
     line-height:18px;
     margin-top:2px;
 }
 
 .woa_valdyra_timeitem a {
-    color:#181819 !important;
+    color:var(--primary-bg-color) !important;
 }
 
 .woa_valdyra_titre,
@@ -16,11 +28,11 @@
 .woa_valdyra_titre_citation {
     clear:both;
     font:35px Bebas Neue;
-    border-top:5px solid #424243;
-    border-bottom:5px solid #424243;
+    border-top:5px solid var(--primary-border-color);
+    border-bottom:5px solid var(--primary-border-color);
     padding:5px;
-    background:#181819;
-    color:#848686;
+    background:var(--primary-bg-color);
+    color:var(--primary-text-color);
     padding-bottom:0
 }
 
@@ -30,7 +42,7 @@
 
 .woa_valdyra_titre_citation {
     text-align: center;
-    color:#919292;
+    color:var(--secondary-text-color);
     font: 13px Open sans;
     padding:5px;
 }
@@ -38,7 +50,7 @@
 .woa_chrono_texte {
     width:auto;
     font: 13px Open Sans;
-    color: #212122;
+    color: var(--secondary-text-color);
     text-align: justify;
     margin: 10px 0px 15px;
 }
@@ -60,19 +72,19 @@
 }
 
 .woa_valdyra_vignette_rouge {
-    background:indianred;
+    background:var(--vignette-encours-color);
 }
 
 .woa_valdyra_vignette_vert {
-    background:darkgreen;
+    background:var(--vignette-termine-color);
 }
 
 .woa_valdyra_vignette_bleu {
-    background:royalblue;
+    background:var(--vignette-abandonne-color);
 }
 
 .woa_valdyra_vignette_gris {
-    background:#282828;
+    background:var(--vignette-aprevoir-color);
 }
 
 .woa_valdyra_norp {
@@ -86,16 +98,16 @@
 .woa_valdyra_chrono_input + .woa_valdyra_chrono_label {
     display: inline-block;
     font:20px Bebas Neue;
-    background:#181819;
-    color:#848686;
+    background:var(--primary-bg-color);
+    color:var(--primary-text-color);
     padding:5px 10px;
 }
 
 .woa_valdyra_chrono_input:checked + .woa_valdyra_chrono_label {
-    background:#848686;
-    color:#181819;
+    background:var(--primary-text-color);
+    color:var(--primary-bg-color);
     padding:5px 10px;
-    border:3px solid #181819;
+    border:3px solid var(--primary-bg-color);
 }
 
 .woa_valdyra_chrono_input ~ .woa_valdyra_chrono_tab {
@@ -134,7 +146,7 @@
     display: block;
     top: 16px;
     position: absolute;
-    left: -8px;
+    left: -10px;
     border-radius: 15px;
     content: '';
     border: 2px solid rgba(0, 0, 0, 0.3);
@@ -142,16 +154,16 @@
 }
 
 .woa_valdyra_timeitem_rouge::after {
-    background:indianred;
+    background:var(--vignette-encours-color);
 }
 
 .woa_valdyra_timeitem_vert::after {
-    background:darkgreen;
+    background:var(--vignette-termine-color);
 }
 
 .woa_chrono_titre {
     font: 45px bebas neue;
-    background: -webkit-linear-gradient(180deg, #5e5e5e, #212122);
+    background: -webkit-linear-gradient(180deg, var(--primary-text-color), var(--secondary-text-color));
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -160,27 +172,27 @@
 
 .woa_chrono_soustitre {
     font: 15px bebas neue;
-    color: #555555;
+    color: var(--secondary-text-color);
     text-align: center;
     line-height: 10px;
 }
 
 .woa_ava_modif {
     font: 14px Bebas Neue;
-    background-color: #212122;
-    color: #828282;
+    background-color: var(--secondary-bg-color);
+    color: var(--secondary-text-color);
     text-align: center;
     padding: 5px;
 }
 
 .woa_chrono_rp {
     font: 20px bebas neue;
-    color: #212122;
+    color: var(--primary-text-color);
 }
 
 .woa_chrono_rp a {
     font: 20px bebas neue;
-    color: #212122;
+    color: var(--primary-text-color);
 }
 
 .woa_valdyra_banner img {
