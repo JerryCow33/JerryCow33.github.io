@@ -1,0 +1,188 @@
+.woa_valdyra_timeitem .woa_chrono_rp {
+    display:flex;
+    align-items:center;
+    width:auto;
+    border-bottom: 6px solid #424243;
+    line-height:18px;
+    margin-top:2px;
+}
+
+.woa_valdyra_timeitem a {
+    color:#181819 !important;
+}
+
+.woa_valdyra_titre,
+.woa_valdyra_titre_principal,
+.woa_valdyra_titre_citation {
+    clear:both;
+    font:35px Bebas Neue;
+    border-top:5px solid #424243;
+    border-bottom:5px solid #424243;
+    padding:5px;
+    background:#181819;
+    color:#848686;
+    padding-bottom:0
+}
+
+.woa_valdyra_titre_principal {
+    text-align:center;
+}
+
+.woa_valdyra_titre_citation {
+    text-align: center;
+    color:#919292;
+    font: 13px Open sans;
+    padding:5px;
+}
+
+.woa_chrono_texte {
+    width:auto;
+    font: 13px Open Sans;
+    color: #212122;
+    text-align: justify;
+    margin: 10px 0px 15px;
+}
+
+.woa_valdyra_vignette_rouge,
+.woa_valdyra_vignette_vert,
+.woa_valdyra_vignette_bleu,
+.woa_valdyra_vignette_gris {
+    font: 14px Bebas Neue;
+    color:white;
+    padding:2px 6px 0px 6px;
+    border-radius:2px;
+    margin-left:3px;
+    margin-right:5px;
+    min-width:65px;
+    text-align:center;
+    align-self:flex-start;
+    margin-top:2px;
+}
+
+.woa_valdyra_vignette_rouge {
+    background:indianred;
+}
+
+.woa_valdyra_vignette_vert {
+    background:darkgreen;
+}
+
+.woa_valdyra_vignette_bleu {
+    background:royalblue;
+}
+
+.woa_valdyra_vignette_gris {
+    background:#282828;
+}
+
+.woa_valdyra_norp {
+    padding-left:20px;
+}
+
+.woa_valdyra_chrono_input {
+    display:none;
+}
+
+.woa_valdyra_chrono_input + .woa_valdyra_chrono_label {
+    display: inline-block;
+    font:20px Bebas Neue;
+    background:#181819;
+    color:#848686;
+    padding:5px 10px;
+}
+
+.woa_valdyra_chrono_input:checked + .woa_valdyra_chrono_label {
+    background:#848686;
+    color:#181819;
+    padding:5px 10px;
+    border:3px solid #181819;
+}
+
+.woa_valdyra_chrono_input ~ .woa_valdyra_chrono_tab {
+    display:none;text-align:left;
+}
+
+#woa_valdyra_chrono_tab1:checked ~ .woa_valdyra_chrono_tab.woa_valdyra_chrono_content1,
+#woa_valdyra_chrono_tab2:checked ~ .woa_valdyra_chrono_tab.woa_valdyra_chrono_content2,
+#woa_valdyra_chrono_tab3:checked ~ .woa_valdyra_chrono_tab.woa_valdyra_chrono_content3,
+#woa_valdyra_chrono_tab4:checked ~ .woa_valdyra_chrono_tab.woa_valdyra_chrono_content4 {
+    display: block;
+}
+
+.woa_valdyra_chrono_tabonglets {
+    text-align:center;
+}
+
+.woa_valdyra_timecontainer {
+    width: 100%;
+    margin: 0 auto;
+    padding-left:20px;
+    max-height:500px;
+    overflow:auto;
+}
+
+.woa_valdyra_timeitem {
+    padding: 10px 30px;
+    position: relative;
+    color: rgba(0, 0, 0, 0.7);
+    border-left: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+.woa_valdyra_timeitem::after {
+    width: 15px;
+    height: 15px;
+    display: block;
+    top: 16px;
+    position: absolute;
+    left: -8px;
+    border-radius: 15px;
+    content: '';
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    background: white;
+}
+
+.woa_valdyra_timeitem_rouge::after {
+    background:indianred;
+}
+
+.woa_valdyra_timeitem_vert::after {
+    background:darkgreen;
+}
+
+.woa_chrono_titre {
+    font: 45px bebas neue;
+    background: -webkit-linear-gradient(180deg, #5e5e5e, #212122);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.woa_chrono_soustitre {
+    font: 15px bebas neue;
+    color: #555555;
+    text-align: center;
+    line-height: 10px;
+}
+
+.woa_ava_modif {
+    font: 14px Bebas Neue;
+    background-color: #212122;
+    color: #828282;
+    text-align: center;
+    padding: 5px;
+}
+
+.woa_chrono_rp {
+    font: 20px bebas neue;
+    color: #212122;
+}
+
+.woa_chrono_rp a {
+    font: 20px bebas neue;
+    color: #212122;
+}
+
+.woa_valdyra_banner img {
+    width:100%;
+}
