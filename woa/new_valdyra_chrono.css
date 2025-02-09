@@ -20,7 +20,7 @@
 }
 
 .woa_valdyra_timeitem a {
-    color:var(--primary-bg-color) !important;
+    color:var(--primary-bg-color);
 }
 
 .woa_valdyra_titre,
@@ -152,7 +152,7 @@
     display: block;
     top: 16px;
     position: absolute;
-    left: -10px;
+    left: -8px;
     border-radius: 15px;
     content: '';
     border: 2px solid rgba(0, 0, 0, 0.3);
