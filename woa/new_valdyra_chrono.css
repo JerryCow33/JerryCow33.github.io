@@ -142,8 +142,8 @@
 .woa_valdyra_timeitem {
     padding: 10px 30px;
     position: relative;
-    color: rgba(0, 0, 0, 0.7);
-    border-left: 2px solid rgba(0, 0, 0, 0.3);
+    color: var(--primary-border-color);
+    border-left: 2px solid var(--primary-border-color);
 }
 
 .woa_valdyra_timeitem::after {
@@ -155,7 +155,7 @@
     left: -8px;
     border-radius: 15px;
     content: '';
-    border: 2px solid rgba(0, 0, 0, 0.3);
+    border: 2px solid var(--primary-border-color);
     background: white;
 }
 
