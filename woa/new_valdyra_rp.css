@@ -1,0 +1,44 @@
+.valdyrarp_main {
+	margin: 0px auto;
+	background-color: #282828;
+	font-family: "Century Gothic", sans-serif;
+	border-top: 9px solid steelblue;
+	border-bottom: 9px solid steelblue;
+	font-size: 15px;
+	text-align: justify;
+	height: auto;
+	color: #999999; 
+}
+
+.valdyrarp_ban {
+	height:200px;
+	background:url("https://zupimages.net/up/21/51/tx9h.png") no-repeat top left;
+    background-size: cover;
+	font-size: 35px;
+	color: steelblue;
+	font-family: "Bebas Neue", serif;
+	font-weight: bold;
+	padding-right: 50px;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	line-height:30px;
+	text-align:right;
+}
+
+.valdyrarp_feat {
+	border-top:2px solid steelblue;
+	color: #505252;
+	font-size: 20px;
+	font-family: 'Bebas Neue', serif;
+}
+
+.valdyrarp_text {
+	padding:20px;
+}
+
+.valdyrarp_foot {
+	height:150px;
+	background:url("https://zupimages.net/up/21/51/4vkj.png") no-repeat top right;
+    background-size: cover;
+}
