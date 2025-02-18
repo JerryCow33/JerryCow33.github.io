@@ -1,0 +1,59 @@
+<!-- Générateur de fiche de chronologie -->
+<input type="hidden" name="page_id" id="page_id" value="chrono" />
+<div class="woa_pa_wrapper">
+    <div class="woa_pa_center">
+        <div class="woa_pa_welcome">
+            <div class="woa_pa_welcome_title">Générateur de fiche de chronologie</div>
+            <div class="woa_pa_welcome_txt">Cette page va vous permettre de générer un code HTML/BBCode de votre fiche que vous pourrez copier/coller dans un nouveau topic du forum.<br /><br />
+                <b>Mode d'emploi :</b>
+                <ul>
+                    <li>Remplissez le formulaire disponible dans l'onglet <b>FORMULAIRE</b></li>
+                    <li>Vous pouvez prévisualiser votre fiche dans l'onglet <b>VISUEL FICHE</b></li>
+                    <li>Une fois votre fiche prête, récupérez le code dans l'onglet <b>CODE GENERE</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="woa_pa_top_bottom"></div>
+<div class="woa_wrapper">
+    <div class="woa_tabs">
+        <div class="woa_tab" id="tab_formulaire">Formulaire</div>
+        <div class="woa_tab" id="tab_code">Code généré</div>
+        <div class="woa_tab" id="tab_html">Visuel fiche</div>
+    </div>
+    <div class="woa_page" id="fiche_formulaire">
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">LIEN IMAGE (620 x 180 px) :</span></div>
+            <div class="woa_champ"><input type="text" name="chrono_image" id="chrono_image" placeholder="https://i.imgur.com/yfVYiaY.png" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">NOM & PRENOM :</span></div>
+            <div class="woa_champ"><input type="text" name="chrono_nom_prenom" id="chrono_nom_prenom" placeholder="Prénom et nom du personnage" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">CITATION :</span></div>
+            <div class="woa_champ"><input type="text" name="chrono_citation" id="chrono_citation" placeholder="« Ta petite citation badass ici. »" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">TITRE :</span></div>
+            <div class="woa_champ"><input type="text" name="chrono_titre" id="chrono_titre" placeholder="MA CHRONOLOGIE RP" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">SOUS-TITRE :</span></div>
+            <div class="woa_champ"><input type="text" name="chrono_soustitre" id="chrono_soustitre" placeholder="du plus ancien au plus récent" /></div>
+        </div>
+        <div class="woa_blocs_lignes_header">
+            <div class="mep_pres_infogen ">CHRONOLOGIE RP</div>
+            <div class="woa_button woa_addline" name="add_chrono_line" id="add_chrono_line">+</div>
+        </div>
+        <div class="woa_chrono_blocs"></div>
+    </div>
+    <div class="woa_page" id="fiche_code">
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po woa_liencopie">COPIER LE CODE DANS LE PRESSE-PAPIER</span></div>
+            <div class="woa_champ woa_textedroite"><span class="mep_po woa_textecopie">TEXTE COPIE !</span></div>
+        </div>
+        <textarea class="woa_code_textarea" name="code" id="code"></textarea></div>
+    <div class="woa_page" id="fiche_html"></div>
+</div>

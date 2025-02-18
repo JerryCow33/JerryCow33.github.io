@@ -1,0 +1,239 @@
+.woa_banniere {
+    height: 200px;
+    min-height: 200px;
+    background: url(https://i.imgur.com/PgqrkKV.png) center;
+}
+
+.woa_titre {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(120deg, #434344 60%, #817d7c 100%) !important;
+    font: 120px Bebas Neue;
+    text-transform: uppercase;
+    padding-left: 200px;
+}
+
+.woa_soustitre {
+    font: 14px Open Sans;
+    color: #817d7c;
+    background-image: none;
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    -webkit-text-fill-color: initial;
+    padding-top: 5px;
+    border-top: 1px solid #817d7c;
+    width: 600px;
+    margin-top: -30px;
+    text-align: center;
+}
+
+.woa_wrapper {
+    padding-top: 10px;
+    width: 620px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.woa_code_textarea {
+    width: 100%;
+    height: 600px;
+    background-color: #181819;
+    color: #737474;
+    border: 1px solid #737474;
+    font: 14px "Courier New";
+}
+
+.woa_tabs {
+    padding: 0px;
+    display: flex;
+}
+
+.woa_tab {
+    margin-left: 10px;
+    font: 20px Bebas Neue;
+    background-color: #181819;
+    color: #737474;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.woa_tab:first-child {
+    margin-left: 0px;
+}
+
+.woa_tab:hover {
+    background-color: #737474;
+    color: #181819;
+}
+
+.woa_tab_actif {
+    background-color: #737474;
+    color: #181819;
+    cursor: auto;
+}
+
+.woa_page {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.woa_pa_center {
+    margin: auto;
+    width: 610px;
+}
+
+.woa_pa_wrapper {
+    background: #181819;
+    padding: 20px 0px;
+}
+
+.woa_ligne {
+    display: flex;
+    align-items: center;
+    margin-top: 3px;
+}
+
+.woa_libelle {
+    width: 250px;
+}
+
+.woa_champ {
+    flex-grow: 1;
+    font: 20px Bebas Neue;
+    text-transform: uppercase;
+}
+
+.woa_champ_ta,
+.woa_champ input[type=text],
+.woa_champ select {
+    width: 100%;
+    background-color: #181819;
+    color: #737474;
+    border: 1px solid #737474;
+    font: 14px Open Sans;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.woa_champ_ta {
+    min-height: 100px;
+}
+
+.woa_textedroite {
+    text-align: right;
+}
+
+.woa_textedroite {
+    color: darkgreen;
+}
+
+.woa_liencopie {
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: disc;
+}
+
+li {
+    margin-left: 15px;
+}
+
+.woa_blocs_lignes_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.woa_button {
+    font: 30px Bebas Neue;
+    font-weight: bold;
+    color: #737474;
+    background-color: #181819;
+    border-radius: 20px;
+    padding: 0px 14px;
+    cursor: pointer;
+}
+
+.woa_button:hover {
+    color: #181819;
+    background-color: #737474;
+}
+
+.woa_bloc_ligne {
+    padding: 5px;
+    background-color: #737474;
+    margin-bottom: 5px;
+}
+
+
+/* The switch - the box around the slider */
+
+.woa_switch {
+    position: relative;
+    display: inline-block;
+    width: 45px;
+    height: 20px;
+}
+
+
+/* Hide default HTML checkbox */
+
+.woa_switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+
+/* The slider */
+
+.woa_slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #737474;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.woa_slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 3px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.woa_slider {
+    background-color: #181819;
+}
+
+input:focus+.woa_slider {
+    box-shadow: 0 0 1px #181819;
+}
+
+input:checked+.woa_slider:before {
+    -webkit-transform: translateX(17px);
+    -ms-transform: translateX(17px);
+    transform: translateX(17px);
+}
+
+
+/* Rounded sliders */
+
+.woa_slider.woa_round {
+    border-radius: 20px;
+}
+
+.woa_slider.woa_round:before {
+    border-radius: 50%;
+}

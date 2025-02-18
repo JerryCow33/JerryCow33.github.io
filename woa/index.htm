@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World of Ashes - Générateur de fiche de personnage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese&amp;display=swap" rel="stylesheet">
+    <link href="https://woa-rpg.forumactif.com/3-ltr.css" rel="stylesheet">
+    <link href="css/xbbcode.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/xbbcode.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $(document).ready(function() {
+            changeGenerateur($("#choixpage").val());
+            $("#choixpage").change(function() {
+                changeGenerateur($(this).val());
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="woa_banniere">
+        <div class="woa_titre">
+            World of ashes
+            <div class="woa_soustitre">Forum RPG médiéval-Fantastique / ouvert à tout public / avatars illustrés</div>
+        </div>
+    </div>
+    <div class="woa_pa_top_bottom"></div>
+    <div class="woa_pa_wrapper">
+        <div class="woa_pa_center">
+            <div class="woa_pa_welcome">
+                <div class="woa_pa_welcome_title">Choix du générateur</div>
+                <div class="woa_pa_welcome_txt woa_champ">
+                    <select name="choixpage" id="choixpage">
+                        <option value="perso">Fiche de personnage</option>
+                        <option value="chrono">Fiche de chronologie</option>
+                        <option value="liens">Fiche de liens</option>
+                        <option value="template">Template RP</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="woa_pa_top_bottom"></div>
+    <div class="woa_page_container"></div>
+
+
+
+</body>
+
+</html>

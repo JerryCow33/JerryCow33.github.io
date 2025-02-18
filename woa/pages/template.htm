@@ -1,0 +1,388 @@
+<!-- Générateur de template RP -->
+<input type="hidden" name="page_id" id="page_id" value="template" />
+<div class="woa_pa_wrapper">
+    <div class="woa_pa_center">
+        <div class="woa_pa_welcome">
+            <div class="woa_pa_welcome_title">Générateur de template RP</div>
+            <div class="woa_pa_welcome_txt">Cette page va vous permettre de générer un code HTML/BBCode de votre template RP que vous pourrez copier/coller dans un nouveau post du forum.<br /><br />
+                <b>Mode d'emploi :</b>
+                <ul>
+                    <li>Remplissez le formulaire disponible dans l'onglet <b>FORMULAIRE</b></li>
+                    <li>Vous pouvez prévisualiser votre template dans l'onglet <b>VISUEL FICHE</b></li>
+                    <li>Une fois votre template prêt, récupérez le code dans l'onglet <b>CODE GENERE</b></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="woa_pa_top_bottom"></div>
+<div class="woa_wrapper">
+    <div class="woa_tabs">
+        <div class="woa_tab" id="tab_formulaire">Formulaire</div>
+        <div class="woa_tab" id="tab_code">Code généré</div>
+        <div class="woa_tab" id="tab_html">Visuel template</div>
+    </div>
+    <div class="woa_page" id="fiche_formulaire">
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">NOM (EN MINUSCULES) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_suffixe" id="tpl_suffixe" maxlength="15" placeholder="15 caractères maximum" /></div>
+        </div>
+
+        <!-- CONTENEUR -->
+        <div class="mep_pres_bloctitre">Conteneur</div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">MARGES EXTERIEURES :</span></div>
+            <div class="woa_champ">
+                <label class="woa_switch">
+                    <input type="checkbox" id="tpl_cont_allmargin" checked>
+                    <span class="woa_slider woa_round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="cont_allmargin_non">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE MARGE HAUTE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_margintop" id="tpl_cont_margintop" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE MARGE BASSE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_marginbottom" id="tpl_cont_marginbottom" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE MARGE GAUCHE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_marginleft" id="tpl_cont_marginleft" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE MARGE DROITE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_marginright" id="tpl_cont_marginright" placeholder="0" /></div>
+            </div>
+        </div>
+        <div class="cont_allmargin_oui">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE DES MARGES (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_margin" id="tpl_cont_margin" placeholder="0" /></div>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">COULEUR DES BORDURES :</span></div>
+            <div class="woa_champ">
+                <label class="woa_switch">
+                    <input type="checkbox" id="tpl_cont_allbordercolor" checked>
+                    <span class="woa_slider woa_round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="cont_allbordercolor_non">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR BORDURE HAUTE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordercolortop" id="tpl_cont_bordercolortop" placeholder="steelblue" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR BORDURE BASSE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordercolorbottom" id="tpl_cont_bordercolorbottom" placeholder="steelblue" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR BORDURE GAUCHE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordercolorleft" id="tpl_cont_bordercolorleft" placeholder="steelblue" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR BORDURE DROITE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordercolorright" id="tpl_cont_bordercolorright" placeholder="steelblue" /></div>
+            </div>
+        </div>
+        <div class="cont_allbordercolor_oui">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR BORDURES :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordercolor" id="tpl_cont_bordercolor" placeholder="steelblue" /></div>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">TAILLE DES BORDURES :</span></div>
+            <div class="woa_champ">
+                <label class="woa_switch">
+                    <input type="checkbox" id="tpl_cont_allbordersize">
+                    <span class="woa_slider woa_round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="cont_allbordersize_non">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE BORDURE HAUTE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordersizetop" id="tpl_cont_bordersizetop" placeholder="9" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE BORDURE BASSE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordersizebottom" id="tpl_cont_bordersizebottom" placeholder="9" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE BORDURE GAUCHE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordersizeleft" id="tpl_cont_bordersizeleft" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE BORDURE DROITE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordersizeright" id="tpl_cont_bordersizeright" placeholder="0" /></div>
+            </div>
+        </div>
+        <div class="cont_allbordersize_oui">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE BORDURES (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_bordersize" id="tpl_cont_bordersize" placeholder="9" /></div>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">ARRONDIS :</span></div>
+            <div class="woa_champ">
+                <label class="woa_switch">
+                    <input type="checkbox" id="tpl_cont_allborderradius">
+                    <span class="woa_slider woa_round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="cont_allborderradius_non">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ARRONDI HAUT GAUCHE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_borderradiustopleft" id="tpl_cont_borderradiustopleft" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ARRONDI HAUT DROIT (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_borderradiustopright" id="tpl_cont_borderradiustopright" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ARRONDI BAS GAUCHE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_borderradiusbottomleft" id="tpl_cont_borderradiusbottomleft" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ARRONDI BAS DROIT (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_borderradiusbottomright" id="tpl_cont_borderradiusbottomright" placeholder="0" /></div>
+            </div>
+        </div>
+        <div class="cont_allborderradius_oui">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ARRONDIS (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_cont_borderradius" id="tpl_cont_borderradius" placeholder="0" /></div>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">COULEUR DE FOND :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_cont_backgroundcolor" id="tpl_cont_backgroundcolor" placeholder="#282828" /></div>
+        </div>
+
+        <!-- HEADER -->
+        <div class="mep_pres_bloctitre">Header</div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">HAUTEUR (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_height" id="tpl_header_height" placeholder="200" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">ALIGNEMENT IMAGE :</span></div>
+            <div class="woa_champ">
+                <select name="tpl_header_imgalign" id="tpl_header_imgalign">
+                    <option value="top left" selected>En haut à gauche</option>
+                    <option value="top center">Centré en haut</option>
+                    <option value="top right">En haut à droite</option>
+                    <option value="center">Centré</option>
+                    <option value="bottom left">En bas à gauche</option>
+                    <option value="bottom center">Centré en bas</option>
+                    <option value="bottom right">En bas à droite</option>
+                </select>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">URL IMAGE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_imgurl" id="tpl_header_imgurl" placeholder="https://zupimages.net/up/25/08/ovma.jpg" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">TAILLE SEPARATION (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_bordersize" id="tpl_header_bordersize" placeholder="0" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">COULEUR SEPARATION :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_bordercolor" id="tpl_header_bordercolor" placeholder="steelblue" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">MARGE INTERIEURE DROITE (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_paddingright" id="tpl_header_paddingright" placeholder="50" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">MARGE INTERIEURE GAUCHE (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_paddingleft" id="tpl_header_paddingleft" placeholder="0" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">JUSTIFICATION CONTENU :</span></div>
+            <div class="woa_champ">
+                <select name="tpl_header_justifycontent" id="tpl_header_justifycontent">
+                    <option value="center">Groupés au centre</option>
+                    <option value="start">Groupés au début</option>
+                    <option value="end">Groupés à la fin</option>
+                    <option value="flex-start">Groupés au début (flexible)</option>
+                    <option value="flex-end" selected>Groupés à la fin (flexible)</option>
+                    <option value="left">Groupés à gauche</option>
+                    <option value="right">Groupés à droite</option>
+                </select>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">ALIGNEMENT ELEMENTS :</span></div>
+            <div class="woa_champ">
+                <select name="tpl_header_alignitems" id="tpl_header_alignitems">
+                    <option value="center" selected>Regroupés au centre</option>
+                    <option value="start">Regroupés au début</option>
+                    <option value="end">Regroupés à la fin</option>
+                    <option value="flex-start">Regroupés au début (flexible)</option>
+                    <option value="flex-end">Regroupés à la fin (flexible)</option>
+                </select>
+            </div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">HAUTEUR INTERLIGNE (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_header_lineheight" id="tpl_header_lineheight" placeholder="30" /></div>
+        </div>
+
+        <!-- TITRE -->
+        <div class="mep_pres_bloctitre">Titre</div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">POLICE TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_title_typo" id="tpl_title_typo" placeholder="'Bebas Neue', serif" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">COULEUR TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_title_color" id="tpl_title_color" placeholder="steelblue" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">TAILLE TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_title_size" id="tpl_title_size" placeholder="35" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">EPAISSEUR TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_title_weight" id="tpl_title_weight" placeholder="700" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">STYLE TEXTE (NORMAL, ITALIC...) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_title_style" id="tpl_title_style" placeholder="normal" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">ALIGNEMENT TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_title_align" id="tpl_title_align" placeholder="right" /></div>
+        </div>
+
+        <!-- FEAT -->
+        <div class="mep_pres_bloctitre">Featuring</div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">PRESENT :</span></div>
+            <div class="woa_champ">
+                <label class="woa_switch">
+                    <input type="checkbox" id="tpl_feat_display" checked>
+                    <span class="woa_slider woa_round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="feat_display_oui">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">POLICE TEXTE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_typo" id="tpl_feat_typo" placeholder="'Bebas Neue', serif" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR TEXTE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_color" id="tpl_feat_color" placeholder="#505252" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE TEXTE (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_size" id="tpl_feat_size" placeholder="20" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">EPAISSEUR TEXTE (700 : GRAS) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_weight" id="tpl_feat_weight" placeholder="700" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">STYLE TEXTE (NORMAL, ITALIC...) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_style" id="tpl_feat_style" placeholder="normal" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ALIGNEMENT TEXTE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_align" id="tpl_feat_align" placeholder="right" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE SEPARATION (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_bordersize" id="tpl_feat_bordersize" placeholder="2" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR SEPARATION :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_feat_bordercolor" id="tpl_feat_bordercolor" placeholder="steelblue" /></div>
+            </div>
+        </div>
+
+        <!-- TEXTE -->
+        <div class="mep_pres_bloctitre">Texte RP</div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">POLICE TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_rp_typo" id="tpl_rp_typo" placeholder="'Century Gothic', sans-serif" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">COULEUR TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_rp_color" id="tpl_rp_color" placeholder="#999999" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">TAILLE TEXTE (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_rp_size" id="tpl_rp_size" placeholder="15" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">ALIGNEMENT TEXTE :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_rp_align" id="tpl_rp_align" placeholder="justify" /></div>
+        </div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">MARGES EXTERIEURES (EN PX) :</span></div>
+            <div class="woa_champ"><input type="text" name="tpl_rp_padding" id="tpl_rp_padding" placeholder="20" /></div>
+        </div>
+
+        <!-- FOOTER -->
+        <div class="mep_pres_bloctitre">Footer</div>
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po">PRESENT :</span></div>
+            <div class="woa_champ">
+                <label class="woa_switch">
+                    <input type="checkbox" id="tpl_footer_display" checked>
+                    <span class="woa_slider woa_round"></span>
+                </label>
+            </div>
+        </div>
+        <div class="footer_display_oui">
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">HAUTEUR (EN PX) :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_footer_height" id="tpl_footer_height" placeholder="150" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">ALIGNEMENT IMAGE :</span></div>
+                <div class="woa_champ">
+                    <select name="tpl_footer_imgalign" id="tpl_footer_imgalign">
+                        <option value="top left">En haut à gauche</option>
+                        <option value="top center">Centré en haut</option>
+                        <option value="top right" selected>En haut à droite</option>
+                        <option value="center">Centré</option>
+                        <option value="bottom left">En bas à gauche</option>
+                        <option value="bottom center">Centré en bas</option>
+                        <option value="bottom right">En bas à droite</option>
+                    </select>
+                </div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">URL IMAGE :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_footer_imgurl" id="tpl_footer_imgurl" placeholder="https://zupimages.net/up/25/08/4ih0.jpg" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">TAILLE SEPARATION :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_footer_bordersize" id="tpl_footer_bordersize" placeholder="0" /></div>
+            </div>
+            <div class="woa_ligne">
+                <div class="woa_libelle"><span class="mep_po">COULEUR SEPARATION :</span></div>
+                <div class="woa_champ"><input type="text" name="tpl_footer_bordercolor" id="tpl_footer_bordercolor" placeholder="steelblue" /></div>
+            </div>
+        </div>
+    </div>
+    <div class="woa_page" id="fiche_code">
+        <div class="woa_ligne">
+            <div class="woa_libelle"><span class="mep_po woa_liencopie">COPIER LE CODE DANS LE PRESSE-PAPIER</span></div>
+            <div class="woa_champ woa_textedroite"><span class="mep_po woa_textecopie">TEXTE COPIE !</span></div>
+        </div>
+        <textarea class="woa_code_textarea" name="code" id="code"></textarea></div>
+    <div class="woa_page" id="fiche_html"></div>
+</div>
