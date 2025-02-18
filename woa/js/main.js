@@ -168,7 +168,7 @@ function generateFiche(page) {
     debugAlert("Début generateFiche(" + page + ")");
     switch (page) {
         case "perso":
-            generateFichePerso();
+            generateFichePersoNew();
             break;
         case "chrono":
             generateFicheChrono();
@@ -236,6 +236,49 @@ function generateFichePerso() {
     $("#code").val(code_html);
     $("#fiche_html").html(parseBBCode(code_html));
     debugAlert("Fin generateFichePerso");
+}
+
+function generateFichePersoNew() {
+    debugAlert("Début generateFichePersoNew");
+    // Valeurs par défaut
+    var perso_image = $("#perso_image").val() != "" ? $("#perso_image").val() : "https://i.imgur.com/TecKNxU.png";
+    var perso_nom_prenom = $("#perso_nom_prenom").val() != "" ? $("#perso_nom_prenom").val() : "PRÉNOM ET NOM DU PERSONNAGE";
+    var perso_predef = $("#perso_predef").prop('checked');
+    var perso_race = $("#perso_race").val() != "" ? $("#perso_race").val() : "Réponse ici";
+    var perso_age = $("#perso_age").val() != "" ? $("#perso_age").val() : "(Pas plus de 30 000 ans/ personnage doit être adulte selon stade de la race)";
+    var perso_taille_poids = $("#perso_taille_poids").val() != "" ? $("#perso_taille_poids").val() : "Réponse ici";
+    var perso_faction = $("#perso_faction").val() != "" ? $("#perso_faction").val() : "Réponse ici";
+    var perso_religion = $("#perso_religion").val() != "" ? $("#perso_religion").val() : "Réponse ici";
+    var perso_sexe = $("#perso_sexe").val() != "" ? $("#perso_sexe").val() : "Réponse ici";
+    var perso_metier = $("#perso_metier").val() != "" ? $("#perso_metier").val() : "Réponse ici";
+    var perso_alignement = $("#perso_alignement").val() != "" ? $("#perso_alignement").val() : "Réponse ici";
+    var perso_rang = $("#perso_rang").val() != "" ? $("#perso_rang").val() : "Réponse ici";
+    var perso_avatar = $("#perso_avatar").val() != "" ? $("#perso_avatar").val() : "Réponse ici";
+    var perso_histoire = $("#perso_histoire").val() != "" ? $("#perso_histoire").val() : "[b](500 mots minimum)[/b]\nRacontez ici l'histoire de votre personnage ainsi que ses actions importantes.\nVeuillez s.v.p. soigner votre français et lire les règles du forum avant tout.";
+    var perso_physique = $("#perso_physique").val() != "" ? $("#perso_physique").val() : "[b](250 mots minimum)[/b]\nDécrivez les aspects psychologiques et physiques importants de votre personnage.";
+    var perso_testrp = $("#perso_testrp").val() != "" ? $("#perso_testrp").val() : "Composez votre test-rp ici. Avant de commencer, veuillez bien lire les consignes concernant les rangs et les personnages prédéfinis. Tout manquement au niveau de ces règles peut entraîner un refus de votre test-rp.";
+    var perso_mort = $("#perso_mort").val() != "" ? $("#perso_mort").val() : "Indiquez ici les différents groupes d'intérêt de votre personnage et décrivez  en quelques lignes sa vision, ses actions, sa position et son appartenance vis-à-vis de ces groupes.\n\nLes groupes d'intérêt ne sont pas obligatoires.";
+    var perso_vocation = $("#perso_vocation").val();
+    var perso_pouvoirs = $("#perso_pouvoirs").val() != "" ? $("#perso_pouvoirs").val() : "Inscrivez ici tous vos pouvoirs du début. [b]Merci de bien lire les règlements concernant cet aspect du forum avant de vous lancer ![/b] Une fois votre présentation validée, cette partie ne sera plus modifiable par vos soins et chaque mise à jour nécessitera des crédits.\n[b]N'oubliez pas qu'acheter un palier donné pour un pouvoir, nécessite l'achat des paliers inférieurs également ![/b]";
+    var perso_objets = $("#perso_objets").val() != "" ? $("#perso_objets").val() : "Inscrivez ici tous vos objets du début. Merci de bien lire les règlements concernant cet aspect du forum avant de vous lancer ! Une fois votre présentation validée, cette partie ne sera plus modifiable par vos soins et chaque mise à jour fera l'objet d'une demande au staff.";
+    var perso_vignette = $("#perso_vignette").val() != "" ? $("#perso_vignette").val() : "https://i.imgur.com/i8oIYED.png";
+    var perso_pseudo = $("#perso_pseudo").val() != "" ? $("#perso_pseudo").val() : "Réponse ici";
+    var perso_connu = $("#perso_connu").val() != "" ? $("#perso_connu").val() : "Réponse ici";
+    var perso_avis = $("#perso_avis").val() != "" ? $("#perso_avis").val() : "Réponse ici";
+    var perso_connexion = $("#perso_connexion").val() != "" ? $("#perso_connexion").val() : "Réponse ici";
+
+    var code_html = "";
+    code_html += "<div class=\"fiche_rpc_general\"> <div class=\"fiche_rpc_g\"> <div class=\"fiche_rpc_g_icon\"><img src=\"https://i.imgur.com/to9aoH8.png\"/></div><div class=\"fiche_rpc_g_title\">" + perso_nom_prenom + "</div></div><div class=\"fiche_rpc_prez_d\"> <div class=\"fiche_rpc_prez_d_ava\"><img src=\"" + perso_image + "\"/></div><div class=\"fiche_rpc_prez_top_info\"> <div class=\"fiche_rpc_prez_champs\"> <div><span>Race</span> : " + perso_race + "</div><div><span>Sexe</span> : " + perso_sexe + "</div><div><span>Âge</span> : " + perso_age + "</div><div><span>Métier</span> : " + perso_metier + "</div><div><span>Taille & poids</span> : " + perso_taille_poids + "</div><div><span>Alignement</span> : " + perso_alignement + "</div><div><span>Faction</span> : " + perso_faction + "</div><div><span>Rang</span> : " + perso_rang + "</div><div><span>Religion</span> : " + perso_religion + "</div><div><span>Avatar</span> : " + perso_avatar + "</div></div><h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Pouvoirs</h1> <div class=\"fiche_rpc_prez_txt_first\">" + perso_pouvoirs + "</div></div><h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Objets</h1> <div class=\"fiche_rpc_prez_txt_second\">" + perso_objets + "</div><h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Vocation</h1> <div class=\"fiche_rpc_prez_txt_second\">" + perso_vocation + "</div>"
+    if (!perso_predef) {
+        code_html += "<h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Description physique et mentale</h1> <div class=\"fiche_rpc_prez_txt_second\">" + perso_physique + "</div><h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Histoire</h1> <div class=\"fiche_rpc_prez_txt_second\">" + perso_histoire + "</div>";
+    } else {
+        code_html += "<h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Test RP</h1> <div class=\"fiche_rpc_prez_txt_second\">" + perso_testrp + "</div>";
+    }
+    code_html += "<h1><img src=\"https://i.imgur.com/DeVgT9v.png\"/> Groupes d'intérêts</h1> <div class=\"fiche_rpc_prez_txt_second\">" + perso_mort + "</div></div><div class=\"fiche_rpc_prez_enbas\"> <div class=\"fiche_rpc_prez_enbas_icon\"><img src=\"https://i.imgur.com/rwKJ1ly.png\"/></div><div class=\"fiche_rpc_prez_enbas_img\"><img src=\"" + perso_vignette + "\"/></div><div class=\"fiche_rpc_bottom_right_inf\"> <h2>derrière l'écran</h2> <div><span>Pseudo</span> : " + perso_pseudo + "</div><div><span>Comment avez-vous connu le forum ?</span> " + perso_connu + "</div><div><span>Avis sur le forum</span> : " + perso_avis + "</div><div><span>Fréquence de connexion</span> : " + perso_connexion + "</div></div></div></div>";
+
+    $("#code").val(code_html);
+    $("#fiche_html").html(parseBBCode(code_html));
+    debugAlert("Fin generateFichePersoNew");
 }
 
 function generateFicheChrono() {

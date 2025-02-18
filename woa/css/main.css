@@ -78,6 +78,15 @@
     padding-bottom: 5px;
 }
 
+.woa_page h1 {
+    width: 100%;
+    color: #959595;
+    font: 25px Cinzel;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    margin-top:10px;
+}
+
 .woa_pa_center {
     margin: auto;
     width: 610px;
@@ -96,6 +105,10 @@
 
 .woa_libelle {
     width: 250px;
+}
+
+.woa_libelle span {
+    font: 13px Cinzel;
 }
 
 .woa_champ {
@@ -236,4 +249,17 @@ input:checked+.woa_slider:before {
 
 .woa_slider.woa_round:before {
     border-radius: 50%;
+}
+
+.woa_pa_welcome_title {
+    width: 100%;
+    color: #959595;
+    font: 25px Cinzel;
+    padding: 5px 10px;
+    background: rgba(0, 0, 0, 0.5);
+    text-align:center;
+}
+
+.woa_pa_welcome_txt {
+    font: 14px 'Open Sans';
 }
