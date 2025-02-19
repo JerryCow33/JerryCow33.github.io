@@ -227,11 +227,11 @@ li {
 }
 
 input:checked+.woa_slider {
-    background-color: #181819;
+    background-color: #0e6097;
 }
 
 input:focus+.woa_slider {
-    box-shadow: 0 0 1px #181819;
+    box-shadow: 0 0 1px #0e6097;
 }
 
 input:checked+.woa_slider:before {
