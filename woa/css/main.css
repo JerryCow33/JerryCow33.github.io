@@ -1,17 +1,20 @@
 .woa_banniere {
     height: 200px;
     min-height: 200px;
-    background: url(https://i.imgur.com/PgqrkKV.png) center;
+    background: url(https://zupimages.net/up/25/10/fkwg.png) center;
+    background-size: contain;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .woa_titre {
+    text-align: center;
+    background: -webkit-linear-gradient(#959595, #464747);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    background-clip: text;
-    background-image: linear-gradient(120deg, #434344 60%, #817d7c 100%) !important;
-    font: 120px Bebas Neue;
-    text-transform: uppercase;
-    padding-left: 200px;
+    font: 52px Cinzel;
 }
 
 .woa_soustitre {
@@ -24,7 +27,7 @@
     padding-top: 5px;
     border-top: 1px solid #817d7c;
     width: 600px;
-    margin-top: -30px;
+    margin-top: -10px;
     text-align: center;
 }
 
