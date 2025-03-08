@@ -27,7 +27,8 @@
 .woa_valdyra_titre_principal,
 .woa_valdyra_titre_citation {
     clear:both;
-    font:35px Bebas Neue;
+    font:48px Norse;
+    font-weight:bold;
     border-top:5px solid var(--primary-border-color);
     border-bottom:5px solid var(--primary-border-color);
     padding:5px;
@@ -43,13 +44,15 @@
 .woa_valdyra_titre_citation {
     text-align: center;
     color:var(--secondary-text-color);
-    font: 13px Open sans;
+    font: 18px Amatic SC;
+    font-weight:700;
     padding:5px;
 }
 
 .woa_chrono_texte, .woa_newchrono_texte {
     width:auto;
-    font: 13px Open Sans;
+    font: 18px Amatic SC;
+    font-weight:700;
     color: var(--secondary-text-color);
     text-align: justify;
     margin: 10px 0px 15px;
@@ -59,7 +62,8 @@
 .woa_valdyra_vignette_vert,
 .woa_valdyra_vignette_bleu,
 .woa_valdyra_vignette_gris {
-    font: 14px Bebas Neue;
+    font: 14px Norse;
+    font-weight:bold;
     color:white;
     padding:2px 6px 0px 6px;
     border-radius:2px;
@@ -97,7 +101,8 @@
 
 .woa_valdyra_chrono_input + .woa_valdyra_chrono_label, .woa_valdyra_newchrono_input + .woa_valdyra_newchrono_label {
     display: inline-block;
-    font:20px Bebas Neue;
+    font:20px Norse;
+    font-weight:bold;
     background:var(--primary-bg-color);
     color:var(--primary-text-color);
     padding:5px 10px;
@@ -168,7 +173,8 @@
 }
 
 .woa_chrono_titre, .woa_newchrono_titre {
-    font: 45px bebas neue;
+    font: 45px Norse;
+    font-weight:bold;
     background: -webkit-linear-gradient(180deg, var(--primary-text-color), var(--secondary-text-color));
     background-clip: text;
     -webkit-background-clip: text;
@@ -177,14 +183,16 @@
 }
 
 .woa_chrono_soustitre, .woa_newchrono_soustitre {
-    font: 15px bebas neue;
+    font: 15px Norse;
+    font-weight:bold;
     color: var(--secondary-text-color);
     text-align: center;
     line-height: 10px;
 }
 
 .woa_ava_modif {
-    font: 14px Bebas Neue;
+    font: 14px Norse;
+    font-weight:bold;
     background-color: var(--secondary-bg-color);
     color: var(--secondary-text-color);
     text-align: center;
@@ -192,12 +200,14 @@
 }
 
 .woa_chrono_rp, .woa_newchrono_rp {
-    font: 20px bebas neue;
+    font: 20px Norse;
+    font-weight:bold;
     color: var(--primary-text-color);
 }
 
 .woa_chrono_rp a, .woa_newchrono_rp a {
-    font: 20px bebas neue;
+    font: 20px Norse;
+    font-weight:bold;
     color: var(--primary-text-color);
 }
 
