@@ -8,6 +8,11 @@
     --vignette-encours-color:indianred;
     --vignette-abandonne-color:royalblue;
     --vignette-aprevoir-color:#212122;
+    --size: 100px;
+    --color_reike: #5a5296;
+    --color_repu: #28548f;
+    --color_autre: #963a2e;
+    --color_defaut: #ffffff;
 }
 
 .woa_valdyra_timeitem .woa_chrono_rp {
@@ -219,4 +224,148 @@
     background:var(--primary-border-color);
     height:5px;
     margin:30px 0px;
+}
+
+/* ------ */
+
+.woa_valdyra_lienscontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: calc(var(--size)/2);
+}
+
+.gallery {
+    --size: 100px;
+    display: grid;
+    grid-template-columns: repeat(6, var(--size));
+    grid-auto-rows: var(--size);
+    margin-bottom: var(--size);
+    place-items: start center;
+    gap: 5px;
+
+    &:has(:hover) div:not(:hover),
+    &:has(:focus) div:not(:focus) {
+        filter: brightness(.5) contrast(.5);
+    }
+
+    & div.gallery-item {
+        overflow: hidden;
+        width: var(--size);
+        height: var(--size);
+        transform: scale(1.4) rotate(45deg);
+        transition: transform 0.25s, filter 0.75s, width 0s, margin-left 0s;
+        grid-column: auto / span 2;
+        border-radius: 5px;
+        margin-left:0px;
+        display:flex;
+
+        &:nth-child(5n - 1) {
+            grid-column: 2 / span 2;
+        }
+
+        &:hover,
+        &:focus {
+            width: calc(var(--size) + 200px);
+            transform: scale(2) rotate(0deg);
+            z-index: 2;
+            margin-left:399px;
+            transition: transform 0.25s, filter 0.25s, width 0.75s, margin-left 0.75s;
+
+            & img {
+                transform: scale(1.5) rotate(0deg);
+                transition: transform 0.25s;
+            }
+        }
+
+        &:focus {
+            outline: 1px dashed #000;
+            outline-offset: -5px;
+        }
+
+        & img {
+            position:relative;
+            width: calc(var(--size));
+            height: calc(var(--size));
+            transform: scale(1.5) rotate(-45deg);
+            transition: transform 0.25s;
+        }
+
+        & div.gallery-perso {
+            background-color:#282828;
+            z-index: 1;
+            width:200px;
+        }
+
+        & div.gallery-titre {
+            display:flex;
+            justify-content:space-between;
+            align-items:flex-end;
+            padding:5px;
+        }
+        
+        & div.gallery-nom {
+            font-family:Norse;
+            font-size:16px;
+            font-weight:bold;
+        }
+
+        & div.gallery-lien {
+            font-family:Norse;
+            font-size:7px;
+            font-weight:bold;
+            font-style: italic;
+            color:var(--primary-text-color);
+        }
+
+        & div.gallery-desc {
+            clear:both;
+            font-family:Amatic SC;
+            font-size:9px;
+            font-weight:bold;
+            line-height: 10px;
+            color:var(--primary-text-color);
+            margin:0px 5px;
+            padding:5px 0px;
+            height:60px;
+            overflow-y:auto;
+            /*border-top:1px solid var(--primary-text-color);*/
+        }
+    }
+}
+
+.reike {
+    border: 2px solid var(--color_reike);
+
+    & div.gallery-nom {
+        color:var(--color_reike);
+    }
+
+    & div.gallery-desc {
+        border-top:1px solid var(--color_reike);
+    }
+}
+
+.repu {
+    border: 2px solid var(--color_repu);
+
+    & div.gallery-nom {
+        color:var(--color_repu);
+    }
+
+    & div.gallery-desc {
+        border-top:1px solid var(--color_repu);
+    }
+}
+
+.autres {
+    border: 2px solid var(--color_autre);
+
+    & div.gallery-nom {
+        color:var(--color_autre);
+    }
+
+    & div.gallery-desc {
+        border-top:1px solid var(--color_autre);
+    }
 }
