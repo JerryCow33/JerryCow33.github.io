@@ -283,6 +283,31 @@
             outline-offset: -5px;
         }
 
+        &:nth-child(5n+1):hover,
+        &:nth-child(5n+1):focus {
+            margin-left:420px;
+        }
+
+        &:nth-child(5n+2):hover,
+        &:nth-child(5n+2):focus {
+            margin-left:0px;
+        }
+
+        &:nth-child(5n+3):hover,
+        &:nth-child(5n+3):focus {
+            margin-left:-420px;
+        }
+
+        &:nth-child(5n+4):hover,
+        &:nth-child(5n+4):focus {
+            margin-left:210px;
+        }
+
+        &:nth-child(5n+5):hover,
+        &:nth-child(5n+5):focus {
+            margin-left:-210px;
+        }
+
         & img {
             position:relative;
             width: calc(var(--size));
