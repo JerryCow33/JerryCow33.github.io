@@ -244,8 +244,8 @@
     place-items: start center;
     gap: 5px;
 
-    &:has(:hover) div:not(:hover),
-    &:has(:focus) div:not(:focus) {
+    &:has(:hover) div.gallery-item:not(:hover),
+    &:has(:focus) div.gallery-item:not(:focus) {
         filter: brightness(.5) contrast(.5);
     }
 
