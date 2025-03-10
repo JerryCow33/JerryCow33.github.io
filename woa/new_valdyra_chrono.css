@@ -9,6 +9,8 @@
     --vignette-abandonne-color:royalblue;
     --vignette-aprevoir-color:#212122;
     --size: 100px;
+    --size-large: 150px;
+    --size-item-border:2px;
     --color_reike: #5a5296;
     --color_repu: #28548f;
     --color_autre: #963a2e;
@@ -236,7 +238,6 @@
 }
 
 .gallery {
-    --size: 100px;
     display: grid;
     grid-template-columns: repeat(6, var(--size));
     grid-auto-rows: var(--size);
@@ -362,11 +363,13 @@
 .reike {
     border: 2px solid var(--color_reike);
 
-    & div.gallery-nom {
+    & div.gallery-nom,
+    & div.gallery2-nom {
         color:var(--color_reike);
     }
 
-    & div.gallery-desc {
+    & div.gallery-desc,
+    & div.gallery2-desc {
         border-top:1px solid var(--color_reike);
     }
 }
@@ -374,11 +377,13 @@
 .repu {
     border: 2px solid var(--color_repu);
 
-    & div.gallery-nom {
+    & div.gallery-nom,
+    & div.gallery2-nom {
         color:var(--color_repu);
     }
 
-    & div.gallery-desc {
+    & div.gallery-desc,
+    & div.gallery2-desc {
         border-top:1px solid var(--color_repu);
     }
 }
@@ -386,11 +391,111 @@
 .autres {
     border: 2px solid var(--color_autre);
 
-    & div.gallery-nom {
+    & div.gallery-nom,
+    & div.gallery2-nom {
         color:var(--color_autre);
     }
 
-    & div.gallery-desc {
+    & div.gallery-desc,
+    & div.gallery2-desc {
         border-top:1px solid var(--color_autre);
+    }
+}
+
+/* ------ */
+
+.woa_valdyra_lienscontainer2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery2 {
+    display: grid;
+    grid-template-columns: repeat(4, var(--size-large));
+    margin: 10px 0px;
+    place-items: start center;
+
+    &:has(:hover) div.gallery2-item:not(:hover),
+    &:has(:focus) div.gallery2-item:not(:focus) {
+        filter: brightness(.5) contrast(.5);
+    }
+
+    & div.gallery2-item {
+        overflow: hidden;
+        width: var(--size-large);
+        height: calc(var(--size-large) * 32 / 9);
+        transition: filter 0.75s, width 0s, margin-left 0s;
+        margin-left:0px;
+        display:flex;
+
+        &:hover,
+        &:focus {
+            width: calc(var(--size-large) * 4);
+            z-index: 2;
+            margin-left:0px;
+            transition: filter 0.25s, width 0.75s, margin-left 0.75s;
+        }
+
+        &:nth-child(4n+1):hover,
+        &:nth-child(4n+1):focus {
+            margin-left:calc(var(--size-large) * 3);
+        }
+
+        &:nth-child(4n+2):hover,
+        &:nth-child(4n+2):focus {
+            margin-left:var(--size-large);
+        }
+
+        &:nth-child(4n+3):hover,
+        &:nth-child(4n+3):focus {
+            margin-left:calc(var(--size-large) * (-1));
+        }
+
+        &:nth-child(4n+4):hover,
+        &:nth-child(4n+4):focus {
+            margin-left:calc(var(--size-large) * (-3));
+        }
+
+        & img.gallery2-avatar {
+            position:relative;
+            width: var(--size-large);
+            height: calc(var(--size-large) * 32 / 9);
+        }
+
+        & div.gallery2-texte {
+            background-color:var(--primary-bg-color);
+            z-index: 1;
+            width:calc(var(--size-large) * 4);
+            display:flex;
+            flex-direction: column;
+            padding:5px;
+        }
+        
+        & div.gallery2-nom {
+            font-family:Norse;
+            font-size:32px;
+            font-weight:bold;
+        }
+
+        & div.gallery2-lien {
+            font-family:Norse;
+            font-size:16px;
+            font-weight:bold;
+            font-style: italic;
+            color:var(--primary-text-color);
+        }
+
+        & div.gallery2-desc {
+            font-family:Amatic SC;
+            font-size:20px;
+            font-weight:bold;
+            line-height: 20px;
+            color:var(--primary-text-color);
+            overflow-y:auto;
+            margin-top:5px;
+            padding-top:5px;
+            height:calc(var(--size-large) * 32 / 9 * 50);
+        }
     }
 }

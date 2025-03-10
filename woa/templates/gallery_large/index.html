@@ -1,108 +1,136 @@
-<div class="val_lg_main">
-	<div class="val_lg_item">
-		<img src="images/valdyra.png" class="val_lg_avatar" />
-		<div class="val_lg_texte">
-			<div class="val_lg_nom">Nom du personnage</div>
-			<div class="val_lg_lien">Lien du personnage</div>
-			<div class="val_lg_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
-		</div>
-	</div>
-	<div class="val_lg_item">
-		<img src="images/kay_al_falhom.png" class="val_lg_avatar" />
-		<div class="val_lg_texte">
-			<div class="val_lg_nom">Nom du personnage</div>
-			<div class="val_lg_lien">Lien du personnage</div>
-			<div class="val_lg_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
-		</div>
-	</div>
-	<div class="val_lg_item">
-		<img src="images/image.png" class="val_lg_avatar" />
-		<div class="val_lg_texte">
-			<div class="val_lg_nom">Nom du personnage</div>
-			<div class="val_lg_lien">Lien du personnage</div>
-			<div class="val_lg_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
-		</div>
-	</div>
-	<div class="val_lg_item">
-		<img src="images/image.png" class="val_lg_avatar" />
-		<div class="val_lg_texte">
-			<div class="val_lg_nom">Nom du personnage</div>
-			<div class="val_lg_lien">Lien du personnage</div>
-			<div class="val_lg_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
-		</div>
-	</div>
-</div>
-<style>
-	:root {
-		--gallery-height:711px;
-		--gallery-width:100px;
-		--gallery-border-width:2px;
-	}
-
-	body {
-		font-family: 'Open Sans', sans-serif;
-		background-color: var(--primary-bg-color);
-	}
-
-	* {
-		/* Ensure sane sizing of all elements */
-		box-sizing: border-box; 
-	}
-
-	.val_lg_main {
-		width:calc((var(--gallery-width) + var(--gallery-border-width) * 2)*4);
-		display: flex;
-		flex-wrap:wrap;
-		height: 100vh;
-
-		.val_lg_item {
-			display: flex;
-			flex-direction: row;
-			border:var(--gallery-border-width) solid var(--primary-border-color);
-			max-height:calc((var(--gallery-width)*32/9) + var(--gallery-border-width) * 2);
-
-			flex: 1 0 calc(var(--gallery-width) + var(--gallery-border-width) * 2); 
-
-			/* Handles any clipping/overflow issues on transition */
-			overflow: hidden;
-			color: white;
-			transition: flex-basis 500ms ease-in-out;
-
-			.val_lg_avatar {
-				width:var(--gallery-width);
-				height:calc(var(--gallery-width)*32/9);
-			}
-		}
-
-		.val_lg_texte {
-			margin: 0;
-			padding: 0;
-			max-width:0%;
-			opacity: 0;
-			transition: all 500ms ease-in-out;
-		}
-
-		.val_lg_item:hover {
-			flex-basis: calc(var(--gallery-width)*4);
-
-			.val_lg_texte {
-				opacity: 1;
-				padding: 5px;
-				max-width:100%;
-			}  
-		}
-	}
-
-	@media (min-width: 600px) {
-		.val_lg_main {
-			flex-direction: row;
-		}
-		
-		.val_lg_item {
-			flex-shrink: 1;
-		}
-	}
-</style>
-<link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel=stylesheet>
-<link href=https://fonts.cdnfonts.com/css/norse rel=stylesheet>
-<link href=https://jerrycow33.github.io/woa/new_valdyra_chrono.css rel=stylesheet>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="woa_valdyra_conteneur">
+        <div class="woa_valdyra_titre_principal">Valdyra</div>
+        <div class="woa_valdyra_banner">
+            <img src="https://zupimages.net/up/21/42/4lsv.jpg">
+        </div>
+        <div class="woa_valdyra_titre_citation">Géante du Grand Nord, fille du froid et des montagnes</div>
+        <div class="woa_chrono_fond">
+            <div class="woa_newchrono_titre">Amitiés, connaissances et ennemis</div>
+            <br>
+            <div class="woa_valdyra_newchrono_tabonglets">
+                <input class="woa_valdyra_newchrono_input" id="woa_valdyra_newchrono_tab1" name="woa_valdyra_newchrono_tabs" type="radio" checked>
+                <label class="woa_valdyra_newchrono_label" for="woa_valdyra_newchrono_tab1">Liens amicaux</label>
+                <input class="woa_valdyra_newchrono_input" id="woa_valdyra_newchrono_tab2" name="woa_valdyra_newchrono_tabs" type="radio">
+                <label class="woa_valdyra_newchrono_label" for="woa_valdyra_newchrono_tab2">Liens neutres</label>
+                <input class="woa_valdyra_newchrono_input" id="woa_valdyra_newchrono_tab3" name="woa_valdyra_newchrono_tabs" type="radio">
+                <label class="woa_valdyra_newchrono_label" for="woa_valdyra_newchrono_tab3">Liens hostiles</label>
+                <input class="woa_valdyra_newchrono_input" id="woa_valdyra_newchrono_tab4" name="woa_valdyra_newchrono_tabs" type="radio">
+                <label class="woa_valdyra_newchrono_label" for="woa_valdyra_newchrono_tab4">Liens archivés</label>
+                <br>
+                <br>
+                <!-- DEBUT BLOC LIENS -->
+                <div class="woa_valdyra_newchrono_tab woa_valdyra_newchrono_content1">
+                    <div class="woa_valdyra_titre">Liens amicaux</div>
+                    <!-- DEBUT LIENS -->
+                    <div class="woa_newchrono_texte woa_valdyra_norp">Aucun lien</div>
+                    <!-- FIN LIENS -->
+                </div>
+                <!-- FIN BLOC LIENS -->
+                <!-- DEBUT BLOC LIENS -->
+                    <div class="woa_valdyra_newchrono_tab woa_valdyra_newchrono_content2">
+                    <div class="woa_valdyra_titre">Liens neutres</div>
+                    <!-- DEBUT LIENS -->
+                    <div class="woa_valdyra_lienscontainer2">
+                        <!-- DEBUT GALERIE -->
+                        <div class="gallery2">
+							<!-- DEBUT ITEM -->
+							<div class="gallery2-item reike">
+								<img src="https://zupimages.net/up/25/11/7rk6.png" class="gallery2-avatar" />
+								<div class="gallery2-texte">
+									<div class="gallery2-nom">Nom du personnage</div>
+									<div class="gallery2-lien">Lien du personnage</div>
+									<div class="gallery2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
+								</div>
+							</div>
+							<!-- FIN ITEM -->
+							<!-- DEBUT ITEM -->
+							<div class="gallery2-item autres">
+								<img src="https://zupimages.net/up/25/11/svd7.png" class="gallery2-avatar" />
+								<div class="gallery2-texte">
+									<div class="gallery2-nom">Nom du personnage</div>
+									<div class="gallery2-lien">Lien du personnage</div>
+									<div class="gallery2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
+								</div>
+							</div>
+							<!-- FIN ITEM -->
+							<!-- DEBUT ITEM -->
+							<div class="gallery2-item repu">
+								<img src="https://zupimages.net/up/25/11/chr9.png" class="gallery2-avatar" />
+								<div class="gallery2-texte">
+									<div class="gallery2-nom">Nom du personnage</div>
+									<div class="gallery2-lien">Lien du personnage</div>
+									<div class="gallery2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
+								</div>
+							</div>
+							<!-- FIN ITEM -->
+							<!-- DEBUT ITEM -->
+							<div class="gallery2-item autres">
+								<img src="https://zupimages.net/up/25/11/chr9.png" class="gallery2-avatar" />
+								<div class="gallery2-texte">
+									<div class="gallery2-nom">Nom du personnage</div>
+									<div class="gallery2-lien">Lien du personnage</div>
+									<div class="gallery2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
+								</div>
+							</div>
+							<!-- FIN ITEM -->
+							<!-- DEBUT ITEM -->
+							<div class="gallery2-item autres">
+								<img src="https://zupimages.net/up/25/11/chr9.png" class="gallery2-avatar" />
+								<div class="gallery2-texte">
+									<div class="gallery2-nom">Nom du personnage</div>
+									<div class="gallery2-lien">Lien du personnage</div>
+									<div class="gallery2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
+								</div>
+							</div>
+							<!-- FIN ITEM -->
+							<!-- DEBUT ITEM -->
+							<div class="gallery2-item autres">
+								<img src="https://zupimages.net/up/25/11/chr9.png" class="gallery2-avatar" />
+								<div class="gallery2-texte">
+									<div class="gallery2-nom">Nom du personnage</div>
+									<div class="gallery2-lien">Lien du personnage</div>
+									<div class="gallery2-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam non mauris eros. Fusce pulvinar at est ut scelerisque. Etiam vulputate lacus lorem, ac fermentum lectus tempor nec. Etiam fermentum quis magna vitae semper. Nam condimentum sit amet turpis eget posuere. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nullam mollis vel urna non gravida.</div>
+								</div>
+							</div>
+							<!-- FIN ITEM -->
+                        </div>
+                        <!-- FIN GALERIE -->
+                    </div>
+                    <!-- FIN LIENS -->
+					<div style="clear:both;"></div>
+                </div>
+                <!-- FIN BLOC LIENS -->
+                <!-- DEBUT BLOC LIENS -->
+                <div class="woa_valdyra_newchrono_tab woa_valdyra_newchrono_content3">
+                    <div class="woa_valdyra_titre">Liens hostiles</div>
+                    <!-- DEBUT LIENS -->
+                    <div class="woa_newchrono_texte woa_valdyra_norp">Aucun lien</div>
+                    <!-- FIN LIENS -->
+                </div>
+                <!-- FIN BLOC LIENS -->
+                <!-- DEBUT BLOC LIENS -->
+                <div class="woa_valdyra_newchrono_tab woa_valdyra_newchrono_content4">
+                    <div class="woa_valdyra_titre">Liens archivés</div>
+                    <!-- DEBUT LIENS -->
+                    <div class="woa_newchrono_texte woa_valdyra_norp">Aucun lien</div>
+                    <!-- FIN LIENS -->
+                </div>
+                <!-- FIN BLOC LIENS -->
+            </div>
+            <div class="woa_ava_modif">MISE À JOUR : 10/03/2025</div>
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel=stylesheet>
+    <link href=https://fonts.cdnfonts.com/css/norse rel=stylesheet>
+    <link href=https://jerrycow33.github.io/woa/new_valdyra_chrono.css rel=stylesheet>
+	<!--<link href=../../new_valdyra_chrono.css rel=stylesheet>-->
+</body>
+</html>
