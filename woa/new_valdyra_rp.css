@@ -67,7 +67,7 @@
 /* DIALOGUES V2 */
 
 .val_dial {
-	min-height:var(--diag-width-img);
+	min-height:calc(15px + var(--diag-width-img));
 	border-radius:var(--diag-border-radius) 10px 10px var(--diag-border-radius);
 	margin:20px;
 	padding:5px;
