@@ -10,13 +10,13 @@
 	--anya-color:purple;
 	--diag-border-radius:40px;
 	--diag-width-img:75px;
-	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra.png");
-	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos.png");
-	--diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan.png");
-	--diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern.png");
-	--diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys.png");
-	--diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra.png");
-	--diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya.png");
+	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra2.png");
+	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos2.png");
+	--diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan2.png");
+	--diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern2.png");
+	--diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys2.png");
+	--diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra2.png");
+	--diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya2.png");
 }
 
 .valdyrarp_main {
@@ -64,45 +64,31 @@
     background-size: cover;
 }
 
-/* DIALOGUES */
+/* DIALOGUES V2 */
 
 .val_dial {
 	min-height:var(--diag-width-img);
 	border-radius:var(--diag-border-radius) 10px 10px var(--diag-border-radius);
 	margin:20px;
 	padding:5px;
-	display:flex;
 	border:1px solid var(--diag-color);
-	
-	& div.val_perso {
-		border-radius:var(--diag-border-radius);
-		width:var(--diag-width-img);
-		height:var(--diag-width-img);
-		min-width:var(--diag-width-img);
-		min-height:var(--diag-width-img);
-		margin-right:10px;
+	padding-left:calc(15px + var(--diag-width-img));
+	font-weight:bold;
+
+	& i {
+		color:var(--diag-color);
+		font-weight:normal;
 	}
-	
-	& div.val_texte {
-		font-weight:bold;
-		flex:1;
 
-		& i {
-			font-weight:normal;
-		}
-
-				
-		&::before {
-			color:var(--diag-color);
-			border-bottom:1px solid var(--diag-color);
-			text-transform: uppercase;
-			display:block;
-			font-weight:600;
-			font-style: italic;
-			padding-bottom:3px;		
-			margin-bottom:3px;		
-		}
-
+	&::before {
+		color:var(--diag-color);
+		text-transform: uppercase;
+		display:block;
+		font-weight:600;
+		font-style: italic;
+		margin-bottom:3px;		
+		padding-bottom:3px;	
+		border-bottom:1px solid var(--diag-color);	
 	}
 }
 
@@ -114,151 +100,88 @@
 .leyra,
 .declan,
 .anya {
-	& i {
-		color:var(--diag-color);
-	}
+	background-position: 5px 5px;
+	background-size: var(--diag-width-img) var(--diag-width-img);
+	background-repeat: no-repeat;
+	font-weight:normal;
 }
 
 .valdyra {
 	border-color: var(--valdyra-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-valdyra-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--valdyra-color);
+	background-image: var(--diag-valdyra-vignette);
+	color:var(--valdyra-color);
 		
-		&::before {
-			content: "Valdyra";
-		}
+	&::before {
+		content: "Valdyra";
 	}
 }
 
 .davos {
 	border-color: var(--davos-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-davos-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--davos-color);
+	background-image: var(--diag-davos-vignette);
+	color:var(--davos-color);
 		
-		&::before {
-			content: "Davos";
-		}
+	&::before {
+		content: "Davos";
 	}
 }
 
 .bern {
 	border-color: var(--bern-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-bern-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--bern-color);
+	background-image: var(--diag-bern-vignette);
+	color:var(--bern-color);
 		
-		&::before {
-			content: "Bern";
-		}
+	&::before {
+		content: "Bern";
 	}
 }
 
 .grishna {
 	border-color: var(--grishna-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-grishna-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--grishna-color);
+	background-image: var(--diag-grishna-vignette);
+	color:var(--grishna-color);
 		
-		&::before {
-			content: "Grishna";
-		}
+	&::before {
+		content: "Grishna";
 	}
 }
 
 .kaylys {
 	border-color: var(--kaylys-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-kaylys-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--kaylys-color);
+	background-image: var(--diag-kaylys-vignette);
+	color:var(--kaylys-color);
 		
-		&::before {
-			content: "Kaylys";
-		}
+	&::before {
+		content: "Kaylys";
 	}
 }
 
 .leyra {
 	border-color: var(--leyra-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-leyra-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--leyra-color);
+	background-image: var(--diag-leyra-vignette);
+	color:var(--leyra-color);
 		
-		&::before {
-			content: "Leyra";
-		}
+	&::before {
+		content: "Leyra";
 	}
 }
 
 .declan {
 	border-color: var(--declan-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-declan-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--declan-color);
+	background-image: var(--diag-declan-vignette);
+	color:var(--declan-color);
 		
-		&::before {
-			content: "Declan";
-		}
+	&::before {
+		content: "Declan";
 	}
 }
 
 .anya {
 	border-color: var(--anya-color);
-	
-	& div.val_perso {
-		background-image:var(--diag-anya-vignette);
-		background-size:cover;
-	}
-	
-	& div.val_texte {
-		font-weight:normal;
-		color:var(--anya-color);
+	background-image: var(--diag-anya-vignette);
+	color:var(--anya-color);
 		
-		&::before {
-			content: "Anya";
-		}
+	&::before {
+		content: "Anya";
 	}
 }
