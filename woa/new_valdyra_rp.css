@@ -101,7 +101,8 @@
 .kaylys,
 .leyra,
 .declan,
-.anya {
+.anya,
+.rosenthal {
 	background-position: 5px 5px;
 	background-size: var(--diag-width-img) var(--diag-width-img);
 	background-repeat: no-repeat;
