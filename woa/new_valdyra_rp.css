@@ -10,13 +10,13 @@
 	--anya-color:;
 	--diag-border-radius:50px;
 	--diag-width-img:100px;
-	--diag-valdyra-vignette:url("/images/vignettes/valdyra.png");
-	--diag-davos-vignette:url("/images/vignettes/davos.png");
-	--diag-declan-vignette:url("/images/vignettes/declan.png");
-	--diag-bern-vignette:url("/images/vignettes/bern.png");
-	--diag-kaylys-vignette:url("/images/vignettes/kaylys.png");
-	--diag-leyra-vignette:url("/images/vignettes/leyra.png");
-	--diag-anya-vignette:url("/images/vignettes/anya.png");
+	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra.png");
+	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos.png");
+	--diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan.png");
+	--diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern.png");
+	--diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys.png");
+	--diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra.png");
+	--diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya.png");
 }
 
 .valdyrarp_main {
@@ -75,7 +75,7 @@
 	border:1px solid var(--diag-color);
 	
 	& div.val_perso {
-		border-radius:var(--diag-border-radius);
+		border-radius:var(--diag-border-radius) 10px 10px var(--diag-border-radius);
 		width:var(--diag-width-img);
 		height:var(--diag-width-img);
 		margin-left:5px;
@@ -83,6 +83,7 @@
 	
 	& div.val_texte {
 		font-weight:bold;
+		align-self:center;
 		
 		& i {
 			font-weight:normal;
