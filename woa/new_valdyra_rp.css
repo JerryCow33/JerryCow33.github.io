@@ -93,6 +93,7 @@
 
 				
 		&::before {
+			color:var(--diag-color);
 			border-bottom:1px solid var(--diag-color);
 			text-transform: uppercase;
 			display:block;
@@ -132,7 +133,6 @@
 		
 		&::before {
 			content: "Valdyra";
-			color:var(--diag-color);
 		}
 	}
 }
@@ -151,10 +151,6 @@
 		
 		&::before {
 			content: "Davos";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
@@ -173,10 +169,6 @@
 		
 		&::before {
 			content: "Bern";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
@@ -195,10 +187,6 @@
 		
 		&::before {
 			content: "Grishna";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
@@ -217,10 +205,6 @@
 		
 		&::before {
 			content: "Kaylys";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
@@ -239,10 +223,6 @@
 		
 		&::before {
 			content: "Leyra";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
@@ -261,10 +241,6 @@
 		
 		&::before {
 			content: "Declan";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
@@ -283,10 +259,6 @@
 		
 		&::before {
 			content: "Anya";
-			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
