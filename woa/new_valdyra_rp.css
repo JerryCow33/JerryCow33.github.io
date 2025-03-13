@@ -9,6 +9,7 @@
 	--declan-color:salmon;
 	--anya-color:purple;
 	--rosenthal-color:orange;
+	--orihana-color:#ffe082;
 	--diag-border-radius:40px;
 	--diag-width-img:75px;
 	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra2.png");
@@ -20,6 +21,7 @@
 	--diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya2.png");
 	--diag-rosenthal-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/rosenthal2.png");
 	--diag-grishna-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/grishna2.png");
+	--diag-orihana-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/orihana2.png");
 }
 
 .valdyrarp_main {
@@ -117,7 +119,8 @@
 .leyra,
 .declan,
 .anya,
-.rosenthal {
+.rosenthal,
+.orihana {
 	background-position: 5px 5px;
 	background-size: var(--diag-width-img) var(--diag-width-img);
 	background-repeat: no-repeat;
@@ -211,5 +214,15 @@
 		
 	&::before {
 		content: "Rosenthal";
+	}
+}
+
+.orihana {
+	border-color: var(--orihana-color);
+	background-image: var(--diag-orihana-vignette);
+	color:var(--orihana-color);
+		
+	&::before {
+		content: "Ori'Hanna";
 	}
 }
