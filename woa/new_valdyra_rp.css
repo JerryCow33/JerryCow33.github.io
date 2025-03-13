@@ -74,7 +74,7 @@
 	display:flex;
 	border:1px solid var(--diag-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		border-radius:var(--diag-border-radius);
 		width:var(--diag-width-img);
 		height:var(--diag-width-img);
