@@ -100,7 +100,7 @@
 .valdyra {
 	border-color: var(--valdyra-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-valdyra-vignette);
 		background-size:cover;
 	}
@@ -114,7 +114,7 @@
 .davos {
 	border-color: var(--davos-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-davos-vignette);
 		background-size:cover;
 	}
@@ -128,7 +128,7 @@
 .bern {
 	border-color: var(--bern-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-bern-vignette);
 		background-size:cover;
 	}
@@ -142,7 +142,7 @@
 .grishna {
 	border-color: var(--grishna-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-grishna-vignette);
 		background-size:cover;
 	}
@@ -156,7 +156,7 @@
 .kaylys {
 	border-color: var(--kaylys-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-kaylys-vignette);
 		background-size:cover;
 	}
@@ -170,7 +170,7 @@
 .leyra {
 	border-color: var(--leyra-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-leyra-vignette);
 		background-size:cover;
 	}
@@ -184,7 +184,7 @@
 .declan {
 	border-color: var(--declan-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-declan-vignette);
 		background-size:cover;
 	}
@@ -198,7 +198,7 @@
 .anya {
 	border-color: var(--anya-color);
 	
-	& img.val_perso {
+	& div.val_perso {
 		background-image:var(--diag-anya-vignette);
 		background-size:cover;
 	}
