@@ -8,7 +8,7 @@
 	--leyra-color:lightpink;
 	--declan-color:salmon;
 	--anya-color:purple;
-	--diag-border-radius:50px;
+	--diag-border-radius:40px;
 	--diag-width-img:75px;
 	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra.png");
 	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos.png");
@@ -78,15 +78,30 @@
 		border-radius:var(--diag-border-radius);
 		width:var(--diag-width-img);
 		height:var(--diag-width-img);
+		min-width:var(--diag-width-img);
+		min-height:var(--diag-width-img);
 		margin-right:10px;
 	}
 	
 	& div.val_texte {
 		font-weight:bold;
-		
+		flex:1;
+
 		& i {
 			font-weight:normal;
 		}
+
+				
+		&::before {
+			border-bottom:1px solid var(--diag-color);
+			text-transform: uppercase;
+			display:block;
+			font-weight:600;
+			font-style: italic;
+			padding-bottom:3px;		
+			margin-bottom:3px;		
+		}
+
 	}
 }
 
@@ -118,9 +133,6 @@
 		&::before {
 			content: "Valdyra";
 			color:var(--diag-color);
-			display:block;
-			font-weight:600;
-			font-style: italic;
 		}
 	}
 }
