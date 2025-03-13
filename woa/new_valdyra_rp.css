@@ -68,15 +68,16 @@
 }
 
 .valdyrarp_imgleft {
-	width:100px;
+	width:200px;
 	float:left;
-	margin-left:5px;
+	margin-right:5px;
 	margin-top:5px;
 }
 
 .valdyrarp_imgright {
-	float:left;
-	margin-right:5px;
+	width:200px;
+	float:right;
+	margin-left:5px;
 	margin-top:5px;
 }
 
