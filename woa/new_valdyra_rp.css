@@ -10,13 +10,13 @@
 	--anya-color:;
 	--diag-border-radius:50px;
 	--diag-width-img:100px;
-	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra.png");
-	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos.png");
-	--diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan.png");
-	--diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern.png");
-	--diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys.png");
-	--diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra.png");
-	--diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya.png");
+	--diag-valdyra-vignette:"https://jerrycow33.github.io/woa/images/vignettes/valdyra.png";
+	--diag-davos-vignette:"https://jerrycow33.github.io/woa/images/vignettes/davos.png";
+	--diag-declan-vignette:"https://jerrycow33.github.io/woa/images/vignettes/declan.png";
+	--diag-bern-vignette:"https://jerrycow33.github.io/woa/images/vignettes/bern.png";
+	--diag-kaylys-vignette:"https://jerrycow33.github.io/woa/images/vignettes/kaylys.png";
+	--diag-leyra-vignette:"https://jerrycow33.github.io/woa/images/vignettes/leyra.png";
+	--diag-anya-vignette:"https://jerrycow33.github.io/woa/images/vignettes/anya.png";
 }
 
 .valdyrarp_main {
@@ -68,14 +68,14 @@
 
 .val_dial {
 	min-height:var(--diag-width-img);
-	border-radius:var(--diag-border-radius);
+	border-radius:var(--diag-border-radius) 10px 10px var(--diag-border-radius);
 	margin:10px;
 	padding:5px;
 	display:flex;
 	border:1px solid var(--diag-color);
 	
 	& div.val_perso {
-		border-radius:var(--diag-border-radius) 10px 10px var(--diag-border-radius);
+		border-radius:var(--diag-border-radius);
 		width:var(--diag-width-img);
 		height:var(--diag-width-img);
 		margin-left:5px;
@@ -91,7 +91,14 @@
 	}
 }
 
-.valdyra,.davos,.bern,.grishna,.kaylys,.leyra,.declan,.anya {
+.valdyra,
+.davos,
+.bern,
+.grishna,
+.kaylys,
+.leyra,
+.declan,
+.anya {
 	& i {
 		color:var(--diag-color);
 	}
@@ -101,7 +108,7 @@
 	border-color: var(--valdyra-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-valdyra-vignette);
+		background-image:url(var(--diag-valdyra-vignette));
 		background-size:cover;
 	}
 	
@@ -115,7 +122,7 @@
 	border-color: var(--davos-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-davos-vignette);
+		background-image:url(var(--diag-davos-vignette));
 		background-size:cover;
 	}
 	
@@ -129,7 +136,7 @@
 	border-color: var(--bern-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-bern-vignette);
+		background-image:url(var(--diag-bern-vignette));
 		background-size:cover;
 	}
 	
@@ -143,7 +150,7 @@
 	border-color: var(--grishna-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-grishna-vignette);
+		background-image:url(var(--diag-grishna-vignette));
 		background-size:cover;
 	}
 	
@@ -157,7 +164,7 @@
 	border-color: var(--kaylys-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-kaylys-vignette);
+		background-image:url(var(--diag-kaylys-vignette));
 		background-size:cover;
 	}
 	
@@ -171,7 +178,7 @@
 	border-color: var(--leyra-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-leyra-vignette);
+		background-image:url(var(--diag-leyra-vignette));
 		background-size:cover;
 	}
 	
@@ -185,7 +192,7 @@
 	border-color: var(--declan-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-declan-vignette);
+		background-image:url(var(--diag-declan-vignette));
 		background-size:cover;
 	}
 	
@@ -199,7 +206,7 @@
 	border-color: var(--anya-color);
 	
 	& div.val_perso {
-		background-image:var(--diag-anya-vignette);
+		background-image:url(var(--diag-anya-vignette));
 		background-size:cover;
 	}
 	
