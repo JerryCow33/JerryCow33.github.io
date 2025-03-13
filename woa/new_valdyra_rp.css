@@ -1,3 +1,24 @@
+:root {
+	--diag-color:#999999;
+	--grishna-color:lightgrey;
+	--valdyra-color:steelblue;
+	--bern-color:#fc0000;
+	--davos-color:lightgreen;
+	--kaylys-color:indianred;
+	--leyra-color:lightpink;
+	--declan-color:;
+	--anya-color:;
+	--diag-border-radius:50px;
+	--diag-width-img:100px;
+	--diag-valdyra-vignette:url("/images/vignettes/valdyra.png");
+	--diag-davos-vignette:url("/images/vignettes/davos.png");
+	--diag-declan-vignette:url("/images/vignettes/declan.png");
+	--diag-bern-vignette:url("/images/vignettes/bern.png");
+	--diag-kaylys-vignette:url("/images/vignettes/kaylys.png");
+	--diag-leyra-vignette:url("/images/vignettes/leyra.png");
+	--diag-anya-vignette:url("/images/vignettes/anya.png");
+}
+
 .valdyrarp_main {
 	margin: 0px auto;
 	background-color: #282828;
@@ -13,7 +34,7 @@
 .valdyrarp_ban {
 	height:200px;
 	background:url("https://zupimages.net/up/21/51/tx9h.png") no-repeat top left;
-    background-size: cover;
+    	background-size: cover;
 	font-size: 35px;
 	color: steelblue;
 	font-family: "Bebas Neue", serif;
@@ -41,4 +62,148 @@
 	height:150px;
 	background:url("https://zupimages.net/up/21/51/4vkj.png") no-repeat top right;
     background-size: cover;
+}
+
+/* DIALOGUES */
+
+.val_dial {
+	min-height:var(--diag-width-img);
+	border-radius:var(--diag-border-radius);
+	margin:10px;
+	padding:5px;
+	display:flex;
+	border:1px solid var(--diag-color);
+	
+	& img.val_perso {
+		border-radius:var(--diag-border-radius);
+		width:var(--diag-width-img);
+		height:var(--diag-width-img);
+		margin-left:5px;
+	}
+	
+	& div.val_texte {
+		font-weight:bold;
+		
+		& i {
+			font-weight:normal;
+		}
+	}
+}
+
+.valdyra,.davos,.bern,.grishna,.kaylys,.leyra,.declan,.anya {
+	& i {
+		color:var(--diag-color);
+	}
+}
+
+.valdyra {
+	border-color: var(--valdyra-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-valdyra-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--valdyra-color);
+	}
+}
+
+.davos {
+	border-color: var(--davos-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-davos-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--davos-color);
+	}
+}
+
+.bern {
+	border-color: var(--bern-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-bern-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--bern-color);
+	}
+}
+
+.grishna {
+	border-color: var(--grishna-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-grishna-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--grishna-color);
+	}
+}
+
+.kaylys {
+	border-color: var(--kaylys-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-kaylys-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--kaylys-color);
+	}
+}
+
+.leyra {
+	border-color: var(--leyra-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-leyra-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--leyra-color);
+	}
+}
+
+.declan {
+	border-color: var(--declan-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-declan-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--declan-color);
+	}
+}
+
+.anya {
+	border-color: var(--anya-color);
+	
+	& img.val_perso {
+		background-image:var(--diag-anya-vignette);
+		background-size:cover;
+	}
+	
+	& div.val_texte {
+		font-weight:normal;
+		color:var(--anya-color);
+	}
 }
