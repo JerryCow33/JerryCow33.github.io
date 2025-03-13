@@ -66,6 +66,18 @@
     background-size: cover;
 }
 
+.valdyrarp_imgleft {
+	float:left;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+.valdyrarp_imgright {
+	float:left;
+	margin-right:5px;
+	margin-top:5px;
+}
+
 /* DIALOGUES V2 */
 
 .val_dial {
