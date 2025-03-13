@@ -12,6 +12,7 @@
 	--orihana-color:#ffe082;
 	--diag-border-radius:40px;
 	--diag-width-img:75px;
+	--diag-default-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/default.png");
 	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra2.png");
 	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos2.png");
 	--diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan2.png");
@@ -100,6 +101,7 @@
 	}
 
 	&::before {
+		content:"-";
 		color:var(--diag-color);
 		text-transform: uppercase;
 		display:block;
@@ -111,6 +113,7 @@
 	}
 }
 
+.default,
 .valdyra,
 .davos,
 .bern,
@@ -125,6 +128,11 @@
 	background-size: var(--diag-width-img) var(--diag-width-img);
 	background-repeat: no-repeat;
 	font-weight:normal;
+}
+
+.default {
+	background-image: var(--diag-default-vignette);
+	font-weight:bold;
 }
 
 .valdyra {
