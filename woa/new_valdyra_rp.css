@@ -114,7 +114,6 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--valdyra-color);
-
 		
 		&::before {
 			content: "Valdyra";
@@ -137,6 +136,14 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--davos-color);
+		
+		&::before {
+			content: "Davos";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
 
@@ -151,6 +158,14 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--bern-color);
+		
+		&::before {
+			content: "Bern";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
 
@@ -165,6 +180,14 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--grishna-color);
+		
+		&::before {
+			content: "Grishna";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
 
@@ -179,6 +202,14 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--kaylys-color);
+		
+		&::before {
+			content: "Kaylys";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
 
@@ -193,6 +224,14 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--leyra-color);
+		
+		&::before {
+			content: "Leyra";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
 
@@ -207,6 +246,14 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--declan-color);
+		
+		&::before {
+			content: "Declan";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
 
@@ -221,5 +268,13 @@
 	& div.val_texte {
 		font-weight:normal;
 		color:var(--anya-color);
+		
+		&::before {
+			content: "Anya";
+			color:var(--diag-color);
+			display:block;
+			font-weight:600;
+			font-style: italic;
+		}
 	}
 }
