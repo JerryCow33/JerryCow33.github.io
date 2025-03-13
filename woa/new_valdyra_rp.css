@@ -223,6 +223,6 @@
 	color:var(--orihana-color);
 		
 	&::before {
-		content: "Ori'Hanna";
+		content: "Ori'Hana";
 	}
 }
