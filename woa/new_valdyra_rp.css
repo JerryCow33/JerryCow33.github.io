@@ -1,28 +1,28 @@
 :root {
-	--diag-color:#999999;
-	--grishna-color:lightgrey;
-	--valdyra-color:steelblue;
-	--bern-color:#fc0000;
-	--davos-color:lightgreen;
-	--kaylys-color:indianred;
-	--leyra-color:lightpink;
-	--declan-color:salmon;
-	--anya-color:purple;
-	--rosenthal-color:orange;
-	--orihana-color:#ffe082;
-	--diag-border-radius:40px;
-	--diag-width-img:75px;
-	--diag-default-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/default.png");
-	--diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra2.png");
-	--diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos2.png");
-	--diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan2.png");
-	--diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern2.png");
-	--diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys2.png");
-	--diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra2.png");
-	--diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya2.png");
-	--diag-rosenthal-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/rosenthal2.png");
-	--diag-grishna-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/grishna2.png");
-	--diag-orihana-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/orihana2.png");
+	--val-diag-color:#999999;
+	--val-grishna-color:lightgrey;
+	--val-valdyra-color:steelblue;
+	--val-bern-color:#fc0000;
+	--val-davos-color:lightgreen;
+	--val-kaylys-color:indianred;
+	--val-leyra-color:lightpink;
+	--val-declan-color:salmon;
+	--val-anya-color:purple;
+	--val-rosenthal-color:orange;
+	--val-orihana-color:#ffe082;
+	--val-diag-border-radius:40px;
+	--val-diag-width-img:75px;
+	--val-diag-default-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/default.png");
+	--val-diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra2.png");
+	--val-diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos2.png");
+	--val-diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan2.png");
+	--val-diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern2.png");
+	--val-diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys2.png");
+	--val-diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra2.png");
+	--val-diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya2.png");
+	--val-diag-rosenthal-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/rosenthal2.png");
+	--val-diag-grishna-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/grishna2.png");
+	--val-diag-orihana-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/orihana2.png");
 }
 
 .valdyrarp_main {
@@ -91,29 +91,29 @@
 /* DIALOGUES V2 */
 
 .val_dial {
-	min-height:calc(10px + var(--diag-width-img));
-	border-radius:var(--diag-border-radius) 10px 10px var(--diag-border-radius);
+	min-height:calc(10px + var(--val-diag-width-img));
+	border-radius:var(--val-diag-border-radius) 10px 10px var(--val-diag-border-radius);
 	margin:20px 20px 0px 20px;
 	padding:5px;
-	border:1px solid var(--diag-color);
-	padding-left:calc(15px + var(--diag-width-img));
+	border:1px solid var(--val-diag-color);
+	padding-left:calc(15px + var(--val-diag-width-img));
 	font-weight:bold;
 
 	& i {
-		color:var(--diag-color);
+		color:var(--val-diag-color);
 		font-weight:normal;
 	}
 
 	&::before {
 		content:"-";
-		color:var(--diag-color);
+		color:var(--val-diag-color);
 		text-transform: uppercase;
 		display:block;
 		font-weight:600;
 		font-style: italic;
 		margin-bottom:3px;		
 		padding-bottom:3px;	
-		border-bottom:1px solid var(--diag-color);	
+		border-bottom:1px solid var(--val-diag-color);	
 	}
 }
 
@@ -129,20 +129,20 @@
 .rosenthal,
 .orihana {
 	background-position: 5px 5px;
-	background-size: var(--diag-width-img) var(--diag-width-img);
+	background-size: var(--val-diag-width-img) var(--val-diag-width-img);
 	background-repeat: no-repeat;
 	font-weight:normal;
 }
 
 .default {
-	background-image: var(--diag-default-vignette);
+	background-image: var(--val-diag-default-vignette);
 	font-weight:bold;
 }
 
 .valdyra {
-	border-color: var(--valdyra-color);
-	background-image: var(--diag-valdyra-vignette);
-	color:var(--valdyra-color);
+	border-color: var(--val-valdyra-color);
+	background-image: var(--val-diag-valdyra-vignette);
+	color:var(--val-valdyra-color);
 		
 	&::before {
 		content: "Valdyra";
@@ -150,9 +150,9 @@
 }
 
 .davos {
-	border-color: var(--davos-color);
-	background-image: var(--diag-davos-vignette);
-	color:var(--davos-color);
+	border-color: var(--val-davos-color);
+	background-image: var(--val-diag-davos-vignette);
+	color:var(--val-davos-color);
 		
 	&::before {
 		content: "Davos";
@@ -160,9 +160,9 @@
 }
 
 .bern {
-	border-color: var(--bern-color);
-	background-image: var(--diag-bern-vignette);
-	color:var(--bern-color);
+	border-color: var(--val-bern-color);
+	background-image: var(--val-diag-bern-vignette);
+	color:var(--val-bern-color);
 		
 	&::before {
 		content: "Bern";
@@ -170,9 +170,9 @@
 }
 
 .grishna {
-	border-color: var(--grishna-color);
-	background-image: var(--diag-grishna-vignette);
-	color:var(--grishna-color);
+	border-color: var(--val-grishna-color);
+	background-image: var(--val-diag-grishna-vignette);
+	color:var(--val-grishna-color);
 		
 	&::before {
 		content: "Grishna";
@@ -180,9 +180,9 @@
 }
 
 .kaylys {
-	border-color: var(--kaylys-color);
-	background-image: var(--diag-kaylys-vignette);
-	color:var(--kaylys-color);
+	border-color: var(--val-kaylys-color);
+	background-image: var(--val-diag-kaylys-vignette);
+	color:var(--val-kaylys-color);
 		
 	&::before {
 		content: "Kaylys";
@@ -190,9 +190,9 @@
 }
 
 .leyra {
-	border-color: var(--leyra-color);
-	background-image: var(--diag-leyra-vignette);
-	color:var(--leyra-color);
+	border-color: var(--val-leyra-color);
+	background-image: var(--val-diag-leyra-vignette);
+	color:var(--val-leyra-color);
 		
 	&::before {
 		content: "Leyra";
@@ -200,9 +200,9 @@
 }
 
 .declan {
-	border-color: var(--declan-color);
-	background-image: var(--diag-declan-vignette);
-	color:var(--declan-color);
+	border-color: var(--val-declan-color);
+	background-image: var(--val-diag-declan-vignette);
+	color:var(--val-declan-color);
 		
 	&::before {
 		content: "Declan";
@@ -210,9 +210,9 @@
 }
 
 .anya {
-	border-color: var(--anya-color);
-	background-image: var(--diag-anya-vignette);
-	color:var(--anya-color);
+	border-color: var(--val-anya-color);
+	background-image: var(--val-diag-anya-vignette);
+	color:var(--val-anya-color);
 		
 	&::before {
 		content: "Anya";
@@ -220,9 +220,9 @@
 }
 
 .rosenthal {
-	border-color: var(--rosenthal-color);
-	background-image: var(--diag-rosenthal-vignette);
-	color:var(--rosenthal-color);
+	border-color: var(--val-rosenthal-color);
+	background-image: var(--val-diag-rosenthal-vignette);
+	color:var(--val-rosenthal-color);
 		
 	&::before {
 		content: "Rosenthal";
@@ -230,9 +230,9 @@
 }
 
 .orihana {
-	border-color: var(--orihana-color);
-	background-image: var(--diag-orihana-vignette);
-	color:var(--orihana-color);
+	border-color: var(--val-orihana-color);
+	background-image: var(--val-diag-orihana-vignette);
+	color:var(--val-orihana-color);
 		
 	&::before {
 		content: "Ori'Hana";
