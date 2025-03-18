@@ -41,15 +41,11 @@
     padding:5px;
     background:var(--primary-bg-color);
     color:var(--primary-text-color);
-    padding-bottom:0
-}
-
-.woa_valdyra_titre_principal {
+    padding-bottom:0;
     text-align:center;
 }
 
 .woa_valdyra_titre_citation {
-    text-align: center;
     color:var(--secondary-text-color);
     font: 18px Amatic SC;
     font-weight:700;
