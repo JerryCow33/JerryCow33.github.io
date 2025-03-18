@@ -29,8 +29,6 @@
 	margin: 0px auto;
 	background-color: #282828;
 	font-family: "Open Sans", sans-serif;
-	border-top: 9px solid steelblue;
-	border-bottom: 9px solid steelblue;
 	font-size: 15px;
 	text-align: justify;
 	height: auto;
@@ -52,17 +50,21 @@
 	align-items:center;
 	line-height:30px;
 	text-align:right;
+	text-shadow: 1px 1px 2px black;
 }
 
 .valdyrarp_feat {
 	border-top:2px solid steelblue;
-	color: #505252;
+	color: #cccccc;
 	font-size: 20px;
 	font-family: 'Bebas Neue', serif;
+	text-shadow: 1px 1px 2px black;
 }
 
 .valdyrarp_text {
 	padding:20px;
+	border-top: 9px solid steelblue;
+	border-bottom: 9px solid steelblue;	
 }
 
 .valdyrarp_foot {
