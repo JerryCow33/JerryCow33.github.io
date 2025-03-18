@@ -39,8 +39,9 @@
 
 .valdyrarp_ban {
 	height:200px;
-	background:url("https://zupimages.net/up/21/51/tx9h.png") no-repeat top left;
-    background-size: cover;
+	/*background:url("https://zupimages.net/up/21/51/tx9h.png") no-repeat top left;*/
+	background:url("https://cdn.midjourney.com/cb126726-2cae-4645-aefb-791556c6fe5c/0_0.png") no-repeat top left;
+    	background-size: cover;
 	font-size: 35px;
 	color: steelblue;
 	font-family: "Bebas Neue", serif;
@@ -66,8 +67,9 @@
 
 .valdyrarp_foot {
 	height:150px;
-	background:url("https://zupimages.net/up/21/51/4vkj.png") no-repeat top right;
-    background-size: cover;
+	/*background:url("https://zupimages.net/up/21/51/4vkj.png") no-repeat top right;*/
+	background:url("https://cdn.midjourney.com/b1a74c6d-d3c7-4bcb-92ec-86aeaed6c92b/0_3.png") no-repeat top right;
+    	background-size: cover;
 }
 
 .valdyrarp_imgleft {
