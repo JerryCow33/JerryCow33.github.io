@@ -15,6 +15,31 @@
     --color_repu: #28548f;
     --color_autre: #963a2e;
     --color_defaut: #ffffff;
+
+    --val-diag-color:#999999;
+	--val-grishna-color:lightgrey;
+	--val-valdyra-color:steelblue;
+	--val-bern-color:#fc0000;
+	--val-davos-color:lightgreen;
+	--val-kaylys-color:indianred;
+	--val-leyra-color:lightpink;
+	--val-declan-color:salmon;
+	--val-anya-color:purple;
+	--val-rosenthal-color:orange;
+	--val-orihana-color:#ffe082;
+	--val-diag-border-radius:40px;
+	--val-diag-width-img:75px;
+	--val-diag-default-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/default.png");
+	--val-diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra.png");
+	--val-diag-davos-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/davos.png");
+	--val-diag-declan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/declan.png");
+	--val-diag-bern-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/bern.png");
+	--val-diag-kaylys-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaylys.png");
+	--val-diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra.png");
+	--val-diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya.png");
+	--val-diag-rosenthal-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/rosenthal.png");
+	--val-diag-grishna-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/grishna.png");
+	--val-diag-orihana-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/orihana.png");
 }
 
 .woa_valdyra_timeitem .woa_chrono_rp {
@@ -493,5 +518,97 @@
             padding-top:5px;
             height:calc(var(--size-large) * 32 / 9 * 50);
         }
+    }
+}
+
+/* EPIGRAPHE */
+.trajet {
+	width: 100%;
+	border-radius: 10px;
+}
+
+.woa_newchrono_epigraphe {
+	font: 16px Open Sans;
+}
+
+.woa_valdyra_newlien {
+	display: flex;
+	align-content: flex-start;
+	max-height: 160px;
+	border-radius: 160px 5px 5px 160px;
+	border: 2px solid var(--primary-text-color);
+}
+
+.woa_valdyra_newlien_avatar {
+	min-width: 150px;
+	max-height: 150px;
+	object-fit: cover;
+	border-radius: 150px 0 0 150px;
+}
+
+.woa_valdyra_newlien_texte {
+	flex: 1;
+	margin: 5px;
+}
+
+.woa_valdyra_newlien_nom {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 0 0 5px;
+	border-bottom: 2px solid var(--primary-text-color);
+	font: 700 24px Norse;
+	color: var(--primary-text-color);
+
+    & span {
+    	padding-right: 10px;
+    	font: italic 700 18px Norse;
+    	color: var(--primary-text-color);
+    }
+}
+
+.woa_valdyra_newlien_desc {
+	font: 14px Open Sans;
+	width: auto;
+	max-height: 105px;
+	overflow: auto;
+	padding-right: 3px;
+	color: #999;
+	margin: 0;
+}
+
+.lien_valdyra {
+    border-color:var(----val-valdyra-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(----val-valdyra-color);
+
+        & span {
+        	color: var(----val-valdyra-color);
+        }        
+    }
+}
+
+.woa_valdyra_newlien:nth-child(odd) {
+	flex-direction: row-reverse;
+	border-radius: 5px 160px 160px 5px;
+
+    & .woa_valdyra_newlien_avatar {
+	    border-radius: 0 150px 150px 0;
+    }
+    
+    & .woa_valdyra_newlien_nom {
+	    flex-direction: row-reverse;
+	    margin: 0 0 5px;
+
+        & span {
+        	padding-right: 0;
+        	padding-left: 10px;
+        }
+    }
+    
+    & .woa_valdyra_newlien_desc {
+    	padding-right: 0;
+	    padding-left: 3px;
     }
 }
