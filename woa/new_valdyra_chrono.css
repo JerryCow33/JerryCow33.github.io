@@ -79,8 +79,7 @@
 
 .woa_chrono_texte, .woa_newchrono_texte {
     width:auto;
-    font: 18px Open Sans;
-    font-weight:700;
+    font: 14px Open Sans;
     color: var(--secondary-text-color);
     text-align: justify;
     margin: 10px 0px 15px;
