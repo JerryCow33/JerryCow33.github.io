@@ -578,13 +578,13 @@
 }
 
 .lien_valdyra {
-    border-color:var(----val-valdyra-color);
+    border-color:var(--val-valdyra-color);
 
     & .woa_valdyra_newlien_nom {
-	    border-color: var(----val-valdyra-color);
+	    border-color: var(--val-valdyra-color);
 
         & span {
-        	color: var(----val-valdyra-color);
+        	color: var(--val-valdyra-color);
         }        
     }
 }
