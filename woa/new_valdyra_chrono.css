@@ -537,6 +537,30 @@
 	max-height: 160px;
 	border-radius: 160px 5px 5px 160px;
 	border: 2px solid var(--primary-text-color);
+
+	&:nth-child(even) {
+            	flex-direction: row-reverse;
+		border-radius: 5px 160px 160px 5px;
+
+   		& .woa_valdyra_newlien_avatar {
+	   		border-radius: 0 150px 150px 0;
+    		}
+    
+   		& .woa_valdyra_newlien_nom {
+	    		flex-direction: row-reverse;
+	    		margin: 0 0 5px;
+
+        		& span {
+        			padding-right: 0;
+        			padding-left: 10px;
+       			}
+    		}
+    
+    		& .woa_valdyra_newlien_desc {
+    			padding-right: 0;
+	   		 padding-left: 3px;
+    		}
+        }
 }
 
 .woa_valdyra_newlien_avatar {
@@ -575,30 +599,6 @@
 	padding-right: 3px;
 	color: #999;
 	margin: 0;
-}
-
-.woa_valdyra_newlien:nth-child(odd) {
-	flex-direction: row-reverse;
-	border-radius: 5px 160px 160px 5px;
-
-    & .woa_valdyra_newlien_avatar {
-	    border-radius: 0 150px 150px 0;
-    }
-    
-    & .woa_valdyra_newlien_nom {
-	    flex-direction: row-reverse;
-	    margin: 0 0 5px;
-
-        & span {
-        	padding-right: 0;
-        	padding-left: 10px;
-        }
-    }
-    
-    & .woa_valdyra_newlien_desc {
-    	padding-right: 0;
-	    padding-left: 3px;
-    }
 }
 
 .lien_valdyra {
