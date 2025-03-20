@@ -577,18 +577,6 @@
 	margin: 0;
 }
 
-.lien_valdyra {
-    border-color:var(--val-valdyra-color);
-
-    & .woa_valdyra_newlien_nom {
-	    border-color: var(--val-valdyra-color);
-
-        & span {
-        	color: var(--val-valdyra-color);
-        }        
-    }
-}
-
 .woa_valdyra_newlien:nth-child(odd) {
 	flex-direction: row-reverse;
 	border-radius: 5px 160px 160px 5px;
@@ -610,5 +598,119 @@
     & .woa_valdyra_newlien_desc {
     	padding-right: 0;
 	    padding-left: 3px;
+    }
+}
+
+.lien_valdyra {
+    border-color:var(--val-valdyra-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-valdyra-color);
+
+        & span {
+        	color: var(--val-valdyra-color);
+        }        
+    }
+}
+
+
+.lien_bern {
+    border-color:var(--val-bern-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-bern-color);
+
+        & span {
+        	color: var(--val-bern-color);
+        }        
+    }
+}
+
+
+.lien_davos {
+    border-color:var(--val-davos-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-davos-color);
+
+        & span {
+        	color: var(--val-davos-color);
+        }        
+    }
+}
+
+
+.lien_kaylys {
+    border-color:var(--val-kaylys-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-kaylys-color);
+
+        & span {
+        	color: var(--val-kaylys-color);
+        }        
+    }
+}
+
+
+.lien_grishna {
+    border-color:var(--val-grishna-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-grishna-color);
+
+        & span {
+        	color: var(--val-grishna-color);
+        }        
+    }
+}
+
+
+.lien_leyra {
+    border-color:var(--val-leyra-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-leyra-color);
+
+        & span {
+        	color: var(--val-leyra-color);
+        }        
+    }
+}
+
+
+.lien_declan {
+    border-color:var(--val-declan-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-declan-color);
+
+        & span {
+        	color: var(--val-declan-color);
+        }        
+    }
+}
+
+.lien_rosenthal {
+    border-color:var(--val-rosenthal-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-rosenthal-color);
+
+        & span {
+        	color: var(--val-rosenthal-color);
+        }        
+    }
+}
+
+.lien_anya {
+    border-color:var(--val-anya-color);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--val-anya-color);
+
+        & span {
+        	color: var(--val-anya-color);
+        }        
     }
 }
