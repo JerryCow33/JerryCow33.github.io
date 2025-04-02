@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="tabs_conteneur">
+        <img class="tabs_banner" src="https://cdn.midjourney.com/a30ba1f3-895a-43c9-bcca-07310fba53d2/0_3.png" />
+        <div class="tabs_titre">Titre principal</div>
+        <div class="tabs_onglets">
+            <!-- DEBUT ONGLET 1 --><input class="tabs_input" type="radio" name="tabs_input" id="tabs_input1" checked /><label for="tabs_input1" class="tabs_label">Onglet 1</label><!-- FIN ONGLET 1 -->
+            <!-- DEBUT ONGLET 2 --><input class="tabs_input" type="radio" name="tabs_input" id="tabs_input2" /><label for="tabs_input2" class="tabs_label">Onglet 2</label><!-- FIN ONGLET 2 -->
+            <!-- DEBUT ONGLET 3 --><input class="tabs_input" type="radio" name="tabs_input" id="tabs_input3" /><label for="tabs_input3" class="tabs_label">Onglet 3</label><!-- FIN ONGLET 3 -->
+            <!-- DEBUT PAGE 1 --><div class="tabs_content" id="tabs_content1"><div class="tabs_titre">Partie 1</div><div class="tabs_desc">Ut a ante eget dui cursus semper. Suspendisse mattis neque sed aliquet dignissim. Vestibulum facilisis ultricies dui non facilisis. Donec aliquam, ex vitae pulvinar facilisis, leo felis vulputate lorem, ut accumsan diam tortor ut erat. Pellentesque quis accumsan est, eget suscipit orci. Donec tempor egestas urna, eu vehicula purus commodo ut. Sed nec lectus scelerisque, dignissim erat non, egestas mauris. Nunc lobortis pretium aliquet. Integer varius tellus enim, sit amet ornare diam dignissim eget.</div></div><!-- FIN PAGE 1 -->
+            <!-- DEBUT PAGE 2 --><div class="tabs_content" id="tabs_content2"><div class="tabs_titre">Partie 2</div><div class="tabs_desc">Nulla at mauris id dui auctor ornare. Ut eget finibus enim, vitae efficitur ex. Donec ut euismod nisl, nec mollis magna. Phasellus odio eros, mollis at augue commodo, mollis facilisis arcu. Vivamus congue magna sit amet enim malesuada, a interdum dolor facilisis. Sed odio ex, faucibus vel purus ut, feugiat congue massa. Praesent non orci at risus hendrerit eleifend. Donec vulputate eros non dolor cursus, a mollis tortor finibus. Donec tincidunt neque a elit dapibus consequat. Vestibulum non elementum augue, quis pellentesque felis. Sed rutrum accumsan sem ac maximus. Aliquam erat diam, ultricies id erat nec, ultricies molestie purus.</div></div><!-- FIN PAGE 2 -->
+            <!-- DEBUT PAGE 3 --><div class="tabs_content" id="tabs_content3"><div class="tabs_titre">Partie 3</div><div class="tabs_desc">Etiam id purus ut dolor scelerisque lacinia. Etiam blandit ornare risus, non mattis tortor dapibus dictum. Donec consectetur, ligula ac maximus aliquam, ex nisi imperdiet ligula, at convallis arcu urna sed ante. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Mauris scelerisque nisl nibh, non porttitor nibh volutpat sit amet. Cras pulvinar consequat vulputate. Mauris blandit et dui vitae sodales. Curabitur elit magna, lacinia id tellus ut, finibus convallis elit. Donec pretium nisi in est rhoncus venenatis.</div></div><!-- FIN PAGE 3 -->
+        </div>
+    </div>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+    <link href='https://jerrycow33.github.io/woa/new_valdyra_chrono.css' rel='stylesheet' type='text/css' />
+    <style>
+    :root {
+        --tabs-width-conteneur:100%;
+        --tabs-primary-color:#cccccc;
+        --tabs-title-font-family:"Bebas Neue";
+        --tabs-title-font-size:36px;
+        --tabs-onglet-font-family:"Bebas Neue";
+        --tabs-onglet-font-size:24px;
+        --tabs-desc-font-family:"Open Sans";
+        --tabs-desc-font-size:14px;
+    }
+    .tabs_conteneur {
+        width:var(--tabs-width-conteneur);
+    }
+    
+    .tabs_banner {
+        width:100%;
+    }
+    
+    .tabs_titre {
+        text-align: center;
+        padding: 10px 5px 5px 5px;
+        font:var(--tabs-title-font-size) var(--tabs-title-font-family);
+        color:var(--tabs-primary-color);
+        border-top:3px solid var(--tabs-primary-color);
+        border-bottom:3px solid var(--tabs-primary-color);
+        margin-bottom:10px;
+    }
+
+    .tabs_onglets {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content:center;
+    }
+    
+    .tabs_input {
+        display:none;
+    }
+    
+    .tabs_label {
+        padding:5px;
+        margin:5px;
+        line-height:0px;
+        font:var(--tabs-onglet-font-size) var(--tabs-onglet-font-family);
+        color:var(--tabs-primary-color);
+        border:2px solid var(--tabs-primary-color);
+    }
+
+    .tabs_input:checked + .tabs_label {
+        color:#000000;
+        background-color:var(--tabs-primary-color);
+    }
+    
+    .tabs_content {
+        width:100%;
+        display:none;
+        padding-top:10px;
+    }
+
+    #tabs_input1:checked ~ #tabs_content1,
+    #tabs_input2:checked ~ #tabs_content2,
+    #tabs_input3:checked ~ #tabs_content3 {
+        display:block;
+    }
+    
+    .tabs_desc {
+        font:var(--tabs-desc-font-size) var(--tabs-desc-font-family);
+    }
+    </style>
+</body>
+</html>
