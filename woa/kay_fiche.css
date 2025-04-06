@@ -27,13 +27,14 @@
 }
 
 .labels_magie img {
-	min-width:40px;
+	max-width:40px;
 }
 
 .kay_check {
 	display:none;
 }
 
+.kay_defaut,
 .kay_eau,
 .kay_air,
 .kay_feu,
@@ -49,6 +50,7 @@
 	display:none;
 }
 
+#kay_defaut:checked ~ .fiche_rpc_prez_d .kay_defaut,
 #kay_eau:checked ~ .fiche_rpc_prez_d .kay_eau,
 #kay_air:checked ~ .fiche_rpc_prez_d .kay_air,
 #kay_feu:checked ~ .fiche_rpc_prez_d .kay_feu,
