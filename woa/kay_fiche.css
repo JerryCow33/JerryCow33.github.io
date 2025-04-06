@@ -17,7 +17,7 @@
 	width:667px;
 	margin:auto;
 	display:grid;
-	grid-template-columns: repeat(12, 40px);
+	grid-template-columns: repeat(13, 40px);
 	justify-content: center;
 	margin-bottom:20px;
 }
