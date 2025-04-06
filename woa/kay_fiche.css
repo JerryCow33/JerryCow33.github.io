@@ -19,7 +19,7 @@
 	display:none;
 }
 
-#kay_eau:checked ~ img.kay_eau,
+#kay_eau:checked ~ img.kay_eau/*,
 #kay_air:checked ~ img.kay_air,
 #kay_feu:checked ~ img.kay_feu,
 #kay_terre:checked ~ img.kay_terre,
@@ -30,6 +30,6 @@
 #kay_lumiere:checked ~ img.kay_lumiere,
 #kay_ombre:checked ~ img.kay_ombre,
 #kay_feu_divin:checked ~ img.kay_feu_divin,
-#kay_ombre_givre:checked ~ img.kay_ombre_givre {
+#kay_ombre_givre:checked ~ img.kay_ombre_givre*/ {
 	display:block;
 }
