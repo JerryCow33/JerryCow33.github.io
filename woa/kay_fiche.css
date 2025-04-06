@@ -48,6 +48,11 @@
 .kay_feu_divin,
 .kay_ombre_givre {
 	display:none;
+	border-radius:10px;
+}
+
+.fiche_rpc_prez_d_ava {
+	border-radius:10px;
 }
 
 #kay_defaut:checked ~ .fiche_rpc_prez_d .kay_defaut,
