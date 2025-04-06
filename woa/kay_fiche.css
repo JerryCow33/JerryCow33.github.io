@@ -27,7 +27,7 @@
 }
 
 .labels_magie img {
-	width:40px;
+	min-width:40px;
 }
 
 .kay_check {
