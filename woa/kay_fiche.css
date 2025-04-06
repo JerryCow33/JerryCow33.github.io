@@ -1,0 +1,35 @@
+.labels_magie {
+	display:flex;
+	justify-content:center;
+}
+
+.labels_magie label {
+	cursor:pointer
+}
+
+.labels_magie img {
+	width:40px;
+}
+
+.kay_check {
+	display:none;
+}
+
+.fiche_rpc_prez_d_ava img {
+	display:none;
+}
+
+#kay_eau:checked ~ img.kay_eau,
+#kay_air:checked ~ img.kay_air,
+#kay_feu:checked ~ img.kay_feu,
+#kay_terre:checked ~ img.kay_terre,
+#kay_foudre:checked ~ img.kay_foudre,
+#kay_glace:checked ~ img.kay_glace,
+#kay_nature:checked ~ img.kay_nature,
+#kay_metal:checked ~ img.kay_metal,
+#kay_lumiere:checked ~ img.kay_lumiere,
+#kay_ombre:checked ~ img.kay_ombre,
+#kay_feu_divin:checked ~ img.kay_feu_divin,
+#kay_ombre_givre:checked ~ img.kay_ombre_givre {
+	display:block;
+}
