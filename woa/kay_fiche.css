@@ -1,10 +1,29 @@
+:root {
+	--magie-eau-color:#2b90b6;
+	--magie-air-color:#a1c8d3;
+	--magie-feu-color:#d74415;
+	--magie-terre-color:#906026;
+	--magie-foudre-color:#da9700;
+	--magie-glace-color:#4d889e;
+	--magie-nature-color:#5c7e18;
+	--magie-metal-color:#9a9276;
+	--magie-lumiere-color:#fede60;
+	--magie-ombre-color:#a57fa4;
+	--magie-feu_divin-color:#cabf00;
+	--magie-ombre_givre-color:#b864e3;
+}
+
 .labels_magie {
-	display:flex;
-	justify-content:center;
+	width:667px;
+	margin:auto;
+	display:grid;
+	grid-template-columns: repeat(12, 40px);
+	justify-content: center;
+	margin-bottom:20px;
 }
 
 .labels_magie label {
-	cursor:pointer
+	cursor:pointer;
 }
 
 .labels_magie img {
@@ -15,21 +34,296 @@
 	display:none;
 }
 
-.fiche_rpc_prez_d_ava img {
+.kay_eau,
+.kay_air,
+.kay_feu,
+.kay_terre,
+.kay_foudre,
+.kay_glace,
+.kay_nature,
+.kay_metal,
+.kay_lumiere,
+.kay_ombre,
+.kay_feu_divin,
+.kay_ombre_givre {
 	display:none;
 }
 
-#kay_eau:checked ~ img.kay_eau/*,
-#kay_air:checked ~ img.kay_air,
-#kay_feu:checked ~ img.kay_feu,
-#kay_terre:checked ~ img.kay_terre,
-#kay_foudre:checked ~ img.kay_foudre,
-#kay_glace:checked ~ img.kay_glace,
-#kay_nature:checked ~ img.kay_nature,
-#kay_metal:checked ~ img.kay_metal,
-#kay_lumiere:checked ~ img.kay_lumiere,
-#kay_ombre:checked ~ img.kay_ombre,
-#kay_feu_divin:checked ~ img.kay_feu_divin,
-#kay_ombre_givre:checked ~ img.kay_ombre_givre*/ {
+#kay_eau:checked ~ .fiche_rpc_prez_d .kay_eau,
+#kay_air:checked ~ .fiche_rpc_prez_d .kay_air,
+#kay_feu:checked ~ .fiche_rpc_prez_d .kay_feu,
+#kay_terre:checked ~ .fiche_rpc_prez_d .kay_terre,
+#kay_foudre:checked ~ .fiche_rpc_prez_d .kay_foudre,
+#kay_glace:checked ~ .fiche_rpc_prez_d .kay_glace,
+#kay_nature:checked ~ .fiche_rpc_prez_d .kay_nature,
+#kay_metal:checked ~ .fiche_rpc_prez_d .kay_metal,
+#kay_lumiere:checked ~ .fiche_rpc_prez_d .kay_lumiere,
+#kay_ombre:checked ~ .fiche_rpc_prez_d .kay_ombre,
+#kay_feu_divin:checked ~ .fiche_rpc_prez_d .kay_feu_divin,
+#kay_ombre_givre:checked ~ .fiche_rpc_prez_d .kay_ombre_givre {
 	display:block;
+}
+
+#kay_eau:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-eau-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-eau-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-eau-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-eau-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-eau-color) !important
+	}
+}
+
+#kay_air:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-air-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-air-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-air-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-air-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-air-color) !important
+	}
+}
+
+#kay_feu:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-feu-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-feu-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-feu-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-feu-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-feu-color) !important
+	}
+}
+
+#kay_terre:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-terre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-terre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-terre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-terre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-terre-color) !important
+	}
+}
+
+#kay_foudre:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-foudre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-foudre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-foudre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-foudre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-foudre-color) !important
+	}
+}
+
+#kay_glace:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-glace-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-glace-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-glace-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-glace-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-glace-color) !important
+	}
+}
+
+#kay_nature:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-nature-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-nature-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-nature-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-nature-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-nature-color) !important
+	}
+}
+
+#kay_metal:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-metal-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-metal-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-metal-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-metal-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-metal-color) !important
+	}
+}
+
+#kay_lumiere:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-lumiere-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-lumiere-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-lumiere-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-lumiere-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-lumiere-color) !important
+	}
+}
+
+#kay_ombre:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-ombre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-ombre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-ombre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-ombre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-ombre-color) !important
+	}
+}
+
+#kay_feu_divin:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-feu_divin-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-feu_divin-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-feu_divin-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-feu_divin-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-feu_divin-color) !important
+	}
+}
+
+#kay_ombre_givre:checked {
+	&  ~ .fiche_rpc_g .fiche_rpc_g_title {
+		color:var(--magie-ombre_givre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d .fiche_rpc_prez_champs span{
+		color:var(--magie-ombre_givre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d h1{
+		color:var(--magie-ombre_givre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas span{
+		color:var(--magie-ombre_givre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_enbas h2{
+		color:var(--magie-ombre_givre-color) !important
+	}
 }
