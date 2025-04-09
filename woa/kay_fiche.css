@@ -136,6 +136,15 @@ hr {
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-air-color) !important
 	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-air-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-air-color);
+
+	}
 }
 
 #kay_feu:checked {
@@ -157,6 +166,15 @@ hr {
 
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-feu-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-feu-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-feu-color);
+
 	}
 }
 
@@ -180,6 +198,15 @@ hr {
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-terre-color) !important
 	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-terre-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-terre-color);
+
+	}
 }
 
 #kay_foudre:checked {
@@ -201,6 +228,15 @@ hr {
 
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-foudre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-foudre-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-foudre-color);
+
 	}
 }
 
@@ -224,6 +260,15 @@ hr {
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-glace-color) !important
 	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-glace-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-glace-color);
+
+	}
 }
 
 #kay_nature:checked {
@@ -245,6 +290,15 @@ hr {
 
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-nature-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-nature-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-nature-color);
+
 	}
 }
 
@@ -268,6 +322,15 @@ hr {
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-metal-color) !important
 	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-metal-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-metal-color);
+
+	}
 }
 
 #kay_lumiere:checked {
@@ -289,6 +352,15 @@ hr {
 
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-lumiere-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-lumiere-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-lumiere-color);
+
 	}
 }
 
@@ -312,6 +384,15 @@ hr {
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-ombre-color) !important
 	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-ombre-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-ombre-color);
+
+	}
 }
 
 #kay_feu_divin:checked {
@@ -334,6 +415,15 @@ hr {
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-feu_divin-color) !important
 	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-feu_divin-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-feu_divin-color);
+
+	}
 }
 
 #kay_ombre_givre:checked {
@@ -355,5 +445,14 @@ hr {
 
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-ombre_givre-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_d hr {
+		border-top:1px solid var(--magie-ombre_givre-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_d .kay_titre {
+		background-color:var(--magie-ombre_givre-color);
+
 	}
 }
