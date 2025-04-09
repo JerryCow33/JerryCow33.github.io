@@ -34,6 +34,20 @@
 	display:none;
 }
 
+hr {
+	border:0px;
+	border-top:1px solid #cccccc;
+}
+
+.kay_titre {
+	background-color:#cccccc;
+	font:24px "Bebas Neue";
+	color:#282828;
+	margin:0px;
+	padding:15px;
+	border-radius:5px;
+}
+
 .kay_defaut,
 .kay_eau,
 .kay_air,
@@ -90,6 +104,19 @@
 
 	&  ~ .fiche_rpc_prez_enbas h2{
 		color:var(--magie-eau-color) !important
+	}
+
+	&  ~ .fiche_rpc_prez_txt_second hr {
+		border:0px;
+		border-top:1px solid var(--magie-eau-color);
+	}
+	
+	&  ~ .fiche_rpc_prez_txt_second .kay_titre {
+		background-color:var(--magie-eau-color);
+		font:24px "Bebas Neue";
+		color:#282828;
+		margin:0px;
+		padding:15px;
 	}
 }
 
