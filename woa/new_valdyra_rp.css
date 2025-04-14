@@ -58,6 +58,21 @@
 	--val-diag-orihana-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/orihana2.png");
 }
 
+.valdyrarp_imgleft, .kayrp_imgleft {
+	width:200px;
+	float:left;
+	margin-right:5px;
+	margin-top:5px;
+}
+
+.valdyrarp_imgright, .kayrp_imgright {
+	width:200px;
+	float:right;
+	margin-left:5px;
+	margin-top:5px;
+}
+
+/* VALDYRA */
 .valdyrarp_main {
 	margin: 0px auto;
 	background-color: #282828;
@@ -107,22 +122,56 @@
     	background-size: cover;
 }
 
-.valdyrarp_imgleft {
-	width:200px;
-	float:left;
-	margin-right:5px;
-	margin-top:5px;
+/* KAY */
+.kayrp_main {
+	margin: 0px auto;
+	background-color: #282828;
+	font-family: "Open Sans", sans-serif;
+	font-size: 15px;
+	text-align: justify;
+	height: auto;
+	color: #999999; 
 }
 
-.valdyrarp_imgright {
-	width:200px;
-	float:right;
-	margin-left:5px;
-	margin-top:5px;
+.kayrp_ban {
+	height:200px;
+	/*background:url("https://zupimages.net/up/21/51/tx9h.png") no-repeat top left;*/
+	background:url("https://cdn.midjourney.com/dd83286e-7cde-4822-8006-702abdd7c4be/0_1.png") no-repeat top;
+    	background-size: cover;
+	font-size: 35px;
+	color: steelblue;
+	font-family: "Bebas Neue", serif;
+	font-weight: bold;
+	padding-left: 50px;
+	display:flex;
+	justify-content:flex-end;
+	align-items:center;
+	line-height:30px;
+	text-align:left;
+	text-shadow: 1px 1px 2px black;
+}
+
+.kayrp_feat {
+	border-top:2px solid indianred;
+	color: #cccccc;
+	font-size: 20px;
+	font-family: 'Bebas Neue', serif;
+	text-shadow: 1px 1px 2px black;
+}
+
+.kayrp_text {
+	padding:20px;
+	border-top: 9px solid indianred;
+	border-bottom: 9px solid indianred;	
+}
+
+.kayrp_foot {
+	height:150px;
+	background:url("https://cdn.midjourney.com/d1a23cb1-856b-4c21-a101-04016af88c7e/0_3.png") no-repeat top;
+    	background-size: cover;
 }
 
 /* DIALOGUES V2 */
-
 .val_dial {
 	min-height:calc(10px + var(--val-diag-width-img));
 	border-radius:var(--val-diag-border-radius) 10px 10px var(--val-diag-border-radius);
