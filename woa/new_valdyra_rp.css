@@ -94,7 +94,7 @@
 	font-weight: bold;
 	padding-right: 50px;
 	display:flex;
-	justify-content:flex-end;
+	justify-content:flex-start;
 	align-items:center;
 	line-height:30px;
 	text-align:right;
@@ -134,17 +134,16 @@
 }
 
 .kayrp_ban {
-	height:200px;
-	/*background:url("https://zupimages.net/up/21/51/tx9h.png") no-repeat top left;*/
+	height:250px;
 	background:url("https://cdn.midjourney.com/dd83286e-7cde-4822-8006-702abdd7c4be/0_1.png") no-repeat top;
     	background-size: cover;
 	font-size: 35px;
-	color: steelblue;
+	color: indianred;
 	font-family: "Bebas Neue", serif;
 	font-weight: bold;
 	padding-left: 50px;
 	display:flex;
-	justify-content:flex-end;
+	justify-content:flex-start;
 	align-items:center;
 	line-height:30px;
 	text-align:left;
@@ -166,7 +165,7 @@
 }
 
 .kayrp_foot {
-	height:150px;
+	height:250px;
 	background:url("https://cdn.midjourney.com/d1a23cb1-856b-4c21-a101-04016af88c7e/0_3.png") no-repeat top;
     	background-size: cover;
 }
