@@ -99,7 +99,7 @@
 	font-weight: bold;
 	padding-right: 50px;
 	display:flex;
-	justify-content:flex-start;
+	justify-content:flex-end;
 	align-items:center;
 	line-height:30px;
 	text-align:right;
