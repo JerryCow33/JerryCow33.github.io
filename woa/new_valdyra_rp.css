@@ -155,6 +155,10 @@
 	text-shadow: 1px 1px 2px black;
 }
 
+.kayrp_titre {
+	width:50%;
+}
+
 .kayrp_feat {
 	border-top:2px solid indianred;
 	color: #cccccc;
