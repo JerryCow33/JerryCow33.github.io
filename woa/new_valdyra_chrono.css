@@ -601,6 +601,45 @@
 	margin: 0;
 }
 
+/* LIENS FACTIONS */
+
+.lien_reike {
+    border-color:var(--color_reike);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--color_reike);
+
+        & span {
+        	color: var(--color_reike);
+        }        
+    }
+}
+
+.lien_repu {
+    border-color:var(--color_repu);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--color_repu);
+
+        & span {
+        	color: var(--color_repu);
+        }        
+    }
+}
+
+.lien_autres {
+    border-color:var(--color_autre);
+
+    & .woa_valdyra_newlien_nom {
+	    border-color: var(--color_autre);
+
+        & span {
+        	color: var(--color_autre);
+        }        
+    }
+}
+
+/* LIENS CLAN */
 .lien_valdyra {
     border-color:var(--val-valdyra-color);
 
