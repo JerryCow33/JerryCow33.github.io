@@ -13,6 +13,32 @@
             align-items: center;
             font-size:14px;
         }
+
+        .page_hidden {
+          display:none;
+        }
+        
+        .page_navigation {
+          display:flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        .page_next, .page_previous {
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 24px;
+            padding: 5px;
+            flex:1;
+        }
+
+        .page_next {
+            text-align:right;
+        }
+
+        .page_previous {
+            text-align:left;
+        }
+
         .jean_banniere {
             max-width: 100%;
         }
@@ -117,6 +143,13 @@
 </head>
 <body>
 <div class="conteneur">
+
+<div class="page_navigation">
+  <div class="page_previous"><a href="rp2.html" target="_self">&lt;&lt; Précédent</a></div>
+  <div class="page_next page_hidden"><a href="" target="_self">Suivant &gt;&gt;</a></div>
+</div>
+
+
 <div class="mep_pres_conteneur">
   <div class="mep_pres_titre_principal">Acte 3<br>Lagon bleu</div>
   <div class="mep_pres_titre_citation">Valdyra</div>
@@ -433,6 +466,11 @@
         <br>
         <div class="valdyrarp_foot"></div>
     </div>
+</div>
+
+<div class="page_navigation">
+  <div class="page_previous"><a href="rp2.html" target="_self">&lt;&lt; Précédent</a></div>
+  <div class="page_next page_hidden"><a href="" target="_self">Suivant &gt;&gt;</a></div>
 </div>
 
 </div>
