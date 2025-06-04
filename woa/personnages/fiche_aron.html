@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&amp;family=Bebas+Neue&amp;family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://woa-rpg.forumactif.com/0-ltr.css" type="text/css">
+    <title>Document</title>
+    <style>
+        body {
+            display:flex;
+            align-items: center;
+        }
+        .jean_banniere {
+            max-width: 100%;
+        }
+        
+        .jean_pouvoir,
+        .mep_po {
+            text-transform: uppercase
+        }
+
+        .jean_credits,
+        .jean_palier {
+            min-width: 150px;
+            max-width: 150px
+        }
+
+        .mep_pres_pseudo {
+            text-shadow: 1px 1px 2px black;
+            font: 40px Bebas Neue;
+            margin-bottom: -10px
+        }
+
+        .mep_pres_citation {
+            text-shadow: 1px 1px 2px black;
+            line-height: 14px
+        }
+
+        .mep_su_titrebord {
+            height: 6px;
+            background: -webkit-linear-gradient(180deg, #222223, #686666);
+            width: 620px
+        }
+
+        .mep_pres_img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            -moz-border-radius: 50%;
+            -webkit-border-radius: 50%;
+            border: 8px solid #4d4c4d;
+            float: left;
+            margin: 15px 15px 0 20px
+        }
+
+        .jean_titre {
+            text-align: center;
+            font-family: "Bebas Neue", sans-serif;
+            font-size: 24px;
+            padding: 5px;
+            border-top: 2px solid #424243;
+            border-bottom: 2px solid #424243;
+            color: #424243
+        }
+
+        .jean_titre span {
+            font-size: 18px;
+            color: #282828
+        }
+
+        .jean_ligne {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 1px solid #424243
+        }
+
+        .jean_ligne:first-child {
+            border-top: 1px solid #424243
+        }
+
+        .jean_pouvoir {
+            font-weight: 700;
+            flex-grow: 1
+        }
+
+        .jean_pouvoir span {
+            font-size: 11px;
+            font-style: italic;
+            color: #424243;
+            font-weight: 400;
+            text-transform: none
+        }
+
+        .jean_palier {
+            text-align: center
+        }
+
+        .jean_credits {
+            text-align: center;
+            font-weight: 700
+        }
+
+        .conteneur {
+            width: 620px;
+            color: #1B1B1C;
+        }
+
+        .theme_sombre .mep_fond_pres {
+            background: -webkit-linear-gradient(270deg, #1B1B1C, #303031);
+            color: #848686;
+            padding-bottom: 10px;
+        }
+
+        .theme_sombre .mep_pres_bloctitre {
+            background: -webkit-linear-gradient(180deg, #424243, #656566);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .theme_sombre .mep_pres_bloc {
+            padding: 10px;
+            margin-left: 20px;
+            background: -webkit-linear-gradient(180deg, #1B1B1C, #303031);
+            width: 570px;
+            filter: drop-shadow(1px 1px 4px #1B1B1C);
+            text-align: justify;
+        }
+
+        .theme_sombre .mep_pres_titre_principal,
+        .theme_sombre .mep_pres_titre_citation {
+            font: 35px Bebas Neue;
+            border-top: 5px solid #303031;
+            border-bottom: 5px solid #303031;
+            padding: 5px;
+            background: #848686;
+            color: #1B1B1C;
+            padding-bottom: 0;
+        }
+
+        .theme_sombre .mep_pres_titre_principal {
+            text-align: center;
+        }
+
+        .theme_sombre .mep_pres_titre_citation {
+            text-align: center;
+            color: #1B1B1C;
+            font: 13px Open sans;
+            padding: 5px;
+        }
+
+        .pouvoirperso_ligne {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            border-bottom: 1px solid #424243;
+        }
+
+        .pouvoirperso_ligne:first-child {
+            border-top: 1px solid #424243;
+        }
+
+        .pouvoirperso_pouvoir {
+            text-transform: uppercase;
+            font-weight: bold;
+            flex-grow: 1;
+        }
+
+        .pouvoirperso_pouvoir span {
+            font-size: 11px;
+            font-style: italic;
+            color: #777777;
+            font-weight: normal;
+            text-transform: none;
+        }
+
+        .pouvoirperso_palier {
+            min-width: 150px;
+            max-width: 150px;
+            text-align: center;
+        }
+
+        .pouvoirperso_credits {
+            min-width: 150px;
+            max-width: 150px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .aron_histoire img {
+            max-width: 100%;
+        }
+
+        .theme_sombre .jean_titre {
+            color: #cccccc;
+        }
+
+        .theme_sombre .jean_titre span {
+            color: #999999;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="post_content">
+    <div class="conteneur">
+        <div class="mep_pres_conteneur theme_sombre">
+            <div class="mep_pres_titre_principal">Aron l'Ecarlate</div>
+            <img class="jean_banniere" src="https://zupimages.net/up/25/12/jgrf.png">
+            <div class="mep_pres_titre_citation">« Qu'ils meurent tous, et je fermerai les yeux. »</div>
+            <div class="mep_fond_pres">
+                <div class="mep_pres_infogen">INFORMATIONS GÉNÉRALES</div>
+                <div class="mep_pres_infos"><span class="mep_po">RACE :</span> Humain (réincarné)
+                    <br>&nbsp; &nbsp;<span class="mep_po">ÂGE :</span> 52 ans
+                    <br>&nbsp; &nbsp;<span class="mep_po">TAILLE &amp; POIDS :</span> 1m88 pour 102kg
+                    <br>&nbsp; &nbsp;<span class="mep_po">FACTION :</span> Reike
+                    <br>&nbsp; &nbsp;<span class="mep_po">RELIGION :</span> Athée</div> &nbsp;
+                <div class="mep_pres_infos"><span class="mep_po">SEXE :</span> Masculin
+                    <br>&nbsp; &nbsp;<span class="mep_po">MÉTIER :</span> Rebelle (avant, mercenaire et boucher)
+                    <br>&nbsp; &nbsp;<span class="mep_po">ALIGNEMENT :</span> Chaotique Mauvais (avant, neutre bon)
+                    <br>&nbsp; &nbsp;<span class="mep_po">RANG DÉSIRÉ :</span> C
+                    <br>&nbsp; &nbsp;<span class="mep_po">AVATAR :</span> Dark Souls 2 - Bearer of the Curse</div>
+                <div class="mep_pres_bloctitre">Histoire du personnage</div>
+                <div class="mep_pres_bloc aron_histoire">
+                    <div class="jean_titre">Ainsi naquit Aron des Tempêtes
+                        <br><span>Avatar de Lothab</span></div>
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Lothab voyait l'humanité d'un mauvais oeil. Trop prolifique, trop prompt à s'adapter. Il redoutait cette race de par leurs capacités à évoluer à une vitesse stupéfiante. Sa méfiance grandissait à mesure des siècles, au
+                    point où sa colère provoquait des tempêtes dans tout le Sekai. Alors Kazgoth lui proposa de concevoir des anges à l'image de la puissance du "Dernier Dieu", pour contrebalancer l'expansion des humains. Lothab esquissa un sourire, l'idée
+                    lui plaisait. Alors Kazgoth se mit à l'ouvrage, et proposa au plus puissant des Titans le premier d'entre eux. Impressionné par la puissance qui se dégageait de l'oeuvre faite de chair, de fourrure, de crocs et de griffes, Lothab accorda
+                    à ce premier ange le pouvoir de créer et contrôler les tempêtes. Ainsi naquit Aron des Tempêtes, Avatar de Lothab et incarnation de sa puissance.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;En tant qu'Avatar de Lothab, Aron disposait d'une grande partie de ses pouvoirs, et d'une force colossale. Particulièrement fier de son rang, il ne vivait que pour servir les Titans, lui et ses congénères. Mais il avait
+                    également hérité de son caractère irascible et lunatique. Pire encore, dans son sang coulait l'aversion envers les humains, cette race qu'il jugeait inférieure. Des parasites indignes de fouler les terres du Sekai. Les terres des Titans.
+                    Les premières années de leur naissance marquèrent le monde des premiers raids des anges de Lothab sur les contrées humaines, accompagnés des tempêtes fracassantes surgies des mains griffues d'Aron. Des chaînes montagneuses du Grand
+                    Nord, leur fief, une peur primale gagna le cœur des hommes, à la grande satisfaction d'Aron, sous l'œil inquisiteur de Lothab.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Mais Aron sous-estima la faculté des hommes à se relever. Aveuglé par la haine qu'il portait à cette race de faibles mécréants qu'il voyait comme du maigre bétail, il ne se soucia guère des voix qui s'élevaient. Tout d'abord
+                    murmures inaudibles, elles gagnèrent en volume et en nombre. Le Maître des Tempêtes se rendit compte du vent du changement. Trop tard. L'Humanité, de même que les autres races du Sekai, se rebellèrent contre les Titans. Dernier rempart
+                    face à leur colère, les anges de Lothab se battirent face à la déferlante humaine. Les pertes furent conséquentes, et la foudre s'abattit sur nombre d'entre eux. Mais les hommes furent trop nombreux, même face à la puissance des séides
+                    du Dernier Dieu et les tempêtes d'Aron. Les enfants de Lothab tombèrent un à un, l'étau se resserrait autour d'Aron, son Avatar.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Alors il implora l'aide de son Roi, de son Dieu, de celui qu'il représentait. Mais Lothab fit la sourde oreille, préférant se préparer à défendre sa propre vie. Alors Aron comprit qu'il allait devoir combattre seul. Alors
+                    il poussa un rugissement déchirant le ciel, tonitruant du tonnerre grondant. Lui vivant, les hommes ne passeraient pas la barrière montagneuse du Grand Nord. Ils ne pourraient pas entrer dans son repaire. Et pourtant, malgré les blizzards
+                    aussi cinglants que des lames de rasoir, malgré les éclairs assourdissants, rien ne put stopper l'avancée inexorable de l'armée humaine, rien ne put altérer leur volonté de se libérer du joug des Titans.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Acculé, désespérément seul, Aron hurla une nouvelle fois. Un dernier cri effrayant, l'appel de toute sa rage, sa douleur d'avoir perdu ses congénères. Sa fureur d'avoir été abandonné par les Titans. Sa haine exacerbée
+                    envers ces hommes et ces femmes osant bafouer son autorité. Il en fit la promesse, alors que les pointes des lances et des flèches fusèrent sur lui, transperçant son épaisse fourrure blanche : il reviendra sur le Sekai. Et il les tuera
+                    tous, jusqu'au dernier.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Pour ses frères et sœurs.
+                    <br>&nbsp; &nbsp;Et pour son orgueil.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Ainsi mourut Aron des Tempêtes, Avatar de Lothab.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;
+                    <div class="jean_titre">Ainsi naquit Aron Bell
+                        <br><span>Patriarche protecteur</span></div>
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il fumait sa pipe sur le rebord de la fenêtre de sa chambre, les yeux plongés dans une contemplation placide de l'architecture tentaculaire de la capitale du Reike. Nul n'aurait pensé – pas même lui – que ce grand gaillard
+                    bien bâti allait raccrocher son épée et se reconvertir en boucher, ouvrir son propre commerce et vivre une vie simple. Lui qui avait tant écumé les déserts, les steppes et les rochers où son épée et son besoin d'argent lui ordonnaient
+                    d'opérer, Aron Bell n'aurait jamais cru être capable d'une vie plus sédentaire, moins dangereuse. Il n'avait jamais cru être capable d'aimer, ni même de fonder une famille.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Pourtant, tout cela lui était tombé sur le coin de sa gueule cassée. Lui, jeune et fringuant guerrier ne jurant que par la clameur du combat, fier de ses prouesses martiales et de sa force exacerbée, macho invétéré ne
+                    cherchant qu'à profiter du moment présent. Une femme avait réussi à botter en touche tous ses idéaux, autant qu'elle avait réussi à lui botter le cul. Elle s'appelait Norah, on la surnommait "l'infernale" dans le milieu. Une mercenaire
+                    aguerrie, une maîtresse dans le contrôle du feu, et un caractère volcanique, et un concurrent sérieux pour Aron Bell. Ils croisèrent souvent le fer, flirtaient avec le feu, se volaient tour à tour les contrats. Jusqu'à ce qu'un jour,
+                    Aron reconnut en Norah une combattante digne de son respect. Ce jour-là, l'Infernale dévoila à Aron une facette plus profonde de sa personnalité. Un cœur libre, et une volonté d'aimer.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Ce jour-là, Aron et Norah finirent par s'embrasser.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;L'homme fut rejoint dans sa contemplation des rues d'Ikusa par une femme à la longue et flamboyante chevelure ondulée, telles des flammes au repos. Sa tête posée sur l'épaule massive de son compagnon, elle poussa un soupir
+                    apaisé, le sourire radieux, caressant d'une main son ventre rond. "Sans regret ?", demanda-t-elle à son homme. "Aucun !", répondit celui-ci, arborant un sourire bienveillant. Il avait choisi de marcher à ses côtés, de vivre une aventure
+                    commune, celle d'une vie de famille. Lui, le rocher sur pattes. Elle, la flamme ardente. Leurs cœurs avaient trouvé un accord mutuel.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Accord qui donna naissance à leur premier enfant. Le premier d'une fratrie soudée sous la tutelle d'un père attentif et d'une mère protectrice.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Ah, les enfants Bell. L'aîné avait la carrure et la force du père, et la hargne de la mère. Il avait pioché dans les deux ce caractère teigneux, impulsif, vivace et entier. Aron Jr. ne craignait personne et avait tendance
+                    à surprotéger ses frères et sœurs. Mais surtout, il voulait être digne de ses parents, qu'il aimait plus que tout. Il voulait veiller sur son cadet Niklas, et sur sa benjamine Alinka, quitte à jouer le grand frère sévère et dur. Il
+                    les aimait, au fond de lui.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Niklas, justement, avait hérité de la force tranquille d'Aron et de l'amour sincère de Norah. Il était comme l'eau d'un fleuve calme, jouant souvent les médiateurs entre Junior et Alinka, les réprimandait sur leurs erreurs,
+                    et devait même parfois jouer des poings lorsque les mots ne suffisaient pas. C'était uniquement pour leur bien, et les deux autres ne lui en voulaient pas.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Quant à la petite dernière, elle avait pratiquement tout de la mère. Ses yeux d'un bleu délavé. Sa chevelure d'un rouge flamboyant. Et une force de caractère sans commune mesure. Sans parler de sa puissance physique hors
+                    du commun pouvant presque rivaliser avec celle de son frère ainé. Une véritable boule de nerfs faite femme, qui n'avait jamais froid aux yeux, une fierté et une spontanéité provoquant bon nombre d'engueulades entre elle et Junior,
+                    allant bien souvent aux mains. Elle ne se laissait pas faire face à cette bande d'hommes. Mais elle les aimait.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Et Aron les aimait tous autant qu'ils sont. Ses enfants. Avait-il un seul instant pensé à fonder une famille ? Non. A des lieues même d'y avoir songé. S'énervait-il face aux exactions de sa progéniture ? Parfois, pour
+                    les remettre à leur place, et leur faire comprendre les difficultés de la vie au Reike. Regrettait-il ? Non, jamais. Il arborait toujours ce même sourire bienveillant à l'égard de ses enfants. Il les entraînait aux arts martiaux pour
+                    qu'ils puissent se défendre. Il leur apprenait les rudiments de la boucherie. Il les avait toujours soutenus. Comme le jour où Junior et Niklas avaient décidé d'intégrer les rangs de l'armée du Reike.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Toujours accoudé sur le rebord de sa fenêtre, appréciant le fumet du tabac s'échappant de sa pipe en bois, Aron regardait pour la première fois vers le futur. Norah et lui avaient des projets. La boutique fonctionnait
+                    bien, la viande réputée de bonne qualité et le savoir-faire des Bell forçait l'admiration des habitants du quartier. Aron ne regrettait rien.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Jusqu'au jour où les Ryssen envahirent le Reike. Le malheur frappa bientôt la famille Bell, et Aron serra une première fois ses poings d'une colère noire, contenue en son cœur blessé. L'armée leur rapportèrent les dépouilles
+                    de leurs enfants tombés au combat. Il dut supporter les cris et les sanglots de Norah et d'Alinka, les soutenant tel le dernier pilier d'une fondation sur le point de s'écrouler. Mais déjà son cœur criait à la colère, les yeux rivés
+                    sur les deux cadavres mutilés enveloppés dans des linges blancs. L'un d'eux en était même méconnaissable, brûlé jusqu'à l'os.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il enterra lui-même ses enfants, et garda ses griefs pour lui. Pour elles, il se devait de rester fort face à la guerre qui lui avait arraché ses enfants. La boucherie fut temporairement fermée. Deux longues années d'errement,
+                    de douleur, de feu et de flammes. Norah était inconsolable, mais pouvait compter sur Aron. Alinka s'affermissait davantage, avec un sens exacerbé de la justice l'amenant au devant des problèmes qu'Aron devait essuyer.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;La fin de la guerre, les Ryssen ressortirent victorieux, les têtes des souverains Draknys tombèrent aux pieds du nouveau roi, Tensai. Aron et Norah virent d'un mauvais œil l'avènement de ce conquérant devenu maître du
+                    Reike par le sang. Sans conviction, ils réouvrirent la boutique, mais déjà le cœur n'y était plus, et la qualité de leur travail s'en faisait ressentir.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Alors qu'ils revenaient d'une matinée de négociations avec un nouveau fournisseur, Aron et Norah Bell virent un attroupement de gardes devant leur boutique. Un nouveau drame, un nouveau coup de poignard dans le cœur des
+                    parents. La petite dernière avait tué deux Ryssen, réduit leurs têtes en charpie. De nouveau, Aron ne disait mot. De nouveau il serra le poing. Et devant la mascarade de procès, voyant sa fille chérie traînée dans la boue par l'assemblée,
+                    son cœur se brisa. Il ne croyait pas au meurtre. Norah non plus. Alinka n'avait jamais pu faire une chose pareille sans raison.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Ils ressortirent de la cour du palais sans un mot. Ils échangèrent des regards. D'un commun accord, ils décidèrent de reprendre les armes. De les faire payer. Et de trouver un moyen de libérer Alinka d'un sort plus cruel
+                    que la mort.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;
+                    <div class="jean_titre">Ainsi naquit Aron l'Ecarlate
+                        <br><span>Englouti par la haine</span></div>
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;L'énorme épée se planta dans le torse de sa victime, pulvérisant les os, déchirant les chairs dans une gerbe de sang. Un cri d'agonie, puis le silence. Le rouge du fluide vital s'ajouta aux autres vestiges de ses précédentes
+                    tueries au fil de son arme. Il leva les yeux vers le ciel, inspira un bon coup. Derrière lui, un monticule de cadavres démembrés, découpés, broyés. Des Ryssens. Des Reikois. Des ennemis à ses yeux révulsés par la haine. Il en restait
+                    encore foulant ce monde, beaucoup trop. Il ne s'arrêterait pas avant que le dernier Ryssen ne lâche son dernier souffle. L'Entité lui souffla de continuer, seule voix qu'il réussit à écouter, seul soutien de son cœur noirci par la
+                    colère et la douleur. Désillusion crade déformant ses pensées, ses souvenirs.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Aron Bell était mort, tué de ses propres mains lorsqu'il prit une dernière fois dans ses bras sa bien-aimée. Ses derniers espoirs d'une vie meilleure lorsque des éclairs jaillirent soudain de son corps massif, rôtissant
+                    sur place sa moitié, et le foetus de deux mois qu'elle portait en son ventre. Sa dernière parcelle d'humanité, ses dernières espérances, envolées. L'Entité jubilait, l'heure viendra où l'esprit de l'humain sera anéanti. Arrivera le
+                    jour où il renaîtra de la carcasse de cet être inférieur, en pleine possession de toute sa puissance. Et viendra ce jour où sa rage déferlera sur le Reike, et tout le Sekai.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Mais l'humain résistait à ses suggestions. Il lui restait encore une once d'humanité. Un soupçon de lucidité. Une maigre étincelle dans ce maëlstrom de souffrance, de rage, de fureur. Une lueur nommée Alinka. Le temps
+                    viendra où l'Entité le poussera à la tuer. Elle, sa propre fille. Et alors, son esprit se brisera complètement. Et ainsi, Aron des Tempêtes ressurgira.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Nombre de corps semés sur le passage de cet homme en armure, passés sur le fil rugueux de sa lourde et large épée. Les plaques métalliques s'étaient teintées de rouge, ses armes maculées du sang de ses victimes. Aron Bell
+                    n'était plus qu'un vagabond découpant chaque homme, femme, enfant portant la marque des Ryssen. Chaque être vivant ayant prêté allégeance au Reike, à son Roi, à sa Reine. Lui, l'ancien guerrier fier et impétueux. Lui, l'ancien boucher
+                    et père de famille.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Aron Bell n'était plus que l'ombre de lui-même. Il ne méritait plus de porter un instant de plus son nom. Il devint ainsi Aron l'Ecarlate, à l'armure teintée du sang de ceux qu'il a tués.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il était devenu porteur de la haine de l'Entité germant dans son esprit.
+                    <br>&nbsp; &nbsp;Il était devenu Sa colère personnifiée.
+                    <br>&nbsp; &nbsp;Il était devenu le Boucher des Ryssen.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il trouvera le salut dans la mort. Et rejoindra sa famille dans les cendres d'un monde qui lui a tout pris.</div>
+                <div class="mep_pres_bloctitre">Physique et psychologie</div>
+                <div class="mep_pres_bloc">S'il ne se démarque pas particulièrement par sa taille, même s'il reste grand pour un humain, Aron impressionne surtout par sa musculature développée et sa gueule épaisse. Il n'est pas bon de se prendre ne serait-ce qu'une baffe avec ses
+                    grosses paluches de bûcheron. Il intimide par ce regard qui toise et observe de pied en cap, et la lueur brillant au fond de ses yeux bruns n'émet que peu de doute quant à la seule chose qui anime ses gestes. La colère, la haine, la
+                    rancœur, sombres émotions pourrissant son cœur autrefois pétri de bonté et de bienveillance. N'espérez aucune pitié, aucune concession de sa part, il ne vous en accordera aucun. Son armure est au diapason de son état de santé, usé,
+                    abîmé, une carapace protégeant son identité, aussi dure que la pierre recouvrant son cœur noirci par la véhémence de son appréhension du monde.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il est loin le temps où il vous parlait à cœur ouvert, de sa voix grave dotée d'un tintement apaisant aux oreilles. Un bon père de famille, un mari aimant, bienveillant et protecteur. Un fier patriarche dont il ne faut
+                    cependant pas chercher des noises au risque de vous écraser par sa prestance guerrière, avant d'écraser votre nez d'un coup de poing bien placé qui vous allongera pendant dix bonnes minutes le temps de vous remettre du coup. Mettez-vous
+                    dans ses bons papiers, et il vous présentera les meilleurs morceaux de viande de sa boutique. Mais il en faudra beaucoup pour attiser sa colère, la patience dont il fait preuve vis-à-vis de ses enfants, notamment la petite dernière
+                    au caractère aussi fort que sa chère épouse.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il est loin le temps où il pouvait aisément vous accorder une deuxième chance, vous tendre la main pour vous relever, prendre les coups pour vous protéger. Il est fini ce temps, car désormais Aron Bell n'est plus. Désormais,
+                    il ne reste plus qu'Aron, l'Ecarlate, animé par sa seule vengeance, le corps brûlant de haine.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Haine à l'égard des Ryssen qui lui ont tout pris.
+                    <br>&nbsp; &nbsp;Haine envers les Draknys qui ont plié le genou devant l'envahisseur.
+                    <br>&nbsp; &nbsp;Haine envers les esclavagistes qui lui ont enlevé la dernière de sa lignée.
+                    <br>&nbsp; &nbsp;Haine envers lui-même pour ce qu'il est devenu : une épée rugissant du feu de la colère, une armure aussi froide que sa volonté, un cœur vidé de tout ce qui était bien.
+                    <br>&nbsp; &nbsp;A part une petite flamme. Une minuscule étincelle. Le visage de sa fille, encore vivante.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Esprit tourmenté, torturé, empoisonné par l'Entité, Aron ne distingue plus le vrai du faux, le bon du mauvais, l'innocent du coupable. Oh, bien sûr qu'il aura des moments de lucidité. Des moments où l'homme qu'il fut jadis
+                    prendra l'ascendant sur l'homme qu'il est devenu. Des moments rares où il vous parlera, retiendra son énorme lame et ne versera pas votre sang sur l'autel de la vengeance. Des moments futiles, vite rattrapés par sa fureur noire alimentée
+                    par le sombre désir de l'Entité. Alors son épée s'abattra sans hésitation. Et il continuera le chemin de la destruction.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Il les tuera tous. Il répandra leur sang sur la terre des dragons. Et alors seulement, lorsque le dernier des Ryssen tombera à ses pieds, privé de sa tête, il pourra retourner son épée contre le dernier obstacle à son
+                    repos : lui-même.
+                    <br>&nbsp; &nbsp;
+                    <br>&nbsp; &nbsp;Alors seulement il pourra fermer les yeux et goûter au repos de son âme.
+                    <br>&nbsp; &nbsp;</div>
+                <div class="mep_pres_bloctitre">Mort du personnage</div>
+                <div class="mep_pres_bloc">Dans son esprit bouffé par la haine du monde, harrassé par l'Entité n'attendant que de prendre le complet contrôle de son corps, Aron ne voit qu'une seule mort, celle qu'il trouvera au combat. Une délivrance pour lui, et secrètement, il
+                    espère au fond de son coeur voir sa fille le libérer pour de bon de ses tourments, afin de rejoindre sa bien-aimée.</div>
+                <div class="mep_pres_bloctitre">Pouvoirs (guerrier)</div>
+                <div class="mep_pres_bloc">Crédits de départ : 2000 + 1300 (humain) + 300 (wanted) = 3600 crédits
+                    <br>&nbsp; &nbsp;&nbsp;
+                    <br>&nbsp; &nbsp;Pouvoirs à la présentation :&nbsp;
+                    <br>&nbsp; &nbsp;&nbsp;
+                    <div>
+                        <!-- DEBUT LIGNE -->
+                        <div class="pouvoirperso_ligne">
+                            <div class="pouvoirperso_pouvoir">Force surhumaine
+                                <br><span>Porter facilement une tonne sur les épaules, créer des cratères plus ou moins importants au sol en frappant, détruire plusieurs types de bâtiments et barrières magiques solides, briser des métaux résistants, frapper physiquement à distance grâce à l'onde de choc créée par le mouvement (~10 m)</span></div>
+                            <div
+                            class="pouvoirperso_palier">Palier 2</div>
+                        <div class="pouvoirperso_credits">3000 crédits</div>
+                    </div>
+                    <!-- FIN LIGNE -->
+                    <!-- DEBUT LIGNE -->
+                    <div class="pouvoirperso_ligne">
+                        <div class="pouvoirperso_pouvoir">Renforcement de la constitution physique
+                            <br><span>Bloque les armes basiques et les pouvoirs de palier 1 (à l'exception des armes spéciales)</span></div>
+                        <div class="pouvoirperso_palier">Palier 1</div>
+                        <div class="pouvoirperso_credits">300 crédits</div>
+                    </div>
+                    <!-- FIN LIGNE -->
+                    <!-- DEBUT LIGNE -->
+                    <div class="pouvoirperso_ligne">
+                        <div class="pouvoirperso_pouvoir">Régénération
+                            <br><span>Régénère les blessures mineures instantanément</span></div>
+                        <div class="pouvoirperso_palier">Palier 1</div>
+                        <div class="pouvoirperso_credits">300 crédits</div>
+                    </div>
+                    <!-- FIN LIGNE -->
+                </div>
+                <br>&nbsp; &nbsp;
+                <br>&nbsp; &nbsp;Pouvoirs achetés après validation : aucun&nbsp;
+                <br>&nbsp; &nbsp;
+                <br>&nbsp; &nbsp;Immunité : Lumière
+                <br>&nbsp; &nbsp;Faiblesse : Ombre
+                <br>&nbsp; &nbsp;&nbsp;
+                <br>&nbsp; &nbsp;&nbsp; </div>
+            <div class="mep_pres_bloctitre">Objets et armes</div>
+            <div class="mep_pres_bloc">- Ancienne armure complète gravée et usée, rougie par le sang séché
+                <br>&nbsp; &nbsp;- Large zweihänder, rougie par le sang séché
+                <br>&nbsp; &nbsp;- Epée abîmée, rougie par le sang séché
+                <br>&nbsp; &nbsp;- Cape bleue mâtinée de fourrure abîmée
+                <br>
+                <br>Potion de métamorphose</div> <img src="https://zupimages.net/up/22/16/4y74.jpg" class="mep_pres_img">
+            <div class="mep_pres_perso">
+                <div class="mep_pres_persotitre">DERRIÈRE L'ÉCRAN</div><span class="mep_po">PSEUDO :</span> &nbsp;JerryCow
+                <br>&nbsp; &nbsp;<span class="mep_po">COMMENT AVEZ-VOUS CONNU LE FORUM ?</span> Top-site
+                <br>&nbsp; &nbsp;<span class="mep_po">AVIS SUR LE FORUM :</span> Vraiment beau design, liberté de création, il est cool !
+                <br>&nbsp; &nbsp;<span class="mep_po">FRÉQUENCE DE CONNEXION :</span> Assez fréquente</div>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+</div>
+</div>
+
+
+</body>
+</html>
