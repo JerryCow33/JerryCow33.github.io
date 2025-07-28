@@ -1,7 +1,8 @@
 :root {
-    --primary-text-color: darkred;
+    --primary-text-color: rgb(107, 76, 45);
     --secondary-text-color: #282828;
     --tertiary-text-color: sandybrown;
+    --quarter-text-color: darkred;
     --clear-text-color: #ffffff;
     --primary-font: 'Meddon', sans-serif;
     --secondary-font: 'Intel One Mono', monospace;
@@ -24,7 +25,7 @@
     font-size: 2em;
     line-height: 1em;
     margin: 20px 0px;
-    color: var(--primary-text-color);
+    color: var(--quarter-text-color);
     text-align: center;
 
 
@@ -61,7 +62,7 @@
         align-items: center;
         padding:0px 10px;
         margin:0px;
-        color: var(--primary-text-color);    
+        color: var(--quarter-text-color);    
 
         & span {
             align-self: flex-end;
@@ -102,17 +103,18 @@
     line-height: 1em;
     color: var(--secondary-text-color);
     display:flex;
+    flex-direction: column-reverse;
     justify-content: space-between;
-    align-items: flex-end;
     border-bottom: 1px solid var(--primary-text-color);
     margin-bottom: 10px;
     padding-left: 10px;
+    gap:3px;
 
     & span {
         font-family: var(--secondary-font);
         font-size: 0.6em;
         color: var(--primary-text-color);
-        margin-left: 10px;
+        padding-left: 30px;
         text-wrap-mode: nowrap;
     }
 }
@@ -239,8 +241,7 @@
         flex-direction: column;
 
         &:hover {
-            color: hsl(0, 100%, 75%); 
-            hsl(0, 100%, 75%);
+            color: var(--quarter-text-color); 
         }
 
 
