@@ -117,9 +117,9 @@
 
 .woa_kay_texte {
     margin: 0px 10px 5px 10px;
-    font-size:1.8em;
-    font-family: var(--tertiary-font);
-    line-height:1em;
+    font-size: 1em;
+    font-family: var(--secondary-font);
+    line-height: 1.3em;
     text-align: justify;
 
     &.norp {
