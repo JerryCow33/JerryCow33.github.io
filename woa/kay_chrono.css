@@ -267,7 +267,7 @@
 .woa_kay_separator {
     display: block;
     margin: auto;
-    max-width: 200px;
+    width: 200px;
 }
 
 .woa_kay_separator_mini {
