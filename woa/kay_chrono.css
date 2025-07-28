@@ -52,7 +52,6 @@
     align-items: center;
     font-family: var(--secondary-font);
     font-weight: bold;
-    color: var(--primary-text-color);
     padding: 5px 30px;
 
     & .woa_kay_label {
@@ -61,6 +60,7 @@
         justify-content: center;
         align-items: center;
         padding:0px 10px;
+        color: var(--primary-text-color);    
 
         & span {
             align-self: flex-end;
@@ -69,7 +69,9 @@
 }
 
 .woa_kay_input:checked + .woa_kay_label_content {
-    color: var(--secondary-text-color);
+    & .woa_kay_label {
+        color: var(--secondary-text-color);
+    }
 
     &:before {
         content: url(./images/feather-left.png);
@@ -82,8 +84,7 @@
 
 .woa_kay_content {
     text-align:left;
-    margin: 20px;
-    margin-bottom:50px;
+    margin: 0px 20px;
     display:none;
 }
 
