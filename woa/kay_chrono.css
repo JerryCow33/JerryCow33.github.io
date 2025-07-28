@@ -112,6 +112,8 @@
         font-family: var(--secondary-font);
         font-size: 0.6em;
         color: var(--primary-text-color);
+        margin-left: 10px;
+        text-wrap-mode: nowrap;
     }
 }
 
