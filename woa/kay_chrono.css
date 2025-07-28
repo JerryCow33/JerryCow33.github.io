@@ -101,7 +101,7 @@
     font-family: var(--primary-font);
     font-size: 2em;
     line-height: 1em;
-    color: var(--secondary-text-color);
+    color: var(--quarter-text-color);
     display:flex;
     flex-direction: column-reverse;
     justify-content: space-between;
