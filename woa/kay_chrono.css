@@ -280,7 +280,6 @@
     border-top:1px solid var(--primary-text-color);
     border-bottom:1px solid var(--primary-text-color);
     background:var(--primary-text-color);
-    margin-bottom:20px;
 
     & img {
         width: 600px;
