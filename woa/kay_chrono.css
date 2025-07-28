@@ -226,6 +226,8 @@
         font-size: 0.8em;
         text-transform: none;
         color:var(--clear-text-color);
+        margin-left: 10px;
+        text-wrap-mode: nowrap;
     }
 
     & a {
