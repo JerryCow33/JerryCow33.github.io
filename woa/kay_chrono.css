@@ -1,0 +1,291 @@
+:root {
+    --primary-text-color: darkred;
+    --secondary-text-color: #282828;
+    --tertiary-text-color: sandybrown;
+    --clear-text-color: #ffffff;
+    --primary-font: 'Meddon', sans-serif;
+    --secondary-font: 'Intel One Mono', monospace;
+    --tertiary-font: 'Rouge Script', cursive;
+    --vignette-termine-color: darkgreen;
+    --vignette-encours-color: indianred;
+    --vignette-archive-color: royalblue;
+    --vignette-aprevoir-color: #212122;
+}
+
+.woa_kay_conteneur {
+    background-image: url(./images/papyrus.png);
+    border-radius: 5px;
+    padding: 20px 0px;
+    color: var(--secondary-text-color);
+}
+
+.woa_kay_main_title {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    line-height: 1em;
+    margin: 20px 0px;
+    color: var(--primary-text-color);
+    text-align: center;
+
+
+    & span {
+        font-family: var(--secondary-font);
+        font-size: 0.5em;
+        color: var(--secondary-text-color);
+    }
+}
+
+.woa_kay_tabonglets {
+    margin-bottom: 10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.woa_kay_input {
+    display: none;
+}
+
+.woa_kay_input + .woa_kay_label_content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: var(--primary-text-color);
+    padding: 5px 30px;
+
+    & .woa_kay_label {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding:0px 10px;
+
+        & span {
+            align-self: flex-end;
+        }
+    }
+}
+
+.woa_kay_input:checked + .woa_kay_label_content {
+    color: var(--secondary-text-color);
+
+    &:before {
+        content: url(./images/feather-left.png);
+    }
+
+    &:after {
+        content: url(./images/feather-right.png);
+    }
+}
+
+.woa_kay_content {
+    text-align:left;
+    margin: 20px;
+    margin-bottom:50px;
+    display:none;
+}
+
+.woa_kay_tabonglets:has(#woa_kay_tab1:checked)
+    ~ .woa_kay_content1,
+.woa_kay_tabonglets:has(#woa_kay_tab2:checked)
+    ~ .woa_kay_content2 {
+    display: block;
+}
+
+.woa_kay_content_titre {
+    font-family: var(--primary-font);
+    font-size: 2em;
+    line-height: 1em;
+    color: var(--secondary-text-color);
+    display:flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    border-bottom: 1px solid var(--primary-text-color);
+    margin-bottom: 10px;
+
+    & span {
+        font-family: var(--secondary-font);
+        font-size: 0.6em;
+        color: var(--primary-text-color);
+    }
+}
+
+.woa_kay_texte {
+    margin: 0px 10px 5px 10px;
+    font-size:1.8em;
+    font-family: var(--tertiary-font);
+    line-height:1em;
+    text-align: justify;
+
+    &.norp {
+        padding-top:6px;
+    }
+}
+
+.woa_kay_timeitem {
+    margin: 20px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(244, 164, 96, 0.4);
+}
+
+.woa_kay_timeitem_image {
+    width: 70px;
+    align-self: stretch;
+    background:var(--primary-text-color);
+    border-radius: 5px 0px 0px 5px;
+    overflow:hidden;
+    display:flex;
+
+    &:before {
+        content: "";
+        display: block;
+        font-family: var(--secondary-font);
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        text-align: center;;
+        width:20px;
+        padding-left:2px;
+        color:var(--clear-text-color);
+    }
+
+    & img {
+        width: 50px;
+        height:100%;
+        display: block;
+        mix-blend-mode: screen;
+        object-position: 50% 50%;
+        object-fit: cover;
+    }
+}
+
+
+.rp_archive {
+    &:before {
+        content:"archivé";
+        background: var(--vignette-archive-color);
+    }
+}
+
+.rp_encours {
+    &:before {
+        content:"en cours";
+        background: var(--vignette-encours-color);
+    }
+}
+
+.rp_termine {
+    &:before {
+        content:"terminé";
+        background: var(--vignette-termine-color);
+    }
+}
+
+.rp_aprevoir {
+    &:before {
+        content:"à prévoir";
+        background: var(--vignette-aprevoir-color);
+    }
+}
+
+.woa_kay_timeitem_content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-bottom: 1px solid var(--primary-text-color);
+    border-right: 1px solid var(--primary-text-color);
+}
+
+.woa_kay_rp {
+    font-family: var(--secondary-font);
+    display:flex;
+    align-items: center;
+    margin-bottom:10px;
+    background: var(--primary-text-color);
+    padding:0px 10px;
+}
+
+.woa_kay_rp_titre {
+    color: var(--primary-text-color);
+    font-size: 1.2em;
+    text-transform: uppercase;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex:1;
+
+    & span.woa_kay_date {
+        font-family: var(--secondary-font);
+        font-size: 0.8em;
+        text-transform: none;
+        color:var(--clear-text-color);
+    }
+
+    & a {
+        color: var(--tertiary-text-color);
+        text-decoration: none;
+        display:flex;
+        flex-direction: column;
+
+        &:hover {
+            color: hsl(0, 100%, 75%); 
+            hsl(0, 100%, 75%);
+        }
+
+
+        & span {
+            font-size: 0.8em;
+        color:var(--clear-text-color);
+            text-transform: none;
+        }
+    }
+}
+
+.woa_kay_modif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--secondary-font);
+    font-weight: bold;
+    color: var(--secondary-text-color);
+
+    &:before {
+        content: url(./images/feather-left.png);
+        margin-right: 10px;
+    }
+
+    &:after {
+        content: url(./images/feather-right.png);
+        margin-left: 10px;
+    }
+}
+
+.woa_kay_separator {
+    display: block;
+    margin: auto;
+    max-width: 200px;
+}
+
+.woa_kay_separator_mini {
+    display: block;
+    max-height: 20px;
+    margin:20px auto;
+}
+
+.woa_kay_banner {
+    border-top:1px solid var(--primary-text-color);
+    border-bottom:1px solid var(--primary-text-color);
+    background:var(--primary-text-color);
+    margin-bottom:20px;
+
+    & img {
+        width: 600px;
+        display: block;
+        margin: 0 auto;
+        mix-blend-mode: screen;
+    }
+}
