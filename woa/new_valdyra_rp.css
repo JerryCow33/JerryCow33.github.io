@@ -227,6 +227,7 @@
 .torrp_title {
 	color: var(--val-tor-color);
 	font-size: 30px;
+	line-height: 34px;
 	font-family: "Rubik Distressed", system-ui;
 	text-shadow: 1px 1px 2px black;
 	max-width:50%;
@@ -526,4 +527,5 @@
     transform: translate(0, 0px);
   }
 }
+
 
