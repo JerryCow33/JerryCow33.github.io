@@ -264,7 +264,7 @@
 }
 
 /* DIALOGUES V2 */
-.val_dial {
+.val_dial, .tor_dial {
 	min-height:calc(10px + var(--val-diag-width-img));
 	border-radius:var(--val-diag-border-radius) 10px 10px var(--val-diag-border-radius);
 	margin:20px 20px 0px 20px;
@@ -302,6 +302,13 @@
 		padding-bottom:3px;	
 		border-bottom:1px solid var(--val-diag-color);	
 	}
+}
+
+.tor_dial {
+	border-radius:0px;
+	border-width:1px 0px;
+	border-style:dotted;
+	margin:10px 0px;
 }
 
 .default,
@@ -361,10 +368,6 @@
 	border-color: var(--val-tor-color);
 	background-image: var(--val-diag-tor-vignette);
 	color:var(--val-tor-color);
-	border-radius:0px;
-	border-width:1px 0px;
-	border-style:dotted;
-	margin:10px 0px;
 
 	& c {
  		text-shadow: 1px 1px var(--val-tor-color-darken);
