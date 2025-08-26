@@ -186,7 +186,7 @@
 }
 
 /* TOR */
-.torrp_wrapper {
+.torrp_wrapper, .torrp_wrapper_white {
 	margin: 0px auto;
 	background-color: #181818;
 	display: grid;
@@ -271,26 +271,36 @@
 	margin-top:5px;
 }
 
-.torrp_white {
-	&.torrp_vbanner {
+.torrp_wrapper_white {
+	background-color: #fefefe;
+
+	& .torrp_vbanner {
 		background:url(https://cdn.midjourney.com/51ced465-90b0-423c-977f-0007bdc13f02/0_2.png);
+		background-size: cover;                      /* <------ */
+		background-repeat: no-repeat;
+		background-position: top left 70%;
 	}
 
-	&.torrp_hbanner {
+	& .torrp_hbanner {
 		background:url(https://cdn.midjourney.com/db698e23-154b-43f3-894c-d7d0ea1de65f/0_0.png);
-		background-position: top left;
+		background-size: cover;                      /* <------ */
+		background-repeat: no-repeat;
+		background-position: top left 60%;
 	}
 
-	&.torrp_footer {
+	& .torrp_footer {
 		background:url(https://cdn.midjourney.com/578700f8-6895-4f40-9bf2-afd03d146c85/0_2.png);
 		background-position: top center;
+		background-size: cover;                      /* <------ */
+		background-repeat: no-repeat;
+		background-position: center;
 	}
 
-	&.torrp_feat {
+	& .torrp_feat {
 		color: #282828;
 	}
 
-	&.torrp_main {
+	& .torrp_main {
 		background-image: url(./images/marbre.png);
 		background-position: center;
 		background-attachment: fixed;
