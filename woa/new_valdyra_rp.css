@@ -305,7 +305,8 @@
 		background-position: center;
 		background-attachment: fixed;
 		color: #282828;
-
+		scrollbar-color: #282828 #fefefe;
+		
 		& hr {
 			border:3px solid #383838;
 		}
