@@ -224,6 +224,10 @@
 	}
 }
 
+.torrp_title, .torrp_feat {
+	text-align:left;
+}
+
 .torrp_title {
 	color: var(--val-tor-color);
 	font-size: 30px;
@@ -534,6 +538,7 @@
     transform: translate(0, 0px);
   }
 }
+
 
 
 
