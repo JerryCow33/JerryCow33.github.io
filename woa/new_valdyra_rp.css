@@ -252,6 +252,10 @@
 	color: #cccccc;
 	font-weight:300;
 	text-align: justify;
+
+	& hr {
+		border:3px solid #999999;
+	}
 }
 
 .torrp_footer {
