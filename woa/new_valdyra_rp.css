@@ -271,6 +271,37 @@
 	margin-top:5px;
 }
 
+.torrp_white {
+	&.torrp_vbanner {
+		background:url(https://cdn.midjourney.com/51ced465-90b0-423c-977f-0007bdc13f02/0_2.png);
+	}
+
+	&.torrp_hbanner {
+		background:url(https://cdn.midjourney.com/db698e23-154b-43f3-894c-d7d0ea1de65f/0_0.png);
+		background-position: top left;
+	}
+
+	&.torrp_footer {
+		background:url(https://cdn.midjourney.com/578700f8-6895-4f40-9bf2-afd03d146c85/0_2.png);
+		background-position: top center;
+	}
+
+	&.torrp_feat {
+		color: #282828;
+	}
+
+	&.torrp_main {
+		background-image: url(./images/marbre.png);
+		background-position: center;
+		background-attachment: fixed;
+		color: #282828;
+
+		& hr {
+			border:3px solid #383838;
+		}
+	}
+}
+
 /* DIALOGUES V2 */
 .val_dial, .tor_dial {
 	min-height:calc(10px + var(--val-diag-width-img));
