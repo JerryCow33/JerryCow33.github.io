@@ -121,7 +121,7 @@
 	--val-gilles-color:#6E260E;
 	--val-gilles-color-darken:color-mix(in srgb, var(--val-gilles-color), black 20%);
 	--val-gilles-color-lighten:color-mix(in srgb, var(--val-gilles-color), white 20%);
-	--val-diag-gilles-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/noire.png");
+	--val-diag-gilles-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/gilles.png");
 	/* noveno */
 	--val-noveno-color:#702963;
 	--val-noveno-color-darken:color-mix(in srgb, var(--val-noveno-color), black 20%);
