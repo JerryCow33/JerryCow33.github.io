@@ -6,6 +6,11 @@
 	--val-diag-color-darken:color-mix(in srgb, var(--val-diag-color), black 20%);
 	--val-diag-color-lighten:color-mix(in srgb, var(--val-diag-color), white 20%);
 	--val-diag-default-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/default.png");	
+	/* defaut 2 */
+	--val-diag2-color:#333333;
+	--val-diag2-color-darken:color-mix(in srgb, var(--val-diag-color), black 20%);
+	--val-diag2-color-lighten:color-mix(in srgb, var(--val-diag-color), white 20%);
+	--val-diag2-default-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/default.png");	
 	/* valdyra */
 	--val-valdyra-color:steelblue;
 	--val-valdyra-color-darken:color-mix(in srgb, var(--val-valdyra-color), black 20%);
@@ -67,6 +72,81 @@
 	--val-tor-color-lighten:color-mix(in srgb, var(--val-tor-color), white 20%);
 	--val-diag-tor-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/tor2.png");
 	--val-diag-tor-masked-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/tormasked2.png");
+	/* luther kay */
+	--val-luther-color:darkred;
+	--val-luther-color-darken:color-mix(in srgb, var(--val-luther-color), black 20%);
+	--val-luther-color-lighten:color-mix(in srgb, var(--val-luther-color), white 20%);
+	--val-diag-luther-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/luther.png");
+	/* elena irons */
+	--val-elena-color:crimson;
+	--val-elena-color-darken:color-mix(in srgb, var(--val-elena-color), black 20%);
+	--val-elena-color-lighten:color-mix(in srgb, var(--val-elena-color), white 20%);
+	--val-diag-elena-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/elena.png");
+	/* leitis kay */
+	--val-leitis-color:#355E3B;
+	--val-leitis-color-darken:color-mix(in srgb, var(--val-leitis-color), black 20%);
+	--val-leitis-color-lighten:color-mix(in srgb, var(--val-leitis-color), white 20%);
+	--val-diag-leitis-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leitis.png");
+	/* seonaid kay */
+	--val-seonaid-color:#228B22;
+	--val-seonaid-color-darken:color-mix(in srgb, var(--val-seonaid-color), black 20%);
+	--val-seonaid-color-lighten:color-mix(in srgb, var(--val-seonaid-color), white 20%);
+	--val-diag-seonaid-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/seonaid.png");
+	/* sania */
+	--val-sania-color:#DAA520;
+	--val-sania-color-darken:color-mix(in srgb, var(--val-sania-color), black 20%);
+	--val-sania-color-lighten:color-mix(in srgb, var(--val-sania-color), white 20%);
+	--val-diag-sania-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/sania.png");
+	/* rayan */
+	--val-rayan-color:#8B8000;
+	--val-rayan-color-darken:color-mix(in srgb, var(--val-rayan-color), black 20%);
+	--val-rayan-color-lighten:color-mix(in srgb, var(--val-rayan-color), white 20%);
+	--val-diag-rayan-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/rayan.png");
+	/* drgreat */
+	--val-drgreat-color:#EE4B2B;
+	--val-drgreat-color-darken:color-mix(in srgb, var(--val-drgreat-color), black 20%);
+	--val-drgreat-color-lighten:color-mix(in srgb, var(--val-drgreat-color), white 20%);
+	--val-diag-drgreat-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/drgreat.png");
+	/* valdyra FGB */
+	--val-valdyrafgb-color:steelblue;
+	--val-valdyrafgb-color-darken:color-mix(in srgb, var(--val-valdyrafgb-color), black 20%);
+	--val-valdyrafgb-color-lighten:color-mix(in srgb, var(--val-valdyrafgb-color), white 20%);
+	--val-diag-valdyrafgb-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyrafgb.png");
+	/* noire */
+	--val-noire-color:#880808;
+	--val-noire-color-darken:color-mix(in srgb, var(--val-noire-color), black 20%);
+	--val-noire-color-lighten:color-mix(in srgb, var(--val-noire-color), white 20%);
+	--val-diag-noire-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/noire.png");
+	/* gilles */
+	--val-gilles-color:#6E260E;
+	--val-gilles-color-darken:color-mix(in srgb, var(--val-gilles-color), black 20%);
+	--val-gilles-color-lighten:color-mix(in srgb, var(--val-gilles-color), white 20%);
+	--val-diag-gilles-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/noire.png");
+	/* noveno */
+	--val-noveno-color:#702963;
+	--val-noveno-color-darken:color-mix(in srgb, var(--val-noveno-color), black 20%);
+	--val-noveno-color-lighten:color-mix(in srgb, var(--val-noveno-color), white 20%);
+	--val-diag-noveno-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/noveno.png");
+	/* ego */
+	--val-ego-color:#FFAA33;
+	--val-ego-color-darken:color-mix(in srgb, var(--val-ego-color), black 20%);
+	--val-ego-color-lighten:color-mix(in srgb, var(--val-ego-color), white 20%);
+	--val-diag-ego-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/ego.png");
+	/* lin */
+	--val-lin-color:#0047AB;
+	--val-lin-color-darken:color-mix(in srgb, var(--val-lin-color), black 20%);
+	--val-lin-color-lighten:color-mix(in srgb, var(--val-lin-color), white 20%);
+	--val-diag-lin-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/lin.png");
+	/* longienus */
+	--val-longienus-color:#E34234;
+	--val-longienus-color-darken:color-mix(in srgb, var(--val-longienus-color), black 20%);
+	--val-longienus-color-lighten:color-mix(in srgb, var(--val-longienus-color), white 20%);
+	--val-diag-longienus-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/longienus.png");
+	/* godfrey_lyne */
+	--val-godfrey-color:#36454F;
+	--val-godfrey-color-darken:color-mix(in srgb, var(--val-godfrey-color), black 20%);
+	--val-godfrey-color-lighten:color-mix(in srgb, var(--val-godfrey-color), white 20%);
+	--val-diag-godfrey-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/godfrey_lyne.png");
 }
 
 .valdyrarp_imgleft, .kayrp_imgleft {
@@ -314,7 +394,7 @@
 }
 
 /* DIALOGUES V2 */
-.val_dial, .tor_dial {
+.val_dial, .tor_dial, .fgb_dial {
 	min-height:calc(10px + var(--val-diag-width-img));
 	border-radius:var(--val-diag-border-radius) 10px 10px var(--val-diag-border-radius);
 	margin:20px 20px 0px 20px;
@@ -361,6 +441,30 @@
 	margin:10px 0px;
 }
 
+.fgb_dial {
+	border-radius:0px;
+	border-width:1px 0px;
+	border-style:dashed;
+	border-color: var(--val-diag2-color);
+	margin:10px 0px;
+
+
+	& i {
+		color:var(--val-diag2-color);
+	}
+
+	& c {
+  		text-shadow: 1px 1px var(--val-diag2-color-darken);
+	}
+
+	&::before {
+		content:"-";
+		color:var(--val-diag2-color);
+		border-bottom:1px solid var(--val-diag2-color);	
+	}
+}
+
+
 .default,
 .valdyra,
 .kay,
@@ -374,7 +478,22 @@
 .declan,
 .anya,
 .rosenthal,
-.orihana {
+.orihana,
+.luther,
+.elena,
+.leitis,
+.seonaid,
+.sania,
+.rayan,
+.drgreat,
+.valdyrafgb,
+.godfrey,
+.noire,
+.gilles,
+.noveno,
+.ego,
+.lin,
+.longienus {
 	background-position: 5px 5px;
 	background-size: var(--val-diag-width-img) var(--val-diag-width-img);
 	background-repeat: no-repeat;
@@ -558,6 +677,218 @@
 		content: "Ori'Hana";
 	}
 }
+
+/* FGB */
+.luther {
+	border-color: var(--val-luther-color);
+	background-image: var(--val-diag-luther-vignette);
+	color:var(--val-luther-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-luther-color-darken);
+	}
+	
+	&::before {
+		content: "Luther Kay";
+	}
+}
+
+.elena {
+	border-color: var(--val-elena-color);
+	background-image: var(--val-diag-elena-vignette);
+	color:var(--val-elena-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-elena-color-darken);
+	}
+	
+	&::before {
+		content: "Elena Irons";
+	}
+}
+
+.leitis {
+	border-color: var(--val-leitis-color);
+	background-image: var(--val-diag-leitis-vignette);
+	color:var(--val-leitis-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-leitis-color-darken);
+	}
+	
+	&::before {
+		content: "Leitis Kay";
+	}
+}
+
+.seonaid {
+	border-color: var(--val-seonaid-color);
+	background-image: var(--val-diag-seonaid-vignette);
+	color:var(--val-seonaid-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-seonaid-color-darken);
+	}
+	
+	&::before {
+		content: "Seonaid Kay";
+	}
+}
+
+.sania {
+	border-color: var(--val-sania-color);
+	background-image: var(--val-diag-sania-vignette);
+	color:var(--val-sania-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-sania-color-darken);
+	}
+	
+	&::before {
+		content: "« Scimitar » Sania";
+	}
+}
+
+.rayan {
+	border-color: var(--val-rayan-color);
+	background-image: var(--val-diag-rayan-vignette);
+	color:var(--val-rayan-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-rayan-color-darken);
+	}
+	
+	&::before {
+		content: "« Golem » Rayan";
+	}
+}
+
+.valdyrafgb {
+	border-color: var(--val-valdyrafgb-color);
+	background-image: var(--val-diag-valdyrafgb-vignette);
+	color:var(--val-valdyrafgb-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-valdyrafgb-color-darken);
+	}
+	
+	&::before {
+		content: "Valdyra";
+	}
+}
+
+.drgreat {
+	border-color: var(--val-drgreat-color);
+	background-image: var(--val-diag-drgreat-vignette);
+	color:var(--val-drgreat-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-drgreat-color-darken);
+	}
+	
+	&::before {
+		content: "Dr. Great";
+	}
+}
+
+.godfrey {
+	border-color: var(--val-godfrey-color);
+	background-image: var(--val-diag-godfrey-vignette);
+	color:var(--val-godfrey-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-godfrey-color-darken);
+	}
+	
+	&::before {
+		content: "Godfrey / Lyne";
+	}
+}
+
+.noire {
+	border-color: var(--val-noire-color);
+	background-image: var(--val-diag-noire-vignette);
+	color:var(--val-noire-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-noire-color-darken);
+	}
+	
+	&::before {
+		content: "Noire Gelnaro";
+	}
+}
+
+.gilles {
+	border-color: var(--val-gilles-color);
+	background-image: var(--val-diag-gilles-vignette);
+	color:var(--val-gilles-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-gilles-color-darken);
+	}
+	
+	&::before {
+		content: "Gilles d'Oneval";
+	}
+}
+
+.noveno {
+	border-color: var(--val-noveno-color);
+	background-image: var(--val-diag-noveno-vignette);
+	color:var(--val-noveno-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-noveno-color-darken);
+	}
+	
+	&::before {
+		content: "El Noveno Gigante";
+	}
+}
+
+.ego {
+	border-color: var(--val-ego-color);
+	background-image: var(--val-diag-ego-vignette);
+	color:var(--val-ego-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-ego-color-darken);
+	}
+	
+	&::before {
+		content: "Ego";
+	}
+}
+
+.lin {
+	border-color: var(--val-lin-color);
+	background-image: var(--val-diag-lin-vignette);
+	color:var(--val-lin-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-lin-color-darken);
+	}
+	
+	&::before {
+		content: "Lin";
+	}
+}
+
+.longienus {
+	border-color: var(--val-longienus-color);
+	background-image: var(--val-diag-longienus-vignette);
+	color:var(--val-longienus-color);
+
+	& c {
+ 		text-shadow: 1px 1px var(--val-longienus-color-darken);
+	}
+	
+	&::before {
+		content: "Longienus";
+	}
+}
+
 
 @keyframes wiggleWiggle {
   0% {
