@@ -42,7 +42,7 @@
 	--val-leyra-color-lighten:color-mix(in srgb, var(--val-leyra-color), white 20%);
 	--val-diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra2.png");
 	/* anya */
-	--val-anya-color:purple;
+	--val-anya-color:#9F2B68;
 	--val-anya-color-darken:color-mix(in srgb, var(--val-anya-color), black 20%);
 	--val-anya-color-lighten:color-mix(in srgb, var(--val-anya-color), white 20%);
 	--val-diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya2.png");
@@ -931,6 +931,7 @@
 		transform: translate(0, 0px);
 	}
 }
+
 
 
 
