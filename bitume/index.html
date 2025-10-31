@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function getRandomInt(max) {
+            return Math.floor((Math.random() * max) + 1);
+        }
+
+        function carac_tirage()
+        {
+            let resultat;
+            let caracs = [0, 0, 0, 0, 0, 0];
+
+            for (let i = 0; i < 3; i++)
+            {
+                let de1 = getRandomInt(6);
+                let de2 = getRandomInt(6);
+                let tirage = de1 + de2;
+
+                document.write("Tirage " + (i + 1) + " : " + de1 + " + " + de2 + "<br>");
+                document.write("Caractéristique 2D6 + 6 : " + (tirage + 6) + "<br>");
+                document.write("Caractéristique 19 - 2D6 : " + (19 - tirage) + "<br><br>");
+                caracs[i] = tirage + 6;
+                caracs[i + 3] = 19 - tirage;
+            }
+
+            caracs.sort((a, b) => b - a);
+            document.write("Caractéristiques finales : " + caracs.join(", ") + "<br><br>");
+            document.write("Somme des caractéristiques : " + caracs.reduce((a, b) => a + b, 0) + "<br><br>");
+        }
+
+        carac_tirage();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

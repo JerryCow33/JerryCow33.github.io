@@ -125,6 +125,7 @@
     font-family: var(--secondary-font);
     line-height: 1.3em;
     text-align: justify;
+    flex: 1;
 
     &.norp {
         padding-top:6px;
@@ -134,7 +135,6 @@
 .woa_kay_timeitem {
     margin: 20px;
     display:flex;
-    align-items: center;
     justify-content: center;
     background: rgba(244, 164, 96, 0.4);
 }
