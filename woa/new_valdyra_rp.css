@@ -152,6 +152,11 @@
 	--val-jiji-color-darken:color-mix(in srgb, var(--val-jiji-color), black 20%);
 	--val-jiji-color-lighten:color-mix(in srgb, var(--val-jiji-color), white 20%);
 	--val-diag-jiji-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/jiji.png");
+	/* legion (luther kay) */
+	--val-legion-color:darkred;
+	--val-legion-color-darken:color-mix(in srgb, var(--val-legion-color), black 20%);
+	--val-legion-color-lighten:color-mix(in srgb, var(--val-legion-color), white 20%);
+	--val-diag-legion-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/legion.jpg");
 }
 
 .valdyrarp_imgleft, .kayrp_imgleft {
@@ -499,7 +504,8 @@
 .ego,
 .lin,
 .longienus,
-.jiji {
+.jiji,
+.legion{
 	background-position: 5px 5px;
 	background-size: var(--val-diag-width-img) var(--val-diag-width-img);
 	background-repeat: no-repeat;
@@ -909,6 +915,20 @@
 	}
 }
 
+.legion {
+	border-color: var(--val-legion-color);
+	background-image: var(--val-diag-legion-vignette);
+	color:var(--val-legion-color);
+
+	& c {
+		text-shadow: 1px 1px var(--val-legion-color-darken);
+	}
+	
+	&::before {
+		content: "Legion";
+	}
+}
+
 
 @keyframes wiggleWiggle {
 	0% {
@@ -931,6 +951,7 @@
 		transform: translate(0, 0px);
 	}
 }
+
 
 
 
