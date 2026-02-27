@@ -13,6 +13,20 @@
             padding-top:51px;
         }
 
+        a.diamond-container2 {
+            display:block;
+            width: 100px; /* Largeur du conteneur */
+            height: 100px; /* Hauteur du conteneur */
+            position: relative;
+            overflow: hidden; /* Cache les parties du losange qui dépassent */
+            margin-top:-100%;
+        }
+
+        a.diamond-container2:focus .diamond {
+            box-shadow:inset 0px 0px 0px 3px blue;
+        }
+
+        
         .diamond-container {
             width: 100px; /* Largeur du conteneur */
             height: 100px; /* Hauteur du conteneur */
@@ -50,33 +64,46 @@
         .diamond-container:nth-child(9n+7) { grid-column-start: 4; }
         .diamond-container:nth-child(9n+8) { grid-column-start: 6; }
         .diamond-container:nth-child(9n+9) { grid-column-start: 8; }
+
+        /* Lignes impaires - 5 cases */
+        a.diamond-container2:nth-child(9n+1) { grid-column-start: 1; }
+        a.diamond-container2:nth-child(9n+2) { grid-column-start: 3; }
+        a.diamond-container2:nth-child(9n+3) { grid-column-start: 5; }
+        a.diamond-container2:nth-child(9n+4) { grid-column-start: 7; }
+        a.diamond-container2:nth-child(9n+5) { grid-column-start: 9; }
+
+        /* Lignes paires - 4 cases décalées */
+        a.diamond-container2:nth-child(9n+6) { grid-column-start: 2; }
+        a.diamond-container2:nth-child(9n+7) { grid-column-start: 4; }
+        a.diamond-container2:nth-child(9n+8) { grid-column-start: 6; }
+        a.diamond-container2:nth-child(9n+9) { grid-column-start: 8; }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">1</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">2</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">3</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">4</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">5</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">6</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">7</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">8</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">9</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">10</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">11</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">12</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">13</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">14</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">15</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">16</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">17</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">18</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">19</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">20</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">21</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">22</div></div></div>
-        <div class="diamond-container"><div class="diamond"><div class="diamond-content">23</div></div></div>
+        <a class="diamond-container2" href="#1"><div class="diamond"><div class="diamond-content">1</div></div></a>
+        <a class="diamond-container2" href="#2"><div class="diamond"><div class="diamond-content">2</div></div></a>
+        <a class="diamond-container2" href="#3"><div class="diamond"><div class="diamond-content">3</div></div></a>
+        <a class="diamond-container2" href="#4"><div class="diamond"><div class="diamond-content">4</div></div></a>
+        <a class="diamond-container2" href="#5"><div class="diamond"><div class="diamond-content">5</div></div></a>
+        <a class="diamond-container2" href="#6"><div class="diamond"><div class="diamond-content">6</div></div></a>
+        <a class="diamond-container2" href="#7"><div class="diamond"><div class="diamond-content">7</div></div></a>
+        <a class="diamond-container2" href="#8"><div class="diamond"><div class="diamond-content">8</div></div></a>
+        <a class="diamond-container2" href="#9"><div class="diamond"><div class="diamond-content">9</div></div></a>
+        <a class="diamond-container2" href="#10"><div class="diamond"><div class="diamond-content">10</div></div></a>
+        <a class="diamond-container2" href="#11"><div class="diamond"><div class="diamond-content">11</div></div></a>
+        <a class="diamond-container2" href="#12"><div class="diamond"><div class="diamond-content">12</div></div></a>
+        <a class="diamond-container2" href="#13"><div class="diamond"><div class="diamond-content">13</div></div></a>
+        <a class="diamond-container2" href="#14"><div class="diamond"><div class="diamond-content">14</div></div></a>
+        <a class="diamond-container2" href="#15"><div class="diamond"><div class="diamond-content">15</div></div></a>
+        <a class="diamond-container2" href="#16"><div class="diamond"><div class="diamond-content">16</div></div></a>
+        <a class="diamond-container2" href="#17"><div class="diamond"><div class="diamond-content">17</div></div></a>
+        <a class="diamond-container2" href="#18"><div class="diamond"><div class="diamond-content">18</div></div></a>
+        <a class="diamond-container2" href="#19"><div class="diamond"><div class="diamond-content">19</div></div></a>
+        <a class="diamond-container2" href="#20"><div class="diamond"><div class="diamond-content">20</div></div></a>
+        <a class="diamond-container2" href="#21"><div class="diamond"><div class="diamond-content">21</div></div></a>
+        <a class="diamond-container2" href="#22"><div class="diamond"><div class="diamond-content">22</div></div></a>
+        <a class="diamond-container2" href="#23"><div class="diamond"><div class="diamond-content">23</div></div></a>
     </div>
 </body>
 </html>

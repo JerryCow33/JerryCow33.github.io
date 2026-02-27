@@ -24,7 +24,7 @@
 	--val-kaylys-color:indianred;
 	--val-leyra-color:lightpink;
 	--val-declan-color:salmon;
-	--val-anya-color:purple;
+	--val-anya-color:#9F2B68;
 	--val-rosenthal-color:orange;
 	--val-orihana-color:#ffe082;
 	--val-diag-border-radius:40px;
@@ -753,3 +753,4 @@
         }        
     }
 }
+

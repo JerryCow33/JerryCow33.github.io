@@ -47,7 +47,7 @@
 	--val-leyra-color-lighten:color-mix(in srgb, var(--val-leyra-color), white 20%);
 	--val-diag-leyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/leyra2.png");
 	/* anya */
-	--val-anya-color:purple;
+	--val-anya-color:#9F2B68;
 	--val-anya-color-darken:color-mix(in srgb, var(--val-anya-color), black 20%);
 	--val-anya-color-lighten:color-mix(in srgb, var(--val-anya-color), white 20%);
 	--val-diag-anya-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/anya2.png");
@@ -152,6 +152,16 @@
 	--val-godfrey-color-darken:color-mix(in srgb, var(--val-godfrey-color), black 20%);
 	--val-godfrey-color-lighten:color-mix(in srgb, var(--val-godfrey-color), white 20%);
 	--val-diag-godfrey-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/godfrey_lyne.png");
+	/* jiji */
+	--val-jiji-color:#282828;
+	--val-jiji-color-darken:color-mix(in srgb, var(--val-jiji-color), black 20%);
+	--val-jiji-color-lighten:color-mix(in srgb, var(--val-jiji-color), white 20%);
+	--val-diag-jiji-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/jiji.png");
+	/* legion (luther kay) */
+	--val-legion-color:darkred;
+	--val-legion-color-darken:color-mix(in srgb, var(--val-legion-color), black 20%);
+	--val-legion-color-lighten:color-mix(in srgb, var(--val-legion-color), white 20%);
+	--val-diag-legion-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/legion.jpg");
 }
 
 /* VALDYRA */
@@ -417,15 +427,15 @@
 
 	& c {
 		display:inline-block;
-  		transform: translateY(-1px);
-  		animation-name: wiggleWiggle;
-  		animation-duration: 0.15s;
-  		animation-iteration-count: infinite;
-  		text-shadow: 1px 1px var(--val-diag-color-darken);
+		transform: translateY(-1px);
+		animation-name: wiggleWiggle;
+		animation-duration: 0.15s;
+		animation-iteration-count: infinite;
+		text-shadow: 1px 1px var(--val-diag-color-darken);
 	}
 
 	& c:nth-child(odd) {
-  		animation-direction:reverse;
+		animation-direction:reverse;
 	}
 
 	&::before {
@@ -461,7 +471,7 @@
 	}
 
 	& c {
-  		text-shadow: 1px 1px var(--val-diag2-color-darken);
+		text-shadow: 1px 1px var(--val-diag2-color-darken);
 	}
 
 	&::before {
@@ -500,7 +510,9 @@
 .noveno,
 .ego,
 .lin,
-.longienus {
+.longienus,
+.jiji,
+.legion{
 	background-position: 5px 5px;
 	background-size: var(--val-diag-width-img) var(--val-diag-width-img);
 	background-repeat: no-repeat;
@@ -518,7 +530,7 @@
 	color:var(--val-valdyra-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-valdyra-color-darken);
+		text-shadow: 1px 1px var(--val-valdyra-color-darken);
 	}
 		
 	&::before {
@@ -532,7 +544,7 @@
 	color:var(--val-kay-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-kay-color-darken);
+		text-shadow: 1px 1px var(--val-kay-color-darken);
 	}
 		
 	&::before {
@@ -546,7 +558,7 @@
 	color:var(--val-tor-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-tor-color-darken);
+		text-shadow: 1px 1px var(--val-tor-color-darken);
 	}
 		
 	&::before {
@@ -565,7 +577,7 @@
 	color:var(--val-davos-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-davos-color-darken);
+		text-shadow: 1px 1px var(--val-davos-color-darken);
 	}
 		
 	&::before {
@@ -579,7 +591,7 @@
 	color:var(--val-bern-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-bern-color-darken);
+		text-shadow: 1px 1px var(--val-bern-color-darken);
 	}
 	
 	&::before {
@@ -593,7 +605,7 @@
 	color:var(--val-grishna-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-grishna-color-darken);
+		text-shadow: 1px 1px var(--val-grishna-color-darken);
 	}
 	
 	&::before {
@@ -607,7 +619,7 @@
 	color:var(--val-kaylys-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-kaylys-color-darken);
+		text-shadow: 1px 1px var(--val-kaylys-color-darken);
 	}
 	
 	&::before {
@@ -621,7 +633,7 @@
 	color:var(--val-leyra-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-leyra-color-darken);
+		text-shadow: 1px 1px var(--val-leyra-color-darken);
 	}
 	
 	&::before {
@@ -635,7 +647,7 @@
 	color:var(--val-declan-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-declan-color-darken);
+		text-shadow: 1px 1px var(--val-declan-color-darken);
 	}
 	
 	&::before {
@@ -649,7 +661,7 @@
 	color:var(--val-anya-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-anya-color-darken);
+		text-shadow: 1px 1px var(--val-anya-color-darken);
 	}
 	
 	&::before {
@@ -663,7 +675,7 @@
 	color:var(--val-rosenthal-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-rosenthal-color-darken);
+		text-shadow: 1px 1px var(--val-rosenthal-color-darken);
 	}
 	
 	&::before {
@@ -677,7 +689,7 @@
 	color:var(--val-orihana-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-orihana-color-darken);
+		text-shadow: 1px 1px var(--val-orihana-color-darken);
 	}
 	
 	&::before {
@@ -692,7 +704,7 @@
 	color:var(--val-luther-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-luther-color-darken);
+		text-shadow: 1px 1px var(--val-luther-color-darken);
 	}
 	
 	&::before {
@@ -706,7 +718,7 @@
 	color:var(--val-elena-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-elena-color-darken);
+		text-shadow: 1px 1px var(--val-elena-color-darken);
 	}
 	
 	&::before {
@@ -720,7 +732,7 @@
 	color:var(--val-leitis-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-leitis-color-darken);
+		text-shadow: 1px 1px var(--val-leitis-color-darken);
 	}
 	
 	&::before {
@@ -734,7 +746,7 @@
 	color:var(--val-seonaid-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-seonaid-color-darken);
+		text-shadow: 1px 1px var(--val-seonaid-color-darken);
 	}
 	
 	&::before {
@@ -748,7 +760,7 @@
 	color:var(--val-sania-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-sania-color-darken);
+		text-shadow: 1px 1px var(--val-sania-color-darken);
 	}
 	
 	&::before {
@@ -762,7 +774,7 @@
 	color:var(--val-rayan-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-rayan-color-darken);
+		text-shadow: 1px 1px var(--val-rayan-color-darken);
 	}
 	
 	&::before {
@@ -776,7 +788,7 @@
 	color:var(--val-valdyrafgb-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-valdyrafgb-color-darken);
+		text-shadow: 1px 1px var(--val-valdyrafgb-color-darken);
 	}
 	
 	&::before {
@@ -790,7 +802,7 @@
 	color:var(--val-drgreat-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-drgreat-color-darken);
+		text-shadow: 1px 1px var(--val-drgreat-color-darken);
 	}
 	
 	&::before {
@@ -804,7 +816,7 @@
 	color:var(--val-godfrey-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-godfrey-color-darken);
+		text-shadow: 1px 1px var(--val-godfrey-color-darken);
 	}
 	
 	&::before {
@@ -818,7 +830,7 @@
 	color:var(--val-noire-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-noire-color-darken);
+		text-shadow: 1px 1px var(--val-noire-color-darken);
 	}
 	
 	&::before {
@@ -832,7 +844,7 @@
 	color:var(--val-gilles-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-gilles-color-darken);
+		text-shadow: 1px 1px var(--val-gilles-color-darken);
 	}
 	
 	&::before {
@@ -846,7 +858,7 @@
 	color:var(--val-noveno-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-noveno-color-darken);
+		text-shadow: 1px 1px var(--val-noveno-color-darken);
 	}
 	
 	&::before {
@@ -860,7 +872,7 @@
 	color:var(--val-ego-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-ego-color-darken);
+		text-shadow: 1px 1px var(--val-ego-color-darken);
 	}
 	
 	&::before {
@@ -874,7 +886,7 @@
 	color:var(--val-lin-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-lin-color-darken);
+		text-shadow: 1px 1px var(--val-lin-color-darken);
 	}
 	
 	&::before {
@@ -888,7 +900,7 @@
 	color:var(--val-longienus-color);
 
 	& c {
- 		text-shadow: 1px 1px var(--val-longienus-color-darken);
+		text-shadow: 1px 1px var(--val-longienus-color-darken);
 	}
 	
 	&::before {
@@ -896,27 +908,55 @@
 	}
 }
 
+.jiji {
+	border-color: var(--val-jiji-color);
+	background-image: var(--val-diag-jiji-vignette);
+	color:var(--val-jiji-color);
+
+	& c {
+		text-shadow: 1px 1px var(--val-jiji-color-darken);
+	}
+	
+	&::before {
+		content: "JiJi";
+	}
+}
+
+.legion {
+	border-color: var(--val-legion-color);
+	background-image: var(--val-diag-legion-vignette);
+	color:var(--val-legion-color);
+
+	& c {
+		text-shadow: 1px 1px var(--val-legion-color-darken);
+	}
+	
+	&::before {
+		content: "Legion";
+	}
+}
+
 
 @keyframes wiggleWiggle {
-  0% {
-    transform: translate(0, 0px);
-  }
-  
-  25% {
-    transform: translate(0, -1px);
-  }
-  
-  50% {
-    transform: translate(0, 0px);
-  }
-  
-  75% {
-    transform: translate(0, 1px);
-  } 
-  
-  100% {
-    transform: translate(0, 0px);
-  }
+	0% {
+		transform: translate(0, 0px);
+	}
+
+	25% {
+		transform: translate(0, -1px);
+	}
+
+	50% {
+		transform: translate(0, 0px);
+	}
+
+	75% {
+		transform: translate(0, 1px);
+	} 
+
+	100% {
+		transform: translate(0, 0px);
+	}
 }
 
 /* VALDYRA V2 */
@@ -972,5 +1012,7 @@
 .valdyrarp_text_new {
 	padding: 10px
 }
+
+
 
 
