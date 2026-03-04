@@ -1,0 +1,58 @@
+{
+    "hero": [
+        {
+            "name": "Achilles",
+            "number": 1,
+            "health": 18,
+            "move": 2,
+            "range": "melee",
+            "sidekick": [
+                {
+                    "name": "Patroclus",
+                    "number": 1,
+                    "health": 6,
+                    "move": 2,
+                    "range": "melee"
+                }
+            ],
+            "flavor_text": "Achilles and Patroclus, brothers in arms and blessed by Hermes, together a formidable team. When Patroclus falls under Achilles' helm, it will surely be the day of your doom.",
+            "miniatures": [
+                "Achilles_miniature_1",
+                "Achilles_miniature_2"
+            ],
+            "complexity": "easy",
+            "power_rank": "A",
+            "playstyle": [
+                "Powerful attacks",
+                "Tanky",
+                "aggressive"
+            ],
+            "weaknesses": [
+                "Prone to exhaustion",
+                "Patroclus' death requires timing",
+                "Low mobility"
+            ],
+            "general_tips": "From the first, Achilles and Patroclus make an imposing yet conventional melee duo due to their massive health total and a consistent deck at their disposal. But there's a catch: when his beloved sidekick falls in battle, Achilles' rage increases his attack damage, but also races him faster towards exhaustion.\nBecause his mobility is rather low, Achilles shines in small battlegrounds and struggles in larger ones. The key to any Achilles matchup is knowing when Patroclus should die. Fall too soon and Achilles will exhaust his deck faster than his opponent due to drawing after every combat victory (even in defense). Die too late and Achilles may have risked precious opportunities to lay down some heavy attacks.",
+            "key_cards": [
+                {
+                    "name": "Brothers in Arms",
+                    "type": "attack",
+                    "value": 4,
+                    "character": "Any"
+                },
+                {
+                    "name": "Battle Hardened",
+                    "type": "versatile",
+                    "value": 2,
+                    "character": "Any"
+                },
+                {
+                    "name": "Battle Frenzy",
+                    "type": "attack",
+                    "value": 3,
+                    "character": "Patroclus"
+                }
+            ]
+        }
+    ]
+}

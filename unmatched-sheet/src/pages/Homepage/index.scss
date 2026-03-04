@@ -1,0 +1,13 @@
+@import '../../styles/abstracts/mixins';
+
+.wrapper {
+    @include content-wrapper;
+}
+
+.main {
+    flex:1;
+}
+
+.sr-only {
+    @include sr-only;
+}
