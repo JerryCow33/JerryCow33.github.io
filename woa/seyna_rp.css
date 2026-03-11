@@ -1,0 +1,169 @@
+:root {
+}
+
+/* DIALOGUES */
+seyna, default {
+	display:block;
+	margin:5px 10px;
+	padding:15px;
+	padding-left:110px;
+	border-radius:5px;
+	background-color:var(--jour2);
+	background-position:15px 15px;
+	background-size:80px 80px;
+	background-repeat:no-repeat;
+	min-height:80px;
+	color:var(--jour-texte);
+	
+	&::before {
+		content:"-";
+		color:var(--jour-texte);
+		text-transform:uppercase;
+		display:block;
+		font-weight:600;
+		font-style:italic;
+		margin-bottom:3px;
+		padding-bottom:3px;
+		border-bottom:1px solid var(--jour-texte);
+	}
+
+	& nomperso {
+		color:var(--jour-texte);
+		text-transform:uppercase;
+		display:block;
+		font-weight:600;
+		font-style:italic;
+		margin-bottom:3px;
+		padding-bottom:3px;
+		border-bottom:1px solid var(--jour-texte);
+	}
+
+	& img.seynaperso {
+		position:absolute;
+		width:80px;
+		height:80px;
+		top: 15px;
+		left: 15px;
+	}
+	
+	& i {
+		color:var(--jour-texte);
+		font-weight:400;
+	}
+}
+
+.night-mode seyna, .night-mode default {
+	background-color:var(--nuit2);
+	color:var(--nuit-texte);
+
+	& i {
+		color:var(--nuit-texte);
+	}
+	
+	&::before {
+		content:"-";
+		color:var(--nuit-texte);
+		border-bottom:1px solid var(--nuit-texte);
+	}
+
+	& nomperso {
+		color:var(--nuit-texte);
+		border-bottom:1px solid var(--nuit-texte);
+	}
+}
+
+seyna {
+	background-image:url("https://zupimages.net/up/26/10/otwo.jpg");
+	color:indianred;
+	
+	&::before {
+		content:"Seyna" !important;
+	}
+}
+
+default {
+	background-image:none;
+	position:relative;
+
+	&::before {
+		display:none;
+	}
+}
+
+
+/* TEMPLATE */
+seynawrapper {
+	display:grid;
+	grid-template-columns: 1fr 160px;
+	grid-template-rows: auto 1fr;
+	height:600px;
+	background-color:var(--jour);
+	overflow:hidden;
+	border-radius:10px;
+}
+
+seynaside {
+	grid-column: 2;
+	grid-row: 1 / span 2;
+	height:100%;
+	background-image:url(https://cdn.midjourney.com/e45b9bcc-64d5-49b9-819b-af34f28bc1d7/0_1.png);
+	background-size:cover;
+}
+
+seynatitle {
+	border-image: linear-gradient(to left, transparent, var(--jour2) 20%, var(--jour2) 80%, transparent) 1;
+	border-width: 5px;
+	border-style: solid;
+	border-left: 0;
+	border-right: 0;
+	margin: 5px 0;
+	padding: 5px 0;
+	font-family: "Fjalla One", sans-serif;
+	font-size:30px;
+	font-weight: bold;
+	color: var(--jour-texte);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	& span {
+		font-family: "Open Sans", sans-serif;
+		font-size: 14px;
+		font-style: italic;
+		font-weight: normal;
+		color: indianred;
+	}
+}
+
+seynamain {
+	padding:10px;
+	text-align:justify;
+	color: var(--jour-texte);
+	overflow:auto;
+	scrollbar-color:var(--jour2) transparent;
+}
+
+.night-mode {
+	seynawrapper {
+		background-color:var(--nuit);
+	}
+
+	seynaside {
+		background-image:url(https://cdn.midjourney.com/db14a506-9e0b-48ca-9bcd-5eaaea352c4e/0_0.png);
+	}
+
+	seynatitle {
+		border-image: linear-gradient(to left, transparent, var(--nuit2) 20%, var(--nuit2) 80%, transparent) 1;
+		color: var(--nuit-texte);
+
+		& span {
+			color: steelblue;
+		}
+	}
+
+	seynamain {
+		color: var(--nuit-texte);
+		scrollbar-color:var(--nuit2) transparent;
+	}
+}
