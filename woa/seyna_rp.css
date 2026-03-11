@@ -12,7 +12,7 @@ seyna, default {
 	background-position:15px 15px;
 	background-size:80px 80px;
 	background-repeat:no-repeat;
-	min-height:80px;
+	min-height:110px;
 	color:var(--jour-texte);
 	
 	&::before {
@@ -74,7 +74,7 @@ seyna, default {
 
 seyna {
 	background-image:url("https://zupimages.net/up/26/10/otwo.jpg");
-	color:indianred;
+	color:indianred !important;
 	
 	&::before {
 		content:"Seyna" !important;
@@ -117,7 +117,7 @@ seynatitle {
 	border-left: 0;
 	border-right: 0;
 	margin: 5px 0;
-	padding: 5px 0;
+	padding: 15px 0px 5px 0px;
 	font-family: "Fjalla One", sans-serif;
 	font-size:30px;
 	font-weight: bold;
