@@ -206,3 +206,120 @@ seynarp-item {
         }
     }    
 }
+
+/* CHRONOLOGIE */
+
+linechronoitem {
+    display:flex;
+    flex-wrap:wrap;
+    align-items:stretch;
+    margin-left:10px;
+    position:relative;
+    border-image:linear-gradient(var(--jour-texte), var(--jour-texte)) 0 0 0 1 / 1px repeat;
+    margin-top:-2px;
+    
+    &::before {
+        content:"";
+        min-width:11px;
+        min-height:11px;
+        max-width:11px;
+        max-height:11px;
+        background-color:var(--jour-texte);
+        border-radius:50%;
+        align-self:center;
+        position:absolute;
+        left:0px;z-index:1;
+        margin-left:-5px;
+    }
+    
+    &:first-child {
+        border-image:linear-gradient(transparent, var(--jour-texte)) 0 0 0 1 / 1px repeat;margin-top:0px;
+    }
+    
+    &:last-child {
+        border-image:linear-gradient(var(--jour-texte), transparent) 0 0 0 1 / 1px repeat;
+    }
+}
+
+linechrono {
+    display:flex;
+    align-items:stretch;
+    border-radius:10px 10px 10px 10px;
+    background-color:var(--jour);
+    margin:10px;
+    margin-left:17px;
+    
+    & linetext {
+        display:flex;
+        flex-direction:column;
+        padding:10px;
+        color:var(--jour-texte);
+        
+        & linedate {
+            font-family:"Lisu Bosa", sans-serif;
+            font-size:1em;
+            font-style:italic;
+        }
+        
+        & linetitre {
+            font-family:"Lisu Bosa", sans-serif;
+            font-size:2em;
+            font-weight:bold;
+            padding-bottom:5px;
+            margin-bottom:5px;
+            border-bottom:1px solid var(--jour-texte);
+            
+            & span {
+                font-size:0.6em;
+                font-weight:normal;
+                font-style:italic;
+            }
+        }
+    }
+    
+    &::before {
+        content:"";
+        width:60px;
+        height:30px;
+        clip-path:polygon(0% 50%, 100% 0%, 100% 100%);
+        background-color:var(--jour);
+        margin-left:-8px;
+        align-self:center;
+    }
+}
+
+.night-mode {
+    & linechronoitem {
+        border-image:linear-gradient(var(--nuit-texte), var(--nuit-texte)) 0 0 0 1 / 1px repeat;
+
+        &::before {
+            content:"";
+            background-color:var(--nuit-texte);
+        }
+
+        &:first-child {
+            border-image:linear-gradient(transparent, var(--nuit-texte)) 0 0 0 1 / 1px repeat;
+        }
+
+        &:last-child {
+            border-image:linear-gradient(var(--nuit-texte), transparent) 0 0 0 1 / 1px repeat;
+        }
+    }
+
+    & linechrono {
+        background-color:var(--nuit);
+
+        & linetext {
+            color:var(--nuit-texte);
+
+            & linetitre {
+                border-bottom:1px solid var(--nuit-texte);
+            }
+        }
+
+        &::before {
+            content:"";
+            background-color:var(--nuit);
+        }
+    }
+}
