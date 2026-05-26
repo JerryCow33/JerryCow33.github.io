@@ -1,4 +1,6 @@
 :root {
+	--seynacolor: indianred;
+	--valdyracolor:steelblue;
 }
 
 /* DIALOGUES */
@@ -74,7 +76,7 @@ seyna, valdyra, default {
 
 seyna {
 	background-image:url("https://zupimages.net/up/26/10/otwo.jpg");
-	color:indianred !important;
+	color:var(--seynacolor) !important;
 	
 	&::before {
 		content:"Seyna" !important;
@@ -83,7 +85,7 @@ seyna {
 
 valdyra {
 	background-image:url("https://i.ibb.co/0jFQhJZJ/valdyra.jpg");
-	color:steelblue !important;
+	color:var(--valdyracolor) !important;
 	
 	&::before {
 		content:"Valdyra" !important;
