@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,700i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&amp;display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+    <link href="https://fonts.cdnfonts.com/css/norse" rel="stylesheet">
+    <link rel="stylesheet" href="../css/orodia.css">
+    <style>
+        body {
+            min-width:0px;
+        }
+
+        linechronoitem {
+            display:flex;
+            flex-wrap:wrap;
+            align-items:stretch;
+            margin-left:10px;
+            position:relative;
+            border-image:linear-gradient(var(--jour-texte), var(--jour-texte)) 0 0 0 1 / 1px repeat;
+            margin-top:-2px;
+            
+            &::before {
+                content:"";
+                min-width:11px;
+                min-height:11px;
+                max-width:11px;
+                max-height:11px;
+                background-color:var(--jour-texte);
+                border-radius:50%;
+                align-self:center;
+                position:absolute;
+                left:0px;z-index:1;
+                margin-left:-5px;
+            }
+            
+            &:first-child {
+                border-image:linear-gradient(transparent, var(--jour-texte)) 0 0 0 1 / 1px repeat;margin-top:0px;
+            }
+            
+            &:last-child {
+                border-image:linear-gradient(var(--jour-texte), transparent) 0 0 0 1 / 1px repeat;
+            }
+        }
+        
+        linechrono {
+            display:flex;
+            align-items:stretch;
+            border-radius:10px 10px 10px 10px;
+            background-color:var(--jour);
+            margin:10px;
+            margin-left:17px;
+            
+            & linetext {
+                display:flex;
+                flex-direction:column;
+                padding:10px;
+                color:var(--jour-texte);
+                
+                & linedate {
+                    font-family:"Lisu Bosa", sans-serif;
+                    font-size:1em;
+                    font-style:italic;
+                }
+                
+                & linetitre {
+                    font-family:"Lisu Bosa", sans-serif;
+                    font-size:2em;
+                    font-weight:bold;
+                    padding-bottom:5px;
+                    margin-bottom:5px;
+                    border-bottom:1px solid var(--jour-texte);
+                    
+                    & span {
+                        font-size:0.6em;
+                        font-weight:normal;
+                        font-style:italic;
+                    }
+                }
+            }
+            
+            &::before {
+                content:"";
+                width:60px;
+                height:30px;
+                clip-path:polygon(0% 50%, 100% 0%, 100% 100%);
+                background-color:var(--jour);
+                margin-left:-8px;
+                align-self:center;
+            }
+        }
+
+        .night-mode {
+            & linechronoitem {
+                border-image:linear-gradient(var(--nuit-texte), var(--nuit-texte)) 0 0 0 1 / 1px repeat;
+
+                &::before {
+                    content:"";
+                    background-color:var(--nuit-texte);
+                }
+
+                &:first-child {
+                    border-image:linear-gradient(transparent, var(--nuit-texte)) 0 0 0 1 / 1px repeat;
+                }
+
+                &:last-child {
+                    border-image:linear-gradient(var(--nuit-texte), transparent) 0 0 0 1 / 1px repeat;
+                }
+            }
+
+            & linechrono {
+                background-color:var(--nuit);
+
+                & linetext {
+                    color:var(--nuit-texte);
+
+                    & linetitre {
+                        border-bottom:1px solid var(--nuit-texte);
+                    }
+                }
+
+                &::before {
+                    content:"";
+                    background-color:var(--nuit);
+                }
+            }
+        }
+    </style>
+</head>
+
+<body class="night-mode">
+
+<div class="cate-titre"><h2>Relations</h2></div>
+
+<div class="gallerywrapper"><!--
+
+--><div class="gallerywrapperleft"><!--
+
+--><div class="container_losange"><!--
+
+--><div class="gallery_losange"><!--
+
+--><div class="vagabonds"><label for="desc_snaer"><img alt="Snaer" src="https://zupimages.net/up/26/19/482k.jpg"></label></div><!--
+
+--><div class="averos"><label for="desc_cassian"><img alt="Cassian" src="https://zupimages.net/up/26/19/72it.jpg"></label></div><!--
+
+--><div class="averos"><label for="desc_johannes"><img alt="Johannes" src="https://zupimages.net/up/26/19/0tfx.jpg"></label></div><!--
+
+--><div class="vagabonds"><label for="desc_tbd1"><img alt="TBD1" src="https://zupimages.net/up/26/19/f007.jpg"></label></div><!--
+
+--></div><!--
+
+--></div><!--
+
+--></div><!--
+
+--><div class="gallerywrapperright"><!--
+
+--><input type="radio" name="gallerydesc" id="desc_snaer" checked><div class="gallerydesc">
+<img src="https://zupimages.net/up/26/19/482k.jpg">
+<div class="gallerytitle">Snaer</div>
+<div class="galleryflavor">Soeur jumelle disparue</div>
+<div class="gallerytext">Elles ont vécu l'enfer ensemble, Snaer défendant et soutenant sa soeur dans les moments les plus cruels, face à son père et aux autres membres du clan de Nör. Elle ont fui ensemble lorsque Valdyra a tué leur géniteur dans un élan de rage. Mais au cours de leur cavale, elles ont été séparées, Valdyra appatant les Nörheljar à Forstdrom pour permettre à Snaer de fuir. Depuis ce jour, Valdyra ne cesse de vouloir retrouver Snaer, persuadée qu'elle est encore vivante, quelque part.</div>
+</div><!--
+
+--><input type="radio" name="gallerydesc" id="desc_cassian"><div class="gallerydesc">
+<img src="https://zupimages.net/up/26/19/72it.jpg">
+<div class="gallerytitle">Cassian Saeris</div>
+<div class="galleryflavor">Frère spirituel</div>
+<div class="gallerytext">Il l'avait sauvé de Forstdrom, et permis de soigner ses blessures. Il lui a offert de vivre une nouvelle vie, avec un toit, de la nourriture, un lit. Il l'a aidée à intégrer la nation d'Averos. Et en retour, Valdyra lui confia tout : son passé, ses doutes. Et elle s'engagea à l'armée, marchant sur les pas de ce frère de coeur.</div>
+</div><!--
+
+--><input type="radio" name="gallerydesc" id="desc_johannes"><div class="gallerydesc">
+<img src="https://zupimages.net/up/26/19/0tfx.jpg">
+<div class="gallerytitle">Johannes Nurmi</div>
+<div class="galleryflavor">Amitié en vogue</div>
+<div class="gallerytext">Valdyra rencontra ce jeune marin lors d'un déplacement de la phalange à laquelle elle était affectée. Il était là, vivant sa vie de batelier tranquille lorsqu'il croisa le chemin de la jeune militaire. Le courant passa immédiatement entre eux, et une amitié simple et sincère naquit, ponctuée de moments de complicité et de chambrages.</div>
+</div><!--
+
+--><input type="radio" name="gallerydesc" id="desc_tbd1"><div class="gallerydesc">
+<img src="https://zupimages.net/up/26/19/f007.jpg">
+<div class="gallerytitle">A définir</div>
+<div class="galleryflavor">A définir</div>
+<div class="gallerytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec a diam. Sed sit amet ipsum mauris. Maecenas congue ligula ac quam viverra nec consectetur ante hendrerit. Donec et mollis dolor. Praesent et diam eget libero egestas mattis sit amet vitae augue. Nam tincidunt congue enim, ut porta lorem lacinia consectetur.</div>
+</div><!--
+
+--></div><!--
+
+--></div>
+
+</body>
+</html>

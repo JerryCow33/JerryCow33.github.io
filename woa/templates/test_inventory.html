@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --jour: #C1A18B;
+            --nuit: #2B2732;
+            --jour-texte: #151414;
+            --nuit-texte: #E6E2E2;
+        }
+
+        inventory {display:grid; grid-template-columns: 1fr 1fr; gap:5px; padding:10px; } item {display:block; margin: 5px 10px; padding: 15px; border-radius: 5px; background-color: var(--jour); color:var(--jour-texte); & img {width:80px; height:80px; object-fit:cover; float:left; margin-right:10px; border-radius:5px; border:2px solid var(--jour-texte); } & itemnom {display:block; margin-left:90px; font-weight:600; font-style:italic; text-transform: uppercase; margin-bottom:3px;	 padding-bottom:3px; border-bottom:1px solid var(--jour-texte);} } .night-mode item {background-color: var(--nuit); color:var(--nuit-texte); & img {border:2px solid var(--nuit-texte);} & itemnom {border-bottom:1px solid var(--nuit-texte);} }
+    </style>
+</head>
+<body class="night-mode">
+<inventory><!--
+
+--><item><!--
+--><img src="https://cdn.midjourney.com/1acd3203-89ab-4d78-9f94-29cc23b0599b/0_0.png" /><!--
+--><itemnom>Item 1</itemnom><!--
+-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet urna interdum, fringilla nunc sed, venenatis tellus. Quisque id felis urna. Maecenas porta eget ante ut placerat. Nullam et porta diam. Proin euismod molestie eros eu accumsan. Integer arcu odio, iaculis sit amet ante id, semper porta felis. Suspendisse mattis, felis ultrices laoreet condimentum, nunc lectus lobortis erat, ac tincidunt mauris arcu non libero. Etiam dignissim sapien metus. Morbi justo nibh, finibus id interdum vel, accumsan non ante. Quisque fermentum maximus nulla, a pretium elit suscipit ut. Etiam id neque sapien. Proin magna elit, facilisis quis dolor id, fringilla scelerisque ex.<!--
+--></item><!--
+
+--><item><!--
+--><img src="https://cdn.midjourney.com/1acd3203-89ab-4d78-9f94-29cc23b0599b/0_1.png" /><!--
+--><itemnom>Item 2</itemnom><!--
+-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet urna interdum, fringilla nunc sed, venenatis tellus. Quisque id felis urna. Maecenas porta eget ante ut placerat. Nullam et porta diam. Proin euismod molestie eros eu accumsan. Integer arcu odio, iaculis sit amet ante id, semper porta felis. Suspendisse mattis, felis ultrices laoreet condimentum, nunc lectus lobortis erat, ac tincidunt mauris arcu non libero. Etiam dignissim sapien metus. Morbi justo nibh, finibus id interdum vel, accumsan non ante. Quisque fermentum maximus nulla, a pretium elit suscipit ut. Etiam id neque sapien. Proin magna elit, facilisis quis dolor id, fringilla scelerisque ex.<!--
+--></item><!--
+
+--><item><!--
+--><img src="https://cdn.midjourney.com/1acd3203-89ab-4d78-9f94-29cc23b0599b/0_2.png" /><!--
+--><itemnom>Item 3</itemnom><!--
+-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet urna interdum, fringilla nunc sed, venenatis tellus. Quisque id felis urna. Maecenas porta eget ante ut placerat. Nullam et porta diam. Proin euismod molestie eros eu accumsan. Integer arcu odio, iaculis sit amet ante id, semper porta felis. Suspendisse mattis, felis ultrices laoreet condimentum, nunc lectus lobortis erat, ac tincidunt mauris arcu non libero. Etiam dignissim sapien metus. Morbi justo nibh, finibus id interdum vel, accumsan non ante. Quisque fermentum maximus nulla, a pretium elit suscipit ut. Etiam id neque sapien. Proin magna elit, facilisis quis dolor id, fringilla scelerisque ex.<!--
+--></item><!--
+
+--><item><!--
+--><img src="https://cdn.midjourney.com/1acd3203-89ab-4d78-9f94-29cc23b0599b/0_3.png" /><!--
+--><itemnom>Item 4</itemnom><!--
+-->Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet urna interdum, fringilla nunc sed, venenatis tellus. Quisque id felis urna. Maecenas porta eget ante ut placerat. Nullam et porta diam. Proin euismod molestie eros eu accumsan. Integer arcu odio, iaculis sit amet ante id, semper porta felis. Suspendisse mattis, felis ultrices laoreet condimentum, nunc lectus lobortis erat, ac tincidunt mauris arcu non libero. Etiam dignissim sapien metus. Morbi justo nibh, finibus id interdum vel, accumsan non ante. Quisque fermentum maximus nulla, a pretium elit suscipit ut. Etiam id neque sapien. Proin magna elit, facilisis quis dolor id, fringilla scelerisque ex.<!--
+--></item><!--
+
+--></inventory>
+</body>
+</html>

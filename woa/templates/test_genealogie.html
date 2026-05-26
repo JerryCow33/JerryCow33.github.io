@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        :root {
+            --jour: #C1A18B;
+            --nuit: #2B2732;
+            --jour2: #D9C6B9;
+            --nuit2: #3C3942;
+            --jour-texte: #151414;
+            --nuit-texte: #E6E2E2;
+        }
+
+        genealogie { display:flex; flex-direction:column; padding:10px; } membre { display:block; margin: 5px 10px; padding: 15px; border-radius: 5px; background-color: var(--jour); color:var(--jour-texte); } membrecarte { display:block; margin-bottom:10px; & img { width:150px; height:150px; object-fit:cover; float:left; margin-right:10px; border-radius:5px; border:2px solid var(--jour-texte); } } membrenom { display:block; font-weight:600; font-style:italic; text-transform: uppercase; margin-bottom:3px; padding-bottom:3px; border-bottom:2px solid var(--jour-texte); } membreinfos { display:flex; flex-direction:column; align-items: stretch; align-content:flex-start; justify-content: flex-start; & p { flex:1; margin:0px; display:flex; flex-direction:row; justify-content: stretch; border-radius:5px; padding:5px; background: var(--jour2); margin:3px 0px; & b { min-width:80px; max-width:80px; font-weight:600; } & membrefamille { flex:1; margin:0px; display:flex; flex-direction:column; gap:5px; & famille { display:flex; flex-direction:row; justify-content: space-between; border-bottom:1px solid var(--jour-texte); & span { font-style: italic; font-weight:400; } } & famille:last-child { border-bottom:0px; } } } } .night-mode { membre { background-color: var(--nuit); color:var(--nuit-texte); } membrecarte { & img { border:2px solid var(--nuit-texte); } } membrenom { border-bottom:2px solid var(--nuit-texte); } membreinfos { & p { background: var(--nuit2); & membrefamille { & famille { border-bottom:1px solid var(--nuit-texte); } } } } } @media (max-width: 600px) { membrecarte { & img { width:100%; height:100%; object-fit:cover; border-radius:5px; border:2px solid var(--jour-texte); } } membreinfos { clear:both; } }
+    </style>
+</head>
+<body>
+<genealogie><!--
+
+--><membre><!--
+--><membrecarte><!--
+--><membrenom>Roÿ Nordrdóttir</membrenom><!--
+--><img src="https://i.servimg.com/u/f46/18/88/24/54/roz12.jpg" /><!--
+--><membreinfos><!--
+--><p><b>Genre</b>Masculin</p><!--
+--><p><b>Race</b>Humain</p><!--
+--><p><b>Age</b>45 ans</p><!--
+--><p><b>Taille</b>190 cm</p><!--
+--><p><b>Poids</b>100 kg</p><!--
+--><p><b>Statut</b>Décédé</p><!--
+--><p><b>Famille</b><membrefamille><!--
+--><famille>Cylia Nordrdóttir<span>Epouse</span></famille><!--
+--><famille>Sófya Nordrdóttir<span>Fille</span></famille><!--
+--><famille>Ivarleif Nordrdóttir<span>Fils</span></famille><!--
+--><famille>Sigrid Nordrdóttir<span>Belle sœur</span></famille><!--
+--><famille>Eirikr Nordrdóttir<span>Frère</span></famille><!--
+--><famille>Thyr Nordrdóttir<span>Neveu</span></famille><!--
+--><famille>Balder Nordrdóttir<span>Neveu</span></famille><!--
+--><famille>Söli Nordrdóttir<span>Nièce</span></famille><!--
+--></membrefamille></p><!--
+--></membreinfos><!--
+--></membrecarte><!--
+-->Ancien bourgmeistr d'Úlfheim, il s'est sacrifié afin de permettre à sa femme, Cylia et sa fille, Sófya, de fuir. C'était un homme puissant, considéré par les siens comme un guerrier d'exception. Brave, fort et juste, il ne rechignait jamais à la tâche et participait même activement à la vie du village.<!--
+--></membre><!--
+
+--><membre><!--
+--><membrecarte><!--
+--><membrenom>Cylia Nordrdóttir</membrenom><!--
+--><img src="https://i.servimg.com/u/f46/18/88/24/54/cylia12.jpg" /><!--
+--><membreinfos><!--
+--><p><b>Genre</b>Feminin</p><!--
+--><p><b>Race</b>Elfe</p><!--
+--><p><b>Age</b>95 ans</p><!--
+--><p><b>Taille</b>170 cm</p><!--
+--><p><b>Poids</b>60 kg</p><!--
+--><p><b>Statut</b>Vivante</p><!--
+--><p><b>Famille</b><membrefamille><!--
+--><famille>Roÿ Nordrdóttir<span>Epoux †</span></famille><!--
+--><famille>Sófya Nordrdóttir<span>Fille</span></famille><!--
+--><famille>Ivarleif Nordrdóttir<span>Beau fils</span></famille><!--
+--><famille>Sigrid Nordrdóttir<span>Belle sœur</span></famille><!--
+--><famille>Eirikr Nordrdóttir<span>Beau Frère</span></famille><!--
+--><famille>Thyr Nordrdóttir<span>Neveu</span></famille><!--
+--><famille>Balder Nordrdóttir<span>Neveu</span></famille><!--
+--><famille>Söli Nordrdóttir<span>Nièce</span></famille><!--
+--></membrefamille></p><!--
+--></membreinfos><!--
+--></membrecarte><!--
+-->Bourgmeistr actuelle d'Úlfheim, c'est une femme discrète. Elle est réputée, cependant, pour être stricte mais juste. A l'instar de son défunt époux, elle n'est pas une combattante mais la maîtrise de sa magie du feu lui permet de défendre son village et de tenir en respect les guerriers nordiques. Elle prend son rôle très au sérieux. Si, pour le moment, le village encore petit, son désir est de faire d'Úlfheim une ville prospère et réputée.<!--
+--></membre><!--
+
+
+--></genealogie>
+</body>
+</html>
