@@ -55,7 +55,7 @@ seyna, valdyra, default {
 	}
 }
 
-.night-mode seyna, .night-mode valdyra .night-mode default {
+.night-mode seyna, .night-mode valdyra, .night-mode default {
 	background-color:var(--nuit2);
 	color:var(--nuit-texte);
 
