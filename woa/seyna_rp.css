@@ -2,7 +2,7 @@
 }
 
 /* DIALOGUES */
-seyna, default {
+seyna, valdyra, default {
 	display:block;
 	margin:5px 10px;
 	padding:15px;
@@ -52,7 +52,7 @@ seyna, default {
 	}
 }
 
-.night-mode seyna, .night-mode default {
+.night-mode seyna, .night-mode valdyra .night-mode default {
 	background-color:var(--nuit2);
 	color:var(--nuit-texte);
 
@@ -81,6 +81,15 @@ seyna {
 	}
 }
 
+valdyra {
+	background-image:url("https://i.ibb.co/0jFQhJZJ/valdyra.jpg");
+	color:steelblue !important;
+	
+	&::before {
+		content:"Valdyra" !important;
+	}
+}
+
 default {
 	background-image:none;
 	position:relative;
@@ -92,7 +101,7 @@ default {
 
 
 /* TEMPLATE */
-seynawrapper {
+seynawrapper, valdyrawrapper {
 	display:grid;
 	grid-template-columns: 1fr 160px;
 	grid-template-rows: auto 1fr;
@@ -102,15 +111,22 @@ seynawrapper {
 	border-radius:10px;
 }
 
-seynaside {
+seynaside, valdyraside {
 	grid-column: 2;
 	grid-row: 1 / span 2;
 	height:100%;
-	background-image:url(https://cdn.midjourney.com/e45b9bcc-64d5-49b9-819b-af34f28bc1d7/0_1.png);
 	background-size:cover;
 }
 
-seynatitle {
+seynaside {
+	background-image:url(https://cdn.midjourney.com/e45b9bcc-64d5-49b9-819b-af34f28bc1d7/0_1.png);
+}
+
+valdyraside {
+	background-image:url(https://zupimages.net/up/26/21/4uea.png);
+}
+
+seynatitle, valdyratitle {
 	border-image: linear-gradient(to left, transparent, var(--jour2) 20%, var(--jour2) 80%, transparent) 1;
 	border-width: 5px;
 	border-style: solid;
@@ -136,7 +152,7 @@ seynatitle {
 	}
 }
 
-seynamain {
+seynamain, valdyramain {
 	padding:10px;
 	text-align:justify;
 	color: var(--jour-texte);
@@ -145,7 +161,7 @@ seynamain {
 }
 
 .night-mode {
-	seynawrapper {
+	seynawrapper, valdyrawrapper {
 		background-color:var(--nuit);
 	}
 
@@ -153,7 +169,11 @@ seynamain {
 		background-image:url(https://cdn.midjourney.com/db14a506-9e0b-48ca-9bcd-5eaaea352c4e/0_0.png);
 	}
 
-	seynatitle {
+	valdyraside {
+		background-image:url(https://zupimages.net/up/26/21/99bb.png);
+	}
+
+	seynatitle, valdyratitle {
 		border-image: linear-gradient(to left, transparent, var(--nuit2) 20%, var(--nuit2) 80%, transparent) 1;
 		color: var(--nuit-texte);
 
@@ -162,7 +182,7 @@ seynamain {
 		}
 	}
 
-	seynamain {
+	seynamain, valdyramain {
 		color: var(--nuit-texte);
 		scrollbar-color:var(--nuit2) transparent;
 	}
