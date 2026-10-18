@@ -77,6 +77,11 @@
 	--val-tor-color-lighten:color-mix(in srgb, var(--val-tor-color), white 20%);
 	--val-diag-tor-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/tor2.png");
 	--val-diag-tor-masked-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/tormasked2.png");
+	/* mirabeau */
+	--val-mirabeau-color:#8B4513;
+	--val-mirabeau-color-darken:color-mix(in srgb, var(--val-mirabeau-color), black 20%);
+	--val-mirabeau-color-lighten:color-mix(in srgb, var(--val-mirabeau-color), white 20%);
+	--val-diag-mirabeau-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/mirabeau2.png");
 	/* luther kay */
 	--val-luther-color:darkred;
 	--val-luther-color-darken:color-mix(in srgb, var(--val-luther-color), black 20%);
@@ -487,6 +492,7 @@
 .kay,
 .tor,
 .tormasked,
+.mirabeau,
 .davos,
 .bern,
 .grishna,
@@ -570,6 +576,19 @@
 	background-image: var(--val-diag-tor-masked-vignette);
 }
 
+.mirabeau {
+	border-color: var(--val-mirabeau-color);
+	background-image: var(--val-diag-mirabeau-vignette);
+	color:var(--val-mirabeau-color);
+
+	& c {
+		text-shadow: 1px 1px var(--val-mirabeau-color-darken);
+	}
+		
+	&::before {
+		content: "Mirabeau";
+	}
+}
 
 .davos {
 	border-color: var(--val-davos-color);
