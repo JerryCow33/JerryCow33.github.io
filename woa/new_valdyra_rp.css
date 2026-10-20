@@ -71,6 +71,7 @@
 	--val-kay-color-darken:color-mix(in srgb, var(--val-valdyra-color), black 20%);
 	--val-kay-color-lighten:color-mix(in srgb, var(--val-valdyra-color), white 20%);
 	--val-diag-kay-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kay2.png");
+	--val-diag-kaymonstre-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/kaymonstre2.png");
 	/* tor */
 	--val-tor-color:darkred;
 	--val-tor-color-darken:color-mix(in srgb, var(--val-tor-color), black 20%);
@@ -486,10 +487,10 @@
 	}
 }
 
-
 .default,
 .valdyra,
 .kay,
+.kaymonstre,
 .tor,
 .tormasked,
 .mirabeau,
@@ -544,7 +545,7 @@
 	}
 }
 
-.kay {
+.kay, .kaymonstre {
 	border-color: var(--val-kay-color);
 	background-image: var(--val-diag-kay-vignette);
 	color:var(--val-kay-color);
@@ -556,6 +557,10 @@
 	&::before {
 		content: "Kay";
 	}
+}
+
+.kaymonstre {
+	background-image: var(--val-diag-kaymonstre-vignette);
 }
 
 .tor, .tormasked {
