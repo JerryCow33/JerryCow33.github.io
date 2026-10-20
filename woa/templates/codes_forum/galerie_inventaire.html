@@ -1,0 +1,54 @@
+<style>:root{--item-highlight-day:brown;--item-highlight-night:gold;--item-dimensions:100px;--item-border-corner:calc(var(--item-dimensions) / 10);--item-description-width:60%;--item-nom-size:30px;--item-type-size:18px;--item-texte-size:16px;}inventaire{display:flex;gap:5px;position:relative;}inventaire-items{display:grid;grid-template-columns:repeat(3, var(--item-dimensions));grid-template-rows:repeat(auto-fill, var(--item-dimensions));gap:5px;padding-right:var(--item-description-width);}label.inventaire-item{min-width:var(--item-dimensions);min-height:var(--item-dimensions);width:var(--item-dimensions);height:var(--item-dimensions);& input[type="radio"]{display:none;}&:hover{& inventaire-vignette{border:1px solid var(--jour-texte);mask:conic-gradient(var(--jour) 0 0) content-box, conic-gradient(at var(--item-border-corner) var(--item-border-corner),rgb(from var(--jour) r g b / 0%) 75%,var(--jour) 0)0 0/calc(100% - var(--item-border-corner)) calc(100% - var(--item-border-corner));}}&:has(input:checked){& inventaire-vignette{border:1px solid var(--item-highlight-day);mask:conic-gradient(var(--jour) 0 0) content-box, conic-gradient(at var(--item-border-corner) var(--item-border-corner),rgb(from var(--jour) r g b / 0%) 75%,var(--jour) 0)0 0/calc(100% - var(--item-border-corner)) calc(100% - var(--item-border-corner));}& inventaire-description{display:flex;flex-direction:column;}}}inventaire-description{display:none;position:absolute;top:0;right:0;width:var(--item-description-width);height:100%;& inventaire-nom{display:flex;flex-direction:column;align-items:center;justify-content:center;background-color:var(--jour);padding:5px;border-radius:5px;font-weight:bold;font-family:'Lisu Bosa', sans-serif;font-size:var(--item-nom-size) !important;margin-bottom:5px;color:var(--jour-texte);& span{font-family:'Lisu Bosa', sans-serif;font-size:var(--item-type-size) !important;font-weight:normal;font-style:italic;}}& inventaire-texte{display:block;font-size:var(--item-texte-size) !important;color:var(--jour-texte);flex:1;overflow-y:auto;scrollbar-color:var(--jour) var(--jour2);}}inventaire-vignette{display:block;width:100%;height:100%;box-sizing:border-box;border:1px solid transparent;padding:3px;& img{width:100%;height:100%;object-fit:cover;object-position:center;}}.night-mode{& label.inventaire-item{&:hover{& inventaire-vignette{border:1px solid var(--nuit-texte);mask:conic-gradient(var(--nuit) 0 0) content-box, conic-gradient(at var(--item-border-corner) var(--item-border-corner),rgb(from var(--nuit) r g b / 0%) 75%,var(--nuit) 0)0 0/calc(100% - var(--item-border-corner)) calc(100% - var(--item-border-corner));}}&:has(input:checked){& inventaire-vignette{border:1px solid var(--item-highlight-night);mask:conic-gradient(var(--nuit) 0 0) content-box, conic-gradient(at var(--item-border-corner) var(--item-border-corner),rgb(from var(--nuit) r g b / 0%) 75%,var(--nuit) 0)0 0/calc(100% - var(--item-border-corner)) calc(100% - var(--item-border-corner));}}}& inventaire-description{& inventaire-nom{background-color:var(--nuit);color:var(--nuit-texte);}& inventaire-texte{color:var(--nuit-texte);scrollbar-color:var(--nuit) var(--nuit2);}}}</style><!--
+
+--><div class="cate-titre" style="text-align: center;padding: 25px 30px 10px!important;margin-top: 0px !important;margin-bottom: 10px;"><h2 style="line-height: 55px;">Inventaire</h2></div><!--
+
+--><inventaire><!--
+--><inventaire-items><!--
+
+--><label class="inventaire-item" for="item1"><!--
+--><input type="radio" name="items" id="item1" checked><!--
+--><inventaire-vignette><img src="https://zupimages.net/up/26/31/lllj.png" alt=""></inventaire-vignette><!--
+--><inventaire-description><!--
+--><inventaire-nom>Item n°1<span>Type d'item</span></inventaire-nom><!--
+--><inventaire-texte>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget laoreet risus, iaculis consequat dui. Duis pulvinar eleifend augue. Quisque sed ipsum sed odio hendrerit pulvinar. Nunc bibendum molestie est et maximus. Sed semper dolor in elit convallis, semper facilisis magna ullamcorper. Donec aliquam quam ac mauris varius scelerisque sit amet sed tortor. Cras viverra dui ut ullamcorper ullamcorper. Cras vitae accumsan turpis. Proin quis arcu leo. In posuere, odio blandit viverra sollicitudin, urna quam fermentum odio, ac elementum mi felis non felis.</inventaire-texte><!--
+--></inventaire-description><!--
+--></label><!--
+
+--><label class="inventaire-item" for="item2"><!--
+--><input type="radio" name="items" id="item2"><!--
+--><inventaire-vignette><img src="https://zupimages.net/up/26/31/73td.png" alt=""></inventaire-vignette><!--
+--><inventaire-description><!--
+--><inventaire-nom>Item n°2<span>Type d'item</span></inventaire-nom><!--
+--><inventaire-texte>Curabitur vel pretium orci. Donec ultricies nulla quis diam luctus, in euismod erat dignissim. Curabitur blandit nisi ut tristique consequat. Cras varius blandit augue sed vulputate. Cras est eros, tincidunt ultricies pretium a, facilisis ac dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Sed ac ipsum volutpat, posuere orci nec, sodales dui. Donec efficitur sem ac est lobortis commodo. In in feugiat quam. Nullam commodo at augue vel pretium. Quisque vitae sem luctus, bibendum diam tempor, vehicula sem. Nullam sollicitudin porttitor ex in mattis. Quisque urna risus, imperdiet id tempor a, luctus sed nulla.</inventaire-texte><!--
+--></inventaire-description><!--
+--></label><!--
+
+--><label class="inventaire-item" for="item3"><!--
+--><input type="radio" name="items" id="item3"><!--
+--><inventaire-vignette><img src="https://zupimages.net/up/26/31/3cax.png" alt=""></inventaire-vignette><!--
+--><inventaire-description><!--
+--><inventaire-nom>Item n°3<span>Type d'item</span></inventaire-nom><!--
+--><inventaire-texte>Aliquam sollicitudin facilisis porta. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec ut arcu lorem. Etiam vitae tincidunt sapien, sit amet lobortis justo. Nunc vel molestie urna. Nullam malesuada ipsum mi, in suscipit lectus consectetur vitae. Nulla sed massa at magna rutrum aliquet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus eu turpis at urna semper tincidunt sit amet in nunc. Mauris hendrerit massa sed maximus vestibulum.</inventaire-texte><!--
+--></inventaire-description><!--
+--></label><!--
+
+--><label class="inventaire-item" for="item4"><!--
+--><input type="radio" name="items" id="item4"><!--
+--><inventaire-vignette><img src="https://zupimages.net/up/26/31/xguw.png" alt=""></inventaire-vignette><!--
+--><inventaire-description><!--
+--><inventaire-nom>Item n°4<span>Type d'item</span></inventaire-nom><!--
+--><inventaire-texte>Quisque nec tempor massa, ac hendrerit ligula. Sed nunc purus, molestie sit amet odio volutpat, molestie pulvinar lectus. In laoreet, ipsum a bibendum hendrerit, ipsum arcu ultrices sapien, at hendrerit orci leo non augue. Nam pretium lacus vel libero congue, vel tempus enim suscipit. Nulla pretium consectetur nulla et rutrum. Mauris eget semper dui, sit amet tincidunt purus. Sed tellus sapien, fringilla dignissim congue ac, lobortis a diam. Donec malesuada facilisis accumsan.</inventaire-texte><!--
+--></inventaire-description><!--
+--></label><!--
+
+--><label class="inventaire-item" for="item5"><!--
+--><input type="radio" name="items" id="item5"><!--
+--><inventaire-vignette><img src="https://zupimages.net/up/26/31/bdbh.png" alt=""></inventaire-vignette><!--
+--><inventaire-description><!--
+--><inventaire-nom>Item n°5<span>Type d'item</span></inventaire-nom><!--
+--><inventaire-texte>Praesent quam neque, pretium a congue at, eleifend non mauris. Aenean rutrum justo ultrices turpis accumsan, nec venenatis diam feugiat. Nullam vel mi et diam vulputate sagittis vitae in leo. Vivamus non velit at erat viverra aliquam. Integer non nibh interdum, dignissim sem vitae, aliquam felis. Sed nec enim tincidunt, hendrerit ipsum sed, luctus ante. Integer condimentum tortor vel feugiat mollis. Duis porta lacinia sem vitae tempor.</inventaire-texte><!--
+--></inventaire-description><!--
+--></label><!--
+
+--></inventaire-items><!--
+--></inventaire>

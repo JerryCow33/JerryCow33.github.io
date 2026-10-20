@@ -1,0 +1,28 @@
+<style>onglets { display:flex; justify-content: center; align-items: center; padding:0px 10px; } .ongletleft {justify-content:flex-start;} .ongletright {justify-content:flex-end;} .onglet_input { display: none; } .onglet_input + ongletcontent { display: flex; justify-content: center; align-items: center; & .onglet_label { display: flex; flex-direction: column; justify-content: center; align-items: center; padding:10px; border-radius:5px 5px 0px 0px; margin:0px; color:var(--jour-texte); } } .onglet_input:checked + ongletcontent { & .onglet_label { background-color:var(--jour); } } .onglet_content { text-align:left; display:none; background-color:var(--jour); padding:10px; border-radius:5px; } onglets:has(#onglet_tab1:checked) ~ .onglet_content1, onglets:has(#onglet_tab2:checked) ~ .onglet_content2 { display: block; } contentitem { display:block; text-align: justify; flex: 1; color:var(--jour-texte); } .night-mode { & .onglet_input + ongletcontent { & .onglet_label { color:var(--nuit-texte); } } & .onglet_input:checked + ongletcontent { & .onglet_label { background-color:var(--nuit); } } & .onglet_content { background-color:var(--nuit); } & contentitem { color:var(--nuit-texte); } }</style>
+
+<div class="onglet_conteneur"><!--
+
+--><onglets><!--
+
+--><input class="onglet_input" type="radio" name="onglet_tabs" id="onglet_tab1" checked /><!--
+--><ongletcontent><label for="onglet_tab1" class="onglet_label">Onglet 1</label></ongletcontent><!--
+
+--><input class="onglet_input" type="radio" name="onglet_tabs" id="onglet_tab2" /><!--
+--><ongletcontent><label for="onglet_tab2" class="onglet_label">Onglet 2</label></ongletcontent><!--
+
+--></onglets><!--
+
+--><!-- DEBUT BLOC CHRONO --><div class="onglet_content onglet_content1"><!--
+
+--><!-- DEBUT LIGNE --><contentitem>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam purus sapien, ultricies nec pretium id, commodo sodales nulla. Maecenas sit amet dui at augue fermentum ultricies. Curabitur condimentum risus in efficitur rhoncus. Aliquam erat volutpat. Quisque venenatis scelerisque dui, congue ultricies dolor lacinia non. Proin vehicula finibus ex, ut dignissim velit venenatis et. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin molestie dui laoreet nisi maximus, eget finibus neque fringilla. Quisque quis dignissim dui, tempor dignissim mauris. In hac habitasse platea dictumst. Mauris aliquam ligula nibh, ac pellentesque ipsum maximus non.</contentitem><!-- FIN LIGNE --><!--
+
+-->
+</div><!-- FIN BLOC CHRONO --><!--
+
+--><!-- DEBUT BLOC CHRONO --><div class="onglet_content onglet_content2"><!--
+
+--><!-- DEBUT LIGNE --><contentitem>Vestibulum ac ex egestas, fringilla metus a, consectetur velit. Donec posuere rhoncus massa eget sollicitudin. Aliquam maximus odio elementum, efficitur nunc et, faucibus nibh. Sed tristique sit amet orci nec tincidunt. Donec eget dolor lorem. Maecenas sodales imperdiet dui, non gravida dui ultrices id. Nam tempus imperdiet arcu, non commodo ligula lacinia at. Etiam placerat dui ligula, vel ornare metus viverra a. Donec ullamcorper pharetra urna, et sollicitudin arcu elementum eget. Vestibulum justo justo, accumsan at nunc at, consequat aliquet justo. Pellentesque in diam dignissim, volutpat lacus ac, tristique elit. Vestibulum ac tortor augue.</contentitem><!-- FIN LIGNE --><!--
+
+--></div><!-- FIN BLOC CHRONO --><!--
+
+--></div>

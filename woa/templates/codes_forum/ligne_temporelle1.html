@@ -1,0 +1,40 @@
+<style>:root { --bleu: #4B6C8B; } listerp-wrapper { display: flex; flex-direction: column; gap:0px; color:var(--jour-texte); } listerp-item { display:grid; grid-template-columns:1fr 10px 1px 10px 1fr; grid-auto-flow: dense; gap:0; & listerp-noblank { grid-column: 1; padding:5px; background-color: var(--jour); border-radius: 5px; & listerp-titre { display: flex; font-family: Lisu Bosa; font-size: 1.5em; font-weight: bold; align-items: flex-start; & a { color:var(--jour-texte) !important; text-decoration: none; } & span { padding:0px 5px; margin:5px; border-radius: 5px; text-transform:uppercase; font-size:0.6em; text-wrap: nowrap; } } & listerp-feat { display:block; font-size:0.8em; float:left; text-align:left; padding:0px 5px; & i { font-style: normal; &.rp-fehor { color: var(--fehor); } &.rp-averos { color: var(--averos); } &.rp-kierm { color: var(--kierm); } &.rp-vagabonds { color: var(--vagabonds); } } } & listerp-date { display:block; font-size:0.8em; float:right; text-align:right; padding:0px 5px; } & listerp-text { border-top:1px solid var(--jour-texte); padding:5px; margin-top:25px; font-size:1em; clear:both; display:block; text-align: justify; overflow-y: auto; max-height:200px; scrollbar-color: var(--jour2) transparent; & img { float:left; width:100px; height:100px; object-fit:cover; object-position: center top; margin:5px 10px 0px 0px; border-radius:5px; } } &.rp-encours { & span { background-color: var(--orange); } } &.rp-termine { & span { background-color: var(--vert); } } &.rp-archive { & span { background-color: var(--bleu); } } } & listerp-separator { grid-column: 3; background:linear-gradient(to bottom, var(--jour-texte) 0%, var(--jour-texte) 100%); } & listerp-blank { grid-column: 4 / span 2; } &::before { content:""; display:none; height:1px; background-color:var(--jour-texte); align-self: center; } &::after { content:""; display:block; height:1px; background-color:var(--jour-texte); align-self: center; } &:nth-child(odd) { & listerp-titre { flex-direction: row-reverse; } & listerp-feat { float:right; text-align:right; padding:0px 5px; } & listerp-date { float:left; text-align:left; } & listerp-text img { float:right; margin:5px 0px 0px 10px; } } &:nth-child(even) { & listerp-noblank { grid-column: 5; } & listerp-separator { grid-column: 3; } & listerp-blank { grid-column: 1 / span 2; } } &:first-child { & listerp-separator { background:linear-gradient(to bottom, transparent 0%, var(--jour-texte) 100%); } } &:last-child { & listerp-separator { background:linear-gradient(to bottom, var(--jour-texte) 0%, transparent 100%); } } } .night-mode { & listerp-wrapper { color:var(--nuit-texte); } & listerp-item { & listerp-noblank { background-color: var(--nuit); & listerp-titre { & a { color:var(--nuit-texte) !important; } } & listerp-text { border-top:1px solid var(--nuit-texte); scrollbar-color: var(--nuit2) transparent; } } & listerp-separator { background:linear-gradient(to bottom, var(--nuit-texte) 0%, var(--nuit-texte) 100%); } &::before { content:""; background-color:var(--nuit-texte); } &::after { content:""; background-color:var(--nuit-texte); } &:first-child { & listerp-separator { background:linear-gradient(to bottom, transparent 0%, var(--nuit-texte) 100%); } } &:last-child { & listerp-separator { background:linear-gradient(to bottom, var(--nuit-texte) 0%, transparent 100%); } } } }</style>
+<listerp-wrapper><!--
+
+--><listerp-item><!--
+--><listerp-noblank class="rp-archive"><listerp-titre><span>Archivé</span><a href="">RP n°1</a></listerp-titre><!--
+--><listerp-feat>Feat. <i class="rp-averos">Quelqu'un</i></listerp-feat><!--
+--><listerp-date>26 janvier 5026</listerp-date><!--
+--><listerp-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis imperdiet semper. Phasellus gravida porttitor purus et dapibus. Aliquam vel tellus at sem aliquam scelerisque eu quis lorem.</listerp-text></listerp-noblank><!--
+--><listerp-separator></listerp-separator><!--
+--><listerp-blank></listerp-blank><!--
+--></listerp-item><!--
+
+--><listerp-item><!--
+--><listerp-noblank class="rp-encours"><listerp-titre><span>En cours</span><a href="">RP n°2</a></listerp-titre><!--
+--><listerp-feat>Feat. <i class="rp-kierm">Quelqu'un</i></listerp-feat><!--
+--><listerp-date>2 mars 5026</listerp-date><!--
+--><listerp-text><img src="https://sig.grumpybumpers.com/host/Dakujin.gif">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis imperdiet semper. Phasellus gravida porttitor purus et dapibus. Aliquam vel tellus at sem aliquam scelerisque eu quis lorem. Vestibulum eros ligula, venenatis sed faucibus eget, hendrerit quis nulla. Pellentesque sit amet vulputate erat. Etiam ullamcorper sollicitudin varius. Mauris iaculis vel elit sit amet volutpat. In vel velit ullamcorper, feugiat risus ut, tincidunt felis. Etiam vitae vehicula risus. Fusce varius diam mi, a ultricies ligula pulvinar nec. Aliquam suscipit congue nibh, eu iaculis dolor consequat vitae. Ut placerat non odio et tristique. Mauris sed commodo neque. Vestibulum blandit elit nunc, quis rutrum lorem fringilla viverra. Morbi vel lorem sed neque vulputate ullamcorper. Cras id purus sagittis, rhoncus mi ac, sollicitudin dolor.</listerp-text></listerp-noblank><!--
+--><listerp-separator></listerp-separator><!--
+--><listerp-blank></listerp-blank><!--
+--></listerp-item><!--
+
+--><listerp-item><!--
+--><listerp-noblank class="rp-encours"><listerp-titre><span>En cours</span><a href="">RP n°3</a></listerp-titre><!--
+--><listerp-feat>Feat. <i class="rp-fehor">Quelqu'un</i></listerp-feat><!--
+--><listerp-date>16 mars 5026</listerp-date><!--
+--><listerp-text><img src="https://2img.net/u/4411/52/03/52/avatars/208-9.jpg">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis imperdiet semper. Phasellus gravida porttitor purus et dapibus. Aliquam vel tellus at sem aliquam scelerisque eu quis lorem. Vestibulum eros ligula, venenatis sed faucibus eget, hendrerit quis nulla. Pellentesque sit amet vulputate erat. Etiam ullamcorper sollicitudin varius. Mauris iaculis vel elit sit amet volutpat. In vel velit ullamcorper, feugiat risus ut, tincidunt felis. Etiam vitae vehicula risus. Fusce varius diam mi, a ultricies ligula pulvinar nec. Aliquam suscipit congue nibh, eu iaculis dolor consequat vitae. Ut placerat non odio et tristique. Mauris sed commodo neque. Vestibulum blandit elit nunc, quis rutrum lorem fringilla viverra. Morbi vel lorem sed neque vulputate ullamcorper. Cras id purus sagittis, rhoncus mi ac, sollicitudin dolor.</listerp-text></listerp-noblank><!--
+--><listerp-separator></listerp-separator><!--
+--><listerp-blank></listerp-blank><!--
+--></listerp-item><!--
+
+--><listerp-item><!--
+--><listerp-noblank class="rp-termine"><listerp-titre><span>Terminé</span><a href="">RP n°4</a></listerp-titre><!--
+--><listerp-feat>Feat. <i class="rp-vagabonds">Quelqu'un</i></listerp-feat><!--
+--><listerp-date>2 juin 5026</listerp-date><!--
+--><listerp-text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mollis imperdiet semper. Phasellus gravida porttitor purus et dapibus. Aliquam vel tellus at sem aliquam scelerisque eu quis lorem. Vestibulum eros ligula, venenatis sed faucibus eget, hendrerit quis nulla. Pellentesque sit amet vulputate erat. Etiam ullamcorper sollicitudin varius. Mauris iaculis vel elit sit amet volutpat. In vel velit ullamcorper, feugiat risus ut, tincidunt felis. Etiam vitae vehicula risus. Fusce varius diam mi, a ultricies ligula pulvinar nec. Aliquam suscipit congue nibh, eu iaculis dolor consequat vitae. Ut placerat non odio et tristique. Mauris sed commodo neque. Vestibulum blandit elit nunc, quis rutrum lorem fringilla viverra. Morbi vel lorem sed neque vulputate ullamcorper. Cras id purus sagittis, rhoncus mi ac, sollicitudin dolor.</listerp-text></listerp-noblank><!--
+--><listerp-separator></listerp-separator><!--
+--><listerp-blank></listerp-blank><!--
+--></listerp-item><!--
+
+--></listerp-wrapper>

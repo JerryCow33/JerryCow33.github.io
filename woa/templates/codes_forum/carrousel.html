@@ -1,0 +1,35 @@
+<style>:root { --width-img: 300px; --height-img: 300px; } .slider { margin:auto; width: var(--width-img); text-align: center; overflow: hidden; } .slider-nav { display:flex; justify-content: center; & > a { display: flex; align-items: center; justify-content: center; width: 0.8rem; height: 0.8rem; margin:5px; text-decoration: none; border-radius: 50%; background-color: var(--jour); &:focus { background-color: var(--jour); } } } .slider-slides { display: flex; overflow-x: auto; scroll-snap-type: x mandatory; scroll-behavior: smooth; scrollbar-color: var(--jour) transparent; & > .slider-slide { scroll-snap-align: start; flex-shrink: 0; width: var(--width-img); height: var(--height-img); background-color: var(--jour); border-radius: 10px; overflow: hidden; & div { overflow:hidden; width:100%; height:100%; position:relative; & img { object-fit: cover; width:100%; height:100%; } & span { height:50px; display:flex; justify-content: center; align-items: center; position:absolute; background-color: var(--jour); color:var(--jour-texte); font-size: 1.5rem; bottom:0; left:0; right:0; } } } } .night-mode { & .slider-nav { & > a { background-color: var(--nuit); color:var(--nuit-texte); &:focus { background-color: var(--nuit); color:var(--nuit-texte); } } } & .slider-slides { scrollbar-color: var(--nuit) transparent; & > .slider-slide { background-color: var(--nuit); & div { & span { background-color: var(--nuit); color:var(--nuit-texte); } } }  } }</style>
+<div class="slider"><!--
+--><div class="slider-nav"><!--
+
+--><a href="#slide-1"></a><!--
+--><a href="#slide-2"></a><!--
+--><a href="#slide-3"></a><!--
+--><a href="#slide-4"></a><!--
+--><a href="#slide-5"></a><!--
+--><a href="#slide-6"></a><!--
+--><a href="#slide-7"></a><!--
+--><a href="#slide-8"></a><!--
+--><a href="#slide-9"></a><!--
+--><a href="#slide-10"></a><!--
+
+--></div><!--
+
+--><div class="slider-slides"><!--
+
+--><div class="slider-slide" id="slide-1"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/valdyra.png"><span>Valdyra</span></div></div><!--
+--><div class="slider-slide" id="slide-2"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/bern.png"><span>Bern</span>
+</div></div><!--
+--><div class="slider-slide" id="slide-3"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/davos.png"><span>Davos</span></div></div><!--
+--><div class="slider-slide" id="slide-4"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/leyra.png"><span>Leyra</span></div></div><!--
+--><div class="slider-slide" id="slide-5"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/grishna.png"><span>Grishna</span></div></div><!--
+--><div class="slider-slide" id="slide-6"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/rosenthal.png"><span>Rosenthal</span></div></div><!--
+--><div class="slider-slide" id="slide-7"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/declan.png"><span>Declan</span></div></div><!--
+--><div class="slider-slide" id="slide-8"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/kaylys.png"><span>Kaylys</span></div></div><!--
+--><div class="slider-slide" id="slide-9"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/anya.png"><span>Anya</span>
+</div></div><!--
+--><div class="slider-slide" id="slide-10"><div><img src="https://jerrycow33.github.io/woa/images/vignettes/orihana.png"><span>Orihana</span></div></div><!--
+
+--></div><!--
+
+--></div>

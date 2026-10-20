@@ -1,0 +1,36 @@
+<style>:root{--size :100px;}.filtertabs{display :flex;align-items :center;justify-content :center;gap :10px;margin-bottom :var(--size);& .filtertab{padding :10px;background-color :var(--jour);border-radius :5px;min-width :100px;text-align :center;margin-right :0px !important;}& input[type="radio"]{display :none;&:checked + .filtertab{background-color :var(--jour-texte);color :var(--jour);}}&:has(#filter_all:checked){& + .container_losange > .gallery_losange > div:nth-child(5n + 4){grid-column :2 / span 2;}}&:has(#filter_kierm:checked){& + .container_losange > .gallery_losange > div:nth-child(5n + 4 of .kierm){grid-column :2 / span 2;}& + .container_losange > .gallery_losange > div:not(.kierm){display :none;}}&:has(#filter_fehor:checked){& + .container_losange > .gallery_losange > div:nth-child(5n + 4 of .fehor){grid-column :2 / span 2;}& + .container_losange > .gallery_losange > div:not(.fehor){display :none;}}&:has(#filter_averos:checked){& + .container_losange > .gallery_losange > div:nth-child(5n + 4 of .averos){grid-column :2 / span 2;}& + .container_losange > .gallery_losange > div:not(.averos){display :none;}}&:has(#filter_vagabonds:checked){& + .container_losange > .gallery_losange > div:nth-child(5n + 4 of .vagabonds){grid-column :2 / span 2;}& + .container_losange > .gallery_losange > div:not(.vagabonds){display :none;}}}.container_losange{display :flex;align-items :center;justify-content :center;margin-top :calc(var(--size)/2);}.gallery_losange{display :grid;grid-template-columns :repeat(6, var(--size));grid-auto-rows :var(--size);margin-bottom :var(--size);place-items :start center;gap :5px;&:has(:hover) div:not(:hover), &:has(:focus) div:not(:focus){filter :brightness(.5) contrast(.5);}& div{position :relative;overflow :hidden;width :calc(var(--size));height :calc(var(--size));transform :scale(1.4) rotate(45deg);transition :all 0.25s, transform 0.25s, filter 0.75s;grid-column :auto / span 2;border-radius :5px;&:hover, &:focus{transform :scale(2) rotate(45deg);z-index :1;transition :all 0.25s, transform 0.25s, filter 0.25s;}&:focus{outline :1px dashed #000;outline-offset :-5px;}& img{width :calc(var(--size));height :calc(var(--size));transform :scale(1.5) rotate(-45deg);}}}.kierm{border :2px solid var(--kierm);}.fehor{border :2px solid var(--fehor);}.averos{border :2px solid var(--averos);}.vagabonds{border :2px solid var(--vagabonds);}.night-mode{.filtertabs{& .filtertab{background-color :var(--nuit);}}& input[type="radio"]{&:checked + .filtertab{background-color :var(--nuit-texte);color :var(--nuit);}}}</style>
+<div class="filtertabs"><!--
+
+--><input type="radio" name="filteritem" id="filter_all" checked><label for="filter_all" class="filtertab" data-filter="all">All</label><!--
+--><input type="radio" name="filteritem" id="filter_kierm"><label for="filter_kierm" class="filtertab" data-filter="kierm">Kierm</label><!--
+--><input type="radio" name="filteritem" id="filter_fehor"><label for="filter_fehor" class="filtertab" data-filter="fehor">Fehor</label><!--
+--><input type="radio" name="filteritem" id="filter_averos"><label for="filter_averos" class="filtertab" data-filter="averos">Averos</label><!--
+--><input type="radio" name="filteritem" id="filter_vagabonds"><label for="filter_vagabonds" class="filtertab" data-filter="vagabonds">Vagabonds</label><!--
+
+--></div><!--
+
+--><div class="container_losange"><!--
+
+--><div class="gallery_losange"><!--
+
+--><div class="vagabonds"><img alt="loki" src="https://zupimages.net/up/26/10/kvg4.jpg"></div><!--
+
+--><div class="averos"><img alt="isaac" src="https://zupimages.net/up/26/10/jb4q.png"></div><!--
+
+--><div class="vagabonds"><img alt="Eris" src="https://zupimages.net/up/26/10/gy3j.jpg"></div><!--
+
+--><div class="averos"><img alt="caelan" src="https://zupimages.net/up/26/10/sqrr.png"></div><!--
+
+--><div class="kierm"><img alt="seyna" src="https://zupimages.net/up/26/10/oja1.png"></div><!--
+
+--><div class="kierm"><img alt="selyra" src="https://zupimages.net/up/26/10/yv2o.png"></div><!--
+
+--><div class="kierm"><img alt="calypso" src="https://zupimages.net/up/26/10/exw5.png"></div><!--
+
+--><div class="fehor"><img alt="badre" src="https://zupimages.net/up/26/10/3kls.png"></div><!--
+
+--><div class="fehor"><img alt="arthur" src="https://zupimages.net/up/26/10/hyv1.jpg"></div><!--
+
+--></div><!--
+
+--></div>
