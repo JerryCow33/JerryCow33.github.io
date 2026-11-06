@@ -21,6 +21,7 @@
 	--val-valdyra-color-darken:color-mix(in srgb, var(--val-valdyra-color), black 20%);
 	--val-valdyra-color-lighten:color-mix(in srgb, var(--val-valdyra-color), white 20%);
 	--val-diag-valdyra-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdyra2.png");
+	--val-diag-valdymonstre-vignette:url("https://jerrycow33.github.io/woa/images/vignettes/valdymonstre2.png");
 	/* bern */
 	--val-bern-color:#fc0000;
 	--val-bern-color-darken:color-mix(in srgb, var(--val-bern-color), black 20%);
@@ -489,6 +490,7 @@
 
 .default,
 .valdyra,
+.valdymonstre,
 .kay,
 .kaymonstre,
 .tor,
@@ -531,7 +533,7 @@
 	font-weight:bold;
 }
 
-.valdyra {
+.valdyra, .valdymonstre {
 	border-color: var(--val-valdyra-color);
 	background-image: var(--val-diag-valdyra-vignette);
 	color:var(--val-valdyra-color);
@@ -543,6 +545,10 @@
 	&::before {
 		content: "Valdyra";
 	}
+}
+
+.valdymonstre {
+	background-image: var(--val-diag-valdymonstre-vignette);
 }
 
 .kay, .kaymonstre {
